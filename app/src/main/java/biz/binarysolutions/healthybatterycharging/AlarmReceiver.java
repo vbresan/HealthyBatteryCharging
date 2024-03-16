@@ -131,6 +131,12 @@ public class AlarmReceiver extends BroadcastReceiver {
 		displayNotification(message, Color.RED, context);
 	}
 
+	private Intent getBatteryStatus(Context context) {
+
+		IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+		return context.getApplicationContext().registerReceiver(null, filter);
+	}
+
 	/**
 	 * 
 	 */
@@ -144,10 +150,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		
-		IntentFilter filter  = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-		Intent batteryStatus =
-			context.getApplicationContext().registerReceiver(null, filter);
-
+		Intent batteryStatus = getBatteryStatus(context);
 		if (batteryStatus == null) {
 			return;
 		}
