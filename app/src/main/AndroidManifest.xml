@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="internalOnly"
+    >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver  
+            android:name=".AlarmReceiver"
+            android:exported="false"
+        />
+        
+        <receiver
+            android:name=".PowerConnectionReceiver"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+		</receiver>
+		
+		<receiver 
+		    android:name="biz.binarysolutions.healthybatterycharging.BootReceiver"
+		    android:enabled="true"
+            android:exported="true"
+		    >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            	<action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            	<action android:name="android.intent.action.USER_PRESENT"/>
+            	<action android:name="android.intent.action.REBOOT"/>
+            </intent-filter>
+        </receiver>
+        
+	</application>
+
+</manifest>

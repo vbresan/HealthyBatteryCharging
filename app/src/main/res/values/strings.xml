@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Healthy Battery Charging</string>
+    
+    <string name="BatteryStatus">Battery status:</string>
+    <string name="BatteryLevel">Battery level:</string>
+    
+    <string name="Charging">Charging</string>
+    <string name="NotCharging">Not charging</string>
+    
+    <string name="ConnectCharger">Connect the charger</string>
+    <string name="DisconnectCharger">Disconnect the charger</string>
+    
+    <string name="Message">You are all set up! You\'ll receive alarms when to connect/disconnect the charger. The app is supposed to run automatically after you reboot the phone as well, but this actually depends on your device security settings. So double check that the app is granted the required permission.</string>
+
+</resources>
