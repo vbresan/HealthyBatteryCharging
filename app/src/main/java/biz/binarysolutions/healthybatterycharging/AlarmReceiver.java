@@ -147,6 +147,10 @@ public class AlarmReceiver extends BroadcastReceiver {
 		IntentFilter filter  = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
 		Intent batteryStatus =
 			context.getApplicationContext().registerReceiver(null, filter);
+
+		if (batteryStatus == null) {
+			return;
+		}
 		
 		boolean isCharging = BatteryUtil.isCharging(batteryStatus);
 		int     level      = BatteryUtil.getBatteryLevel(batteryStatus);
