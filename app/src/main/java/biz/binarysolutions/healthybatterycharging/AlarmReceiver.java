@@ -61,6 +61,14 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 		return intent;
 	}
+
+	/**
+	 *
+	 * @return
+	 */
+	private Uri getRingtone() {
+		return RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+	}
 	
 	/**
 	 * 
@@ -76,10 +84,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 		int    lightOff       = 300;
 		
 		PendingIntent dummyIntent = getDummyIntent(context);
-		Uri ringtone = 
-			RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+		Uri           ringtone    = getRingtone();
 
-		Notification notification = new Notification.Builder(context)
+		Notification.Builder builder = new Notification.Builder(context)
 		    .setContentTitle(title)
 		    .setContentText(text)
 		    .setVibrate(vibratePattern)
@@ -87,9 +94,15 @@ public class AlarmReceiver extends BroadcastReceiver {
 		    .setSmallIcon(android.R.drawable.ic_notification_clear_all)
 		    .setAutoCancel(true)
 		    .setContentIntent(dummyIntent)
-		    .setSound(ringtone)
-		    .build();
-		
+		    .setSound(ringtone);
+
+		Notification notification;
+		if (android.os.Build.VERSION.SDK_INT >= 16) {
+			notification = builder.build();
+		} else {
+			notification = builder.getNotification();
+		}
+
 		if (notificationManager == null) {
 			notificationManager = (NotificationManager) 
 				context.getSystemService(Context.NOTIFICATION_SERVICE);
@@ -132,7 +145,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		
 		IntentFilter filter  = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-		Intent batteryStatus = context.registerReceiver(null, filter);
+		Intent batteryStatus =
+			context.getApplicationContext().registerReceiver(null, filter);
 		
 		boolean isCharging = BatteryUtil.isCharging(batteryStatus);
 		int     level      = BatteryUtil.getBatteryLevel(batteryStatus);
