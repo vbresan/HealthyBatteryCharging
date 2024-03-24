@@ -1,5 +1,7 @@
 package biz.binarysolutions.healthybatterycharging;
 
+import static android.app.AlarmManager.INTERVAL_FIFTEEN_MINUTES;
+
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -22,8 +24,7 @@ import biz.binarysolutions.healthybatterycharging.util.BatteryUtil;
 public class AlarmReceiver extends BroadcastReceiver {
 	
 	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
-	private static final long INTERVAL   = 3 * 60 * 1000;
-	
+
 	private static AlarmManager  alarmManager  = null;
 	private static PendingIntent pendingIntent = null;
 	
@@ -202,7 +203,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 	
 		alarmManager.cancel(pendingIntent);
 		alarmManager.setInexactRepeating(
-			ALARM_TYPE, now, INTERVAL, pendingIntent
+			ALARM_TYPE, now, INTERVAL_FIFTEEN_MINUTES, pendingIntent
 		);
 	}
 
