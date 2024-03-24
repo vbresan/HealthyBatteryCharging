@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 34
-    buildToolsVersion "34.0.0"
+    compileSdk 34
     namespace "biz.binarysolutions.healthybatterycharging"
 
     compileOptions {
@@ -15,7 +14,7 @@ android {
         versionCode 2
         versionName "2.0"
         minSdkVersion 15        // android 4.0.4
-        targetSdkVersion 33
+        targetSdkVersion 34
     }
 
     buildTypes {
@@ -24,4 +23,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
+}
+
+dependencies {
+    implementation 'androidx.preference:preference:1.2.1'
 }

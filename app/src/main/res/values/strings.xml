@@ -2,12 +2,18 @@
 <resources>
 
     <string name="app_name">Healthy Battery Charging</string>
+
+    <string name="Low">Low:</string>
+    <string name="High">High:</string>
+
+    <string name="Save">Save</string>
+    <string name="Reset">Reset</string>
     
     <string name="BatteryStatus">Battery status:</string>
     <string name="BatteryLevel">Battery level:</string>
     
     <string name="Charging">Charging</string>
-    <string name="NotCharging">Not charging</string>
+    <string name="Discharging">Discharging</string>
     
     <string name="ConnectCharger">Connect the charger</string>
     <string name="DisconnectCharger">Disconnect the charger</string>

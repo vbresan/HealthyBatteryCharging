@@ -7,12 +7,13 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.SystemClock;
+
+import biz.binarysolutions.healthybatterycharging.util.BatteryUtil;
 
 /**
  * 
@@ -20,16 +21,16 @@ import android.os.SystemClock;
  */
 public class AlarmReceiver extends BroadcastReceiver {
 	
-	private static int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
-	private static long INTERVAL   = 3 * 60 * 1000;
-	
-	private static long BATTERY_HIGH = 80;
-	private static long BATTERY_LOW  = 40;
+	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
+	private static final long INTERVAL   = 3 * 60 * 1000;
 	
 	private static AlarmManager  alarmManager  = null;
 	private static PendingIntent pendingIntent = null;
 	
 	private static NotificationManager notificationManager = null;
+
+	private static int batteryLow;
+	private static int batteryHigh;
 
 	/**
 	 *
@@ -77,6 +78,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 * @param context
 	 */
 	private void displayNotification(String text, int color, Context context) {
+
+		System.out.println("HBC ===> AlarmReceiver.displayNotification called");
 		
 		String title          = context.getString(R.string.app_name);
 		long[] vibratePattern = new long[] { 0, 500, 500, 500, 500 };
@@ -116,6 +119,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 * 
 	 */
 	private void displayDisconnectChargerNotification(Context context) {
+
+		System.out.println("HBC ===> AlarmReceiver.displayDisconnectChargerNotification called");
 		
 		String message = context.getString(R.string.DisconnectCharger);
 		displayNotification(message, Color.GREEN, context);
@@ -126,21 +131,19 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 * 
 	 */
 	private void displayConnectChargerNotification(Context context) {
+
+		System.out.println("HBC ===> AlarmReceiver.displayConnectChargerNotification called");
 		
 		String message = context.getString(R.string.ConnectCharger);
 		displayNotification(message, Color.RED, context);
-	}
-
-	private Intent getBatteryStatus(Context context) {
-
-		IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-		return context.getApplicationContext().registerReceiver(null, filter);
 	}
 
 	/**
 	 * 
 	 */
 	private void stop() {
+
+		System.out.println("HBC ===> AlarmReceiver.stop called");
 
 		if (alarmManager != null && pendingIntent != null) {
 			alarmManager.cancel(pendingIntent);
@@ -149,29 +152,37 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
+
+		System.out.println("HBC ===> AlarmReceiver.onReceive called");
 		
-		Intent batteryStatus = getBatteryStatus(context);
+		Intent batteryStatus = BatteryUtil.getBatteryStatus(context);
 		if (batteryStatus == null) {
 			return;
 		}
 		
 		boolean isCharging = BatteryUtil.isCharging(batteryStatus);
 		int     level      = BatteryUtil.getBatteryLevel(batteryStatus);
-		
-		if (level >= BATTERY_HIGH && isCharging) {
+
+		if (level >= batteryHigh && isCharging) {
 			displayDisconnectChargerNotification(context);
 			stop();
-		} else if (level <= BATTERY_LOW && !isCharging) {
+		} else if (level <= batteryLow && !isCharging) {
 			displayConnectChargerNotification(context);
 			stop();
 		}
 	}
 
 	/**
-	 * 
 	 * @param context
+	 * @param batteryLow
+	 * @param batteryHigh
 	 */
-	public static void start(Context context) {
+	public static void start(Context context, int batteryLow, int batteryHigh) {
+
+		System.out.println("HBC ===> AlarmReceiver.start called");
+
+		AlarmReceiver.batteryLow  = batteryLow;
+		AlarmReceiver.batteryHigh = batteryHigh;
 		
 		if (alarmManager == null) {
 			alarmManager = (AlarmManager) 
@@ -199,6 +210,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 * 
 	 */
 	public static void cancelNotification() {
+
+		System.out.println("HBC ===> AlarmReceiver.cancelNotification called");
 
 		if (notificationManager != null) {
 			notificationManager.cancelAll();

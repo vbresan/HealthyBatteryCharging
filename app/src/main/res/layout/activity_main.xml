@@ -6,15 +6,67 @@
     android:fillViewport="true"
     >
 	<LinearLayout 
-	    
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
-	    android:paddingBottom="@dimen/activity_vertical_margin"
-	    android:paddingLeft="@dimen/activity_horizontal_margin"
-	    android:paddingRight="@dimen/activity_horizontal_margin"
-	    android:paddingTop="@dimen/activity_vertical_margin"
-	    tools:context="biz.binarysolutions.healthybatterycharging.MainActivity" >
+		android:padding="16dp"
+	    tools:context="biz.binarysolutions.healthybatterycharging.MainActivity"
+		>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+			>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center"
+				>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/Low"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:focusableInTouchMode="true"
+					android:focusable="true"
+				/>
+				<include layout="@layout/edittext_input"
+					android:id="@+id/editTextLow"
+				/>
+
+				<TextView
+					android:layout_marginStart="50dp"
+					android:layout_marginLeft="50dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/High"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+				<include layout="@layout/edittext_input"
+					android:id="@+id/editTextHigh"
+				/>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/buttonSave"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/Save"
+				android:enabled="false"
+			/>
+
+			<Button
+				android:id="@+id/buttonReset"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/Reset"
+			/>
+
+		</LinearLayout>
 	
 	    <TextView
 	        android:layout_width="wrap_content"
@@ -37,55 +89,55 @@
 	        android:autoLink="web"
 	        android:text="@string/CompanyURL"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="horizontal"
 	        android:paddingBottom="50dp"
 	        android:paddingTop="50dp" >
-	
+
 	        <LinearLayout
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:orientation="vertical" >
-	
+
 	            <TextView
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="@string/BatteryStatus"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+
 	            <TextView
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="@string/BatteryLevel"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+
 	        </LinearLayout>
-	
+
 	        <LinearLayout
 	            android:layout_width="wrap_content"
 	            android:layout_height="match_parent"
 	            android:orientation="vertical"
 	            android:paddingLeft="5dp" >
-	
+
 	            <TextView
 	                android:id="@+id/textViewBatteryStatus"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+
 	            <TextView
 	                android:id="@+id/textViewBatteryLevel"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+
 	        </LinearLayout>
-	
+
 	    </LinearLayout>
-	
+
 	    <TextView
 	        android:id="@+id/textView1"
 	        android:layout_width="wrap_content"
