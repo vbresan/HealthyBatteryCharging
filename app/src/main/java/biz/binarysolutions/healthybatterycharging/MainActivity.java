@@ -105,12 +105,20 @@ public class MainActivity extends Activity {
 		saveThresholds();
 	}
 
-	private void setButtonSaveEnabled(boolean isEnabled) {
+	private void setButtonEnabled(int id, boolean isEnabled) {
 
-		Button button = findViewById(R.id.buttonSave);
+		Button button = findViewById(id);
 		if (button != null) {
 			button.setEnabled(isEnabled);
 		}
+	}
+
+	private void setButtonSaveEnabled(boolean isEnabled) {
+		setButtonEnabled(R.id.buttonSave, isEnabled);
+	}
+
+	private void setButtonResetEnabled(boolean isEnabled) {
+		setButtonEnabled(R.id.buttonReset, isEnabled);
 	}
 
 	private void addEditTextListeners() {
@@ -133,11 +141,15 @@ public class MainActivity extends Activity {
 					low  = Integer.parseInt(editTextLow.getText().toString());
 					high = Integer.parseInt(editTextHigh.getText().toString());
 				} catch (NumberFormatException e) {
+
 					setButtonSaveEnabled(false);
+					setButtonResetEnabled(true);
+
 					return;
 				}
 
 				setButtonSaveEnabled((low != batteryLow || high != batteryHigh) && low < high);
+				setButtonResetEnabled(low != DEFAULT_BATTERY_LOW || high != DEFAULT_BATTERY_HIGH);
 			}
 		};
 
@@ -205,7 +217,7 @@ public class MainActivity extends Activity {
 			}
 		};
 		registerReceiver(receiver, filter);
-		
+
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 	

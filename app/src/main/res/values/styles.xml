@@ -1,4 +1,19 @@
 <resources>
-    <style name="AppTheme" parent="android:Theme.Black">
+    <style name="AppTheme" parent="Theme.Material3.Dark">
+        <item name="android:windowBackground">@drawable/background_gradient</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:textColorTertiary">@color/textTertiary</item>
+    </style>
+    <style name="AppTheme.Button">
+        <item name="android:layout_margin">@dimen/buttonMargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/minButtonHeight</item>
+        <item name="android:enabled">false</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">@drawable/button_text_colors</item>
+        <item name="android:textSize">@dimen/textH6</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundStart">#0B0C0E</color>
+    <color name="backgroundEnd">#0B0C10</color>
+
+    <color name="glowStart">#7F9BEE</color>
+    <color name="glowEnd">#9F6FE5</color>
+
+    <color name="buttonBackground">#141519</color>
+    <color name="buttonDisabledStroke">#1F2024</color>
+
+    <color name="textPrimary">#F2F2F2</color>
+    <color name="textSecondary">#CACBCF</color>
+    <color name="textTertiary">#A5A6AB</color>
+    <color name="textLink">#B793FF</color>
+
+</resources>

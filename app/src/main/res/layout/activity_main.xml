@@ -1,6 +1,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" 
+    xmlns:tools="http://schemas.android.com/tools"
+	tools:context="biz.binarysolutions.healthybatterycharging.MainActivity"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
@@ -9,8 +10,9 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
-		android:padding="16dp"
-	    tools:context="biz.binarysolutions.healthybatterycharging.MainActivity"
+		android:padding="@dimen/padding"
+		android:focusableInTouchMode="true"
+		android:focusable="true"
 		>
 
 		<LinearLayout
@@ -30,21 +32,21 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="@string/Low"
-					android:textAppearance="?android:attr/textAppearanceLarge"
-					android:focusableInTouchMode="true"
-					android:focusable="true"
+					android:textSize="@dimen/textH4"
+					android:textColor="@color/textPrimary"
 				/>
 				<include layout="@layout/edittext_input"
 					android:id="@+id/editTextLow"
 				/>
 
 				<TextView
-					android:layout_marginStart="50dp"
-					android:layout_marginLeft="50dp"
+					android:layout_marginStart="@dimen/thresholdMargin"
+					android:layout_marginLeft="@dimen/thresholdMargin"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="@string/High"
-					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textSize="@dimen/textH4"
+					android:textColor="@color/textPrimary"
 				/>
 				<include layout="@layout/edittext_input"
 					android:id="@+id/editTextHigh"
@@ -53,66 +55,47 @@
 
 			<Button
 				android:id="@+id/buttonSave"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
 				android:text="@string/Save"
-				android:enabled="false"
+				style="@style/AppTheme.Button"
 			/>
 
 			<Button
 				android:id="@+id/buttonReset"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
 				android:text="@string/Reset"
+				style="@style/AppTheme.Button"
 			/>
 
 		</LinearLayout>
 	
-	    <TextView
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:text="@string/Copyright"
-	        android:textAppearance="?android:attr/textAppearanceSmall" />
-	
-	    <TextView
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:text="@string/CompanyName"
-	        android:textAppearance="?android:attr/textAppearanceLarge" />
-	    
-	    <TextView
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center_horizontal"
-	        android:autoLink="web"
-	        android:text="@string/CompanyURL"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="horizontal"
-	        android:paddingBottom="50dp"
-	        android:paddingTop="50dp" >
+	        android:paddingBottom="@dimen/minPadding"
+	        android:paddingTop="@dimen/minPadding"
+			>
 
 	        <LinearLayout
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:orientation="vertical" >
+	            android:orientation="vertical"
+				>
 
 	            <TextView
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="@string/BatteryStatus"
-	                android:textAppearance="?android:attr/textAppearanceMedium" />
+					android:textSize="@dimen/textH6"
+					android:textColor="@color/textSecondary"
+				/>
 
 	            <TextView
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:text="@string/BatteryLevel"
-	                android:textAppearance="?android:attr/textAppearanceMedium" />
+					android:textSize="@dimen/textH6"
+					android:textColor="@color/textSecondary"
+				/>
 
 	        </LinearLayout>
 
@@ -120,19 +103,26 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="match_parent"
 	            android:orientation="vertical"
-	            android:paddingLeft="5dp" >
+	            android:paddingStart="@dimen/statusValuesPadding"
+				android:paddingLeft="@dimen/statusValuesPadding"
+				tools:ignore="RtlSymmetry"
+				>
 
 	            <TextView
 	                android:id="@+id/textViewBatteryStatus"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:textAppearance="?android:attr/textAppearanceMedium" />
+					android:textSize="@dimen/textH6"
+					android:textColor="@color/textSecondary"
+				/>
 
 	            <TextView
 	                android:id="@+id/textViewBatteryLevel"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:textAppearance="?android:attr/textAppearanceMedium" />
+					android:textSize="@dimen/textH6"
+					android:textColor="@color/textSecondary"
+				/>
 
 	        </LinearLayout>
 
@@ -143,24 +133,45 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="@string/Message"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
+			android:textSize="@dimen/textNormal"
+			android:textColor="@color/textTertiary"
+		/>
 	
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="0dp"
+			android:minHeight="@dimen/minPadding"
 	        android:layout_weight="1"
-	        android:orientation="vertical" >
-	    </LinearLayout>
-	
-	    <TextView
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="bottom|center_horizontal"
-	        android:autoLink="email"
-	        android:paddingBottom="20dp"
-	        android:paddingTop="20dp"
-	        android:text="@string/mail_to"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-	
+	        android:orientation="vertical"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/Copyright"
+			android:textSize="@dimen/textNormal"
+			android:textColor="@color/textTertiary"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/CompanyName"
+			android:textSize="@dimen/textH4"
+			android:textColor="@color/textTertiary"
+		/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:autoLink="web"
+			android:text="@string/CompanyURL"
+			android:textSize="@dimen/textNormal"
+			android:textColorLink="@color/textLink"
+		/>
+
 	</LinearLayout>
 </ScrollView>

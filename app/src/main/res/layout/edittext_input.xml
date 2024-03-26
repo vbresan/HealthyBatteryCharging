@@ -1,5 +1,8 @@
 <EditText
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="LabelFor"
+    android:importantForAutofill="no"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:maxLength="2"
@@ -7,5 +10,6 @@
     android:gravity="center"
     android:inputType="number"
     android:digits="0123456789"
-    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="@dimen/textH4"
+    android:textColor="@color/textPrimary"
 />

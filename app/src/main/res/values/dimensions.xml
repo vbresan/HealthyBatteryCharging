@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding">16dp</dimen>
+    <dimen name="thresholdMargin">25dp</dimen>
+    <dimen name="statusValuesPadding">5dp</dimen>
+    <dimen name="minPadding">44dp</dimen>
+    <dimen name="minButtonHeight">60dp</dimen>
+    <dimen name="buttonCornerRadius">30dp</dimen> <!-- height / 2 -->
+    <dimen name="buttonMargin">4dp</dimen>
+    <dimen name="buttonStroke">2dp</dimen>
+
+    <!-- Major second scale (the same as in M3), with 18sp base font -->
+    <!--
+    <dimen name="textH1">36.49sp</dimen>
+    <dimen name="textH2">32.44sp</dimen>
+    <dimen name="textH3">28.83sp</dimen>
+    -->
+    <dimen name="textH4">25.63sp</dimen>
+    <!--
+    <dimen name="textH5">22.79sp</dimen>
+    -->
+    <dimen name="textH6">20.25sp</dimen>
+    <dimen name="textNormal">18sp</dimen>
+    <!--
+    <dimen name="textSmall">16sp</dimen>
+    <dimen name="textSmallest">14.22sp</dimen>
+    -->
+
+</resources>

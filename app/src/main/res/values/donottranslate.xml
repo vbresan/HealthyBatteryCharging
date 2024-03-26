@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="CompanyName">Binary Solutions</string>
-    <string name="CompanyURL">http://binarysolutions.biz</string>
-    <string name="Copyright">&#169; 2017</string>
-    <string name="mail_to">support+hbc@binarysolutions.biz</string>
+    <string name="CompanyURL">https://binarysolutions.biz</string>
+    <string name="Copyright">&#169; 2017 – 2024</string>
 </resources>

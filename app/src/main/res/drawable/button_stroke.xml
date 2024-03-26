@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonDisabledStroke" />
+            <corners android:radius="@dimen/buttonCornerRadius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/glowStart"
+                android:endColor="@color/glowEnd"
+                android:angle="0"
+            />
+            <corners android:radius="@dimen/buttonCornerRadius" />
+        </shape>
+    </item>
+</selector>
