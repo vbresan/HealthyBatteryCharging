@@ -5,10 +5,10 @@
     <dimen name="thresholdMargin">25dp</dimen>
     <dimen name="statusValuesPadding">5dp</dimen>
     <dimen name="minPadding">44dp</dimen>
-    <dimen name="minButtonHeight">60dp</dimen>
-    <dimen name="buttonCornerRadius">30dp</dimen> <!-- height / 2 -->
+    <dimen name="minButtonHeight">50dp</dimen>
+    <dimen name="buttonCornerRadius">25dp</dimen> <!-- height / 2 -->
     <dimen name="buttonMargin">4dp</dimen>
-    <dimen name="buttonStroke">2dp</dimen>
+    <dimen name="buttonStrokeWidth">2dp</dimen>
 
     <!-- Major second scale (the same as in M3), with 18sp base font -->
     <!--
