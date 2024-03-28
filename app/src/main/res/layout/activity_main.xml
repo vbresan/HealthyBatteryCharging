@@ -22,13 +22,14 @@
 			>
 
 			<RelativeLayout
-				android:layout_width="match_parent"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
 				>
 				<ImageView
 					android:id="@+id/imageViewSave"
 					android:layout_marginTop="20dp"
-					android:layout_width="match_parent"
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:scaleType="fitXY"
 					android:src="@drawable/glow"
@@ -38,7 +39,7 @@
 				<ImageView
 					android:id="@+id/imageViewReset"
 					android:layout_marginTop="78dp"
-					android:layout_width="match_parent"
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:scaleType="fitXY"
 					android:src="@drawable/glow"

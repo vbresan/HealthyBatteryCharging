@@ -37,6 +37,9 @@ public class MainActivity extends Activity {
 	
 	private final Locale locale = Locale.getDefault();
 
+	private static final double GLOW_SCALE_WIDTH  = 1.31;
+	private static final double GLOW_SCALE_HEIGHT = 2.4;
+
 	private static final int DEFAULT_BATTERY_LOW  = 40;
 	private static final int DEFAULT_BATTERY_HIGH = 80;
 
@@ -214,6 +217,22 @@ public class MainActivity extends Activity {
 		imageView.setLayoutParams(params);
 	}
 
+	private void scaleImage
+		(
+			@NotNull ImageView imageView,
+			@NotNull Button    button
+		) {
+
+		int width  = (int) (button.getWidth()  * GLOW_SCALE_WIDTH);
+		int height = (int) (button.getHeight() * GLOW_SCALE_HEIGHT);
+
+		RelativeLayout.LayoutParams params =
+			(RelativeLayout.LayoutParams) imageView.getLayoutParams();
+
+		params.width  = width;
+		params.height = height;
+	}
+
 	private void positionGlowImage
 		(
 			@NotNull RelativeLayout container,
@@ -228,10 +247,10 @@ public class MainActivity extends Activity {
 			return;
 		}
 
+		scaleImage(imageView, button);
+
 		int delta = getVerticalDelta(container, button, imageView);
 		moveImageVertically(imageView, delta);
-
-		System.out.println("====================> delta: " + delta);
 	}
 
 	private void positionGlowImages() {

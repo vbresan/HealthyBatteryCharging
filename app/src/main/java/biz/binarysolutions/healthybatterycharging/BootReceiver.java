@@ -33,6 +33,8 @@ public class BootReceiver extends BroadcastReceiver {
 			return false;
 		}
 
+		System.out.println("HBC ===> action: " + action);
+
 		for (String validAction : ACTIONS) {
 			if (action.equals(validAction)) {
 				return true;
