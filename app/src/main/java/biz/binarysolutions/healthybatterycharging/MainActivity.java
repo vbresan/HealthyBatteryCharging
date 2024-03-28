@@ -1,5 +1,6 @@
 package biz.binarysolutions.healthybatterycharging;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -163,22 +164,40 @@ public class MainActivity extends Activity {
 		editTextHigh.addTextChangedListener(textWatcher);
 	}
 
+	private boolean toggleGlow(MotionEvent event, ImageView imageView) {
+
+		if (imageView != null) {
+
+			int action = event.getAction();
+			if (action == MotionEvent.ACTION_DOWN) {
+				imageView.setVisibility(View.VISIBLE);
+			} else if (action == MotionEvent.ACTION_UP) {
+				imageView.setVisibility(View.INVISIBLE);
+			} else if (action == MotionEvent.ACTION_CANCEL) {
+				imageView.setVisibility(View.INVISIBLE);
+			}
+		}
+
+		return false;
+	}
+
+	@SuppressLint("ClickableViewAccessibility")
 	private void addListeners() {
 
 		Button buttonSave = findViewById(R.id.buttonSave);
 		if (buttonSave != null) {
 			buttonSave.setOnClickListener(v -> saveThresholds());
-			/*
-			buttonSave.setOnTouchListener(() -> {
-				System.out.println("Touch me baby!");
-			});
 
-			 */
+			ImageView imageView = findViewById(R.id.imageViewSave);
+			buttonSave.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
 		}
 
 		Button buttonReset = findViewById(R.id.buttonReset);
 		if (buttonReset != null) {
 			buttonReset.setOnClickListener(v -> resetThresholds());
+
+			ImageView imageView = findViewById(R.id.imageViewReset);
+			buttonReset.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
 		}
 
 		addEditTextListeners();

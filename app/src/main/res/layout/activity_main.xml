@@ -33,7 +33,7 @@
 					android:layout_height="wrap_content"
 					android:scaleType="fitXY"
 					android:src="@drawable/glow"
-					android:visibility="visible"
+					android:visibility="invisible"
 					tools:ignore="ContentDescription"
 				/>
 				<ImageView
@@ -43,7 +43,7 @@
 					android:layout_height="wrap_content"
 					android:scaleType="fitXY"
 					android:src="@drawable/glow"
-					android:visibility="visible"
+					android:visibility="invisible"
 					tools:ignore="ContentDescription"
 				/>
 			</RelativeLayout>
