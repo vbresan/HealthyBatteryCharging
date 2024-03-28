@@ -7,16 +7,22 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.preference.PreferenceManager;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Locale;
 
@@ -41,11 +47,9 @@ public class MainActivity extends Activity {
 
 	private void setEditText(EditText editText, int value) {
 
-		if (editText == null) {
-			return;
+		if (editText != null) {
+			editText.setText(String.format(locale, "%d", value));
 		}
-
-		editText.setText(String.format(locale, "%d", value));
 	}
 
 	private void loadThresholds() {
@@ -134,22 +138,21 @@ public class MainActivity extends Activity {
 			@Override
 			public void afterTextChanged(Editable s) {
 
-				int low;
-				int high;
-
 				try {
-					low  = Integer.parseInt(editTextLow.getText().toString());
-					high = Integer.parseInt(editTextHigh.getText().toString());
+					int low  = Integer.parseInt(editTextLow.getText().toString());
+					int high = Integer.parseInt(editTextHigh.getText().toString());
+
+					boolean isModified = low != batteryLow || high != batteryHigh;
+					setButtonSaveEnabled(isModified && low < high);
+
+					boolean isDefault  = low == DEFAULT_BATTERY_LOW && high == DEFAULT_BATTERY_HIGH;
+					setButtonResetEnabled(!isDefault);
+
 				} catch (NumberFormatException e) {
 
 					setButtonSaveEnabled(false);
 					setButtonResetEnabled(true);
-
-					return;
 				}
-
-				setButtonSaveEnabled((low != batteryLow || high != batteryHigh) && low < high);
-				setButtonResetEnabled(low != DEFAULT_BATTERY_LOW || high != DEFAULT_BATTERY_HIGH);
 			}
 		};
 
@@ -162,6 +165,12 @@ public class MainActivity extends Activity {
 		Button buttonSave = findViewById(R.id.buttonSave);
 		if (buttonSave != null) {
 			buttonSave.setOnClickListener(v -> saveThresholds());
+			/*
+			buttonSave.setOnTouchListener(() -> {
+				System.out.println("Touch me baby!");
+			});
+
+			 */
 		}
 
 		Button buttonReset = findViewById(R.id.buttonReset);
@@ -170,6 +179,83 @@ public class MainActivity extends Activity {
 		}
 
 		addEditTextListeners();
+	}
+
+	private int getVerticalDelta
+		(
+			@NotNull RelativeLayout container,
+			@NotNull Button 		button,
+			@NotNull ImageView 	    imageView
+		) {
+
+		Rect buttonRect = new Rect();
+		button.getDrawingRect(buttonRect);
+		container.offsetDescendantRectToMyCoords(button, buttonRect);
+
+		Rect imageRect  = new Rect();
+		imageView.getDrawingRect(imageRect);
+		container.offsetDescendantRectToMyCoords(imageView, imageRect);
+
+		return buttonRect.centerY() - imageRect.centerY();
+	}
+
+	private void moveImageVertically(@NotNull ImageView imageView, int delta) {
+
+		RelativeLayout.LayoutParams params =
+			(RelativeLayout.LayoutParams) imageView.getLayoutParams();
+
+		params.setMargins(
+			params.leftMargin,
+			params.topMargin + delta,
+			params.rightMargin,
+			params.bottomMargin
+		);
+
+		imageView.setLayoutParams(params);
+	}
+
+	private void positionGlowImage
+		(
+			@NotNull RelativeLayout container,
+			int buttonId,
+			int imageViewId
+		) {
+
+		Button    button    = findViewById(buttonId);
+		ImageView imageView = findViewById(imageViewId);
+
+		if (button == null || imageView == null) {
+			return;
+		}
+
+		int delta = getVerticalDelta(container, button, imageView);
+		moveImageVertically(imageView, delta);
+
+		System.out.println("====================> delta: " + delta);
+	}
+
+	private void positionGlowImages() {
+
+		RelativeLayout container = findViewById(R.id.relativeLayoutContainer);
+		if (container == null) {
+			return;
+		}
+
+		container.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
+
+			@Override
+			public void onGlobalLayout() {
+
+				if (Build.VERSION.SDK_INT >= 16) {
+					container.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+				} else {
+					container.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+				}
+
+				positionGlowImage(container, R.id.buttonSave,  R.id.imageViewSave);
+				positionGlowImage(container, R.id.buttonReset, R.id.imageViewReset);
+			}
+		});
 	}
 
 	/**
@@ -220,11 +306,12 @@ public class MainActivity extends Activity {
 
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
 		refresh();
+		positionGlowImages();
 	}
 
 	@Override

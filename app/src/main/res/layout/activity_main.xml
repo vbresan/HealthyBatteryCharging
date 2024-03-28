@@ -15,58 +15,90 @@
 		android:focusable="true"
 		>
 
-		<LinearLayout
-			android:layout_width="wrap_content"
+		<RelativeLayout
+			android:id="@+id/relativeLayoutContainer"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:orientation="vertical"
-			android:layout_gravity="center"
 			>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				>
+				<ImageView
+					android:id="@+id/imageViewSave"
+					android:layout_marginTop="20dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scaleType="fitXY"
+					android:src="@drawable/glow"
+					android:visibility="visible"
+					tools:ignore="ContentDescription"
+				/>
+				<ImageView
+					android:id="@+id/imageViewReset"
+					android:layout_marginTop="78dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:scaleType="fitXY"
+					android:src="@drawable/glow"
+					android:visibility="visible"
+					tools:ignore="ContentDescription"
+				/>
+			</RelativeLayout>
 
 			<LinearLayout
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_centerInParent="true"
+				android:layout_alignParentTop="true"
 				>
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="@string/Low"
-					android:textSize="@dimen/textH4"
-					android:textColor="@color/textPrimary"
-				/>
-				<include layout="@layout/edittext_input"
-					android:id="@+id/editTextLow"
-				/>
 
-				<TextView
-					android:layout_marginStart="@dimen/thresholdMargin"
-					android:layout_marginLeft="@dimen/thresholdMargin"
+				<LinearLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="@string/High"
-					android:textSize="@dimen/textH4"
-					android:textColor="@color/textPrimary"
-				/>
-				<include layout="@layout/edittext_input"
-					android:id="@+id/editTextHigh"
-				/>
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/Low"
+						android:textColor="@color/textPrimary"
+						android:textSize="@dimen/textH4" />
+
+					<include
+						android:id="@+id/editTextLow"
+						layout="@layout/edittext_input" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/thresholdMargin"
+						android:layout_marginLeft="@dimen/thresholdMargin"
+						android:text="@string/High"
+						android:textColor="@color/textPrimary"
+						android:textSize="@dimen/textH4" />
+
+					<include
+						android:id="@+id/editTextHigh"
+						layout="@layout/edittext_input" />
+				</LinearLayout>
+
+				<Button
+					android:id="@+id/buttonSave"
+					style="@style/AppTheme.Button"
+					android:text="@string/Save" />
+
+				<Button
+					android:id="@+id/buttonReset"
+					style="@style/AppTheme.Button"
+					android:text="@string/Reset" />
+
 			</LinearLayout>
+		</RelativeLayout>
 
-			<Button
-				android:id="@+id/buttonSave"
-				android:text="@string/Save"
-				style="@style/AppTheme.Button"
-			/>
-
-			<Button
-				android:id="@+id/buttonReset"
-				android:text="@string/Reset"
-				style="@style/AppTheme.Button"
-			/>
-
-		</LinearLayout>
-	
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
