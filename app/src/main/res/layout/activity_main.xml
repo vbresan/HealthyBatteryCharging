@@ -15,6 +15,15 @@
 		android:focusable="true"
 		>
 
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/BatteryLevelAlerts"
+			android:textSize="@dimen/textNormal"
+			android:textColor="@color/textTertiary"
+		/>
+
 		<RelativeLayout
 			android:id="@+id/relativeLayoutContainer"
 			android:layout_width="match_parent"
@@ -67,11 +76,13 @@
 						android:layout_height="wrap_content"
 						android:text="@string/Low"
 						android:textColor="@color/textPrimary"
-						android:textSize="@dimen/textH4" />
+						android:textSize="@dimen/textH4"
+					/>
 
 					<include
 						android:id="@+id/editTextLow"
-						layout="@layout/edittext_input" />
+						layout="@layout/edittext_input"
+					/>
 
 					<TextView
 						android:layout_width="wrap_content"
@@ -80,22 +91,26 @@
 						android:layout_marginLeft="@dimen/thresholdMargin"
 						android:text="@string/High"
 						android:textColor="@color/textPrimary"
-						android:textSize="@dimen/textH4" />
+						android:textSize="@dimen/textH4"
+					/>
 
 					<include
 						android:id="@+id/editTextHigh"
-						layout="@layout/edittext_input" />
+						layout="@layout/edittext_input"
+					/>
 				</LinearLayout>
 
 				<Button
 					android:id="@+id/buttonSave"
 					style="@style/AppTheme.Button"
-					android:text="@string/Save" />
+					android:text="@string/Save"
+				/>
 
 				<Button
 					android:id="@+id/buttonReset"
 					style="@style/AppTheme.Button"
-					android:text="@string/Reset" />
+					android:text="@string/Reset"
+				/>
 
 			</LinearLayout>
 		</RelativeLayout>

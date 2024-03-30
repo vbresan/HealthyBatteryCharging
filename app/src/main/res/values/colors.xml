@@ -12,6 +12,6 @@
     <color name="textPrimary">#F2F2F2</color>
     <color name="textSecondary">#CACBCF</color>
     <color name="textTertiary">#A5A6AB</color>
-    <color name="textLink">#B793FF</color>
+    <color name="textLink">@color/glowStart</color>
 
 </resources>
