@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 	
 	private final Locale locale = Locale.getDefault();
 
-	private static final double GLOW_SCALE_WIDTH  = 1.31;
+	private static final double GLOW_SCALE_WIDTH  = 1.35;
 	private static final double GLOW_SCALE_HEIGHT = 2.4;
 
 	private static final int DEFAULT_BATTERY_LOW  = 40;
