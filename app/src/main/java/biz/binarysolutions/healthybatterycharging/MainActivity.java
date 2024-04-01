@@ -342,6 +342,7 @@ public class MainActivity extends Activity {
 		};
 		registerReceiver(receiver, filter);
 
+		System.out.println("HBC ===> MainActivity.onCreate calling AlarmReceiver.start");
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 
