@@ -18,8 +18,6 @@ public class BootReceiver extends BroadcastReceiver {
 		"android.intent.action.BOOT_COMPLETED",
         "android.intent.action.QUICKBOOT_POWERON",
         "com.htc.intent.action.QUICKBOOT_POWERON",
-        "android.intent.action.USER_PRESENT",
-		"android.intent.action.REBOOT",
 	};
 
 	private boolean isValidAction(Intent intent) {
