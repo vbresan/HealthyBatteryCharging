@@ -1,7 +1,5 @@
 package biz.binarysolutions.healthybatterycharging;
 
-import static android.app.AlarmManager.INTERVAL_FIFTEEN_MINUTES;
-
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -24,6 +22,7 @@ import biz.binarysolutions.healthybatterycharging.util.BatteryUtil;
 public class AlarmReceiver extends BroadcastReceiver {
 	
 	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
+	private static final long INTERVAL   = AlarmManager.INTERVAL_FIFTEEN_MINUTES / 5;
 
 	private static AlarmManager  alarmManager  = null;
 	private static PendingIntent pendingIntent = null;
@@ -64,6 +63,19 @@ public class AlarmReceiver extends BroadcastReceiver {
 		return intent;
 	}
 
+	@SuppressWarnings("UnnecessaryLocalVariable")
+	private PendingIntent getDeleteIntent(Context context) {
+
+		PendingIntent intent = PendingIntent.getActivity(
+			context,
+			0,
+			new Intent(),
+			getPendingIntentFlags(0)
+		);
+
+		return intent;
+	}
+
 	/**
 	 *
 	 * @return
@@ -87,8 +99,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 		int    lightOn        = 1000;
 		int    lightOff       = 300;
 		
-		PendingIntent dummyIntent = getDummyIntent(context);
-		Uri           ringtone    = getRingtone();
+		PendingIntent dummyIntent  = getDummyIntent(context);
+		PendingIntent deleteIntent = getDeleteIntent(context);
+		Uri           ringtone     = getRingtone();
 
 		Notification.Builder builder = new Notification.Builder(context)
 		    .setContentTitle(title)
@@ -98,6 +111,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 		    .setSmallIcon(android.R.drawable.ic_notification_clear_all)
 		    .setAutoCancel(true)
 		    .setContentIntent(dummyIntent)
+			.setDeleteIntent(deleteIntent)
 		    .setSound(ringtone);
 
 		Notification notification;
@@ -155,7 +169,11 @@ public class AlarmReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 
 		System.out.println("HBC ===> AlarmReceiver.onReceive called");
-		
+
+		// check if there are any outstanding notifications
+		// NotificationManager.getActiveNotifications() requires at least API 23
+		// if there are, return
+
 		Intent batteryStatus = BatteryUtil.getBatteryStatus(context);
 		if (batteryStatus == null) {
 			return;
@@ -180,7 +198,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 */
 	public static void start(Context context, int batteryLow, int batteryHigh) {
 
-		System.out.println("HBC ===> AlarmReceiver.start called");
+		System.out.println("HBC ===> AlarmReceiver.start called (" + batteryLow + ", " + batteryHigh + ")");
 
 		AlarmReceiver.batteryLow  = batteryLow;
 		AlarmReceiver.batteryHigh = batteryHigh;
@@ -199,11 +217,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 			);
 		}
 		
-		long now = SystemClock.elapsedRealtime();
-	
-		alarmManager.cancel(pendingIntent);
+		long firstTrigger = SystemClock.elapsedRealtime() - INTERVAL;
 		alarmManager.setInexactRepeating(
-			ALARM_TYPE, now, INTERVAL_FIFTEEN_MINUTES, pendingIntent
+			ALARM_TYPE, firstTrigger, INTERVAL, pendingIntent
 		);
 	}
 

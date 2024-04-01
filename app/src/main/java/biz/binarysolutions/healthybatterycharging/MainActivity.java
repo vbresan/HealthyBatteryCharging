@@ -96,6 +96,8 @@ public class MainActivity extends Activity {
 		editor.apply();
 
 		setButtonSaveEnabled(false);
+
+		AlarmReceiver.cancelNotification();
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 
