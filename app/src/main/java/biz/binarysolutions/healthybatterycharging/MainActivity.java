@@ -69,6 +69,11 @@ public class MainActivity extends Activity {
 
 		EditText editTextHigh = findViewById(R.id.editTextHigh);
 		setEditText(editTextHigh, batteryHigh);
+
+		boolean isDefault =
+			batteryLow  == DEFAULT_BATTERY_LOW &&
+			batteryHigh == DEFAULT_BATTERY_HIGH;
+		setButtonResetEnabled(!isDefault);
 	}
 
 	private void saveThresholds() {
