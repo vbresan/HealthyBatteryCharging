@@ -63,19 +63,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 		return intent;
 	}
 
-	@SuppressWarnings("UnnecessaryLocalVariable")
-	private PendingIntent getDeleteIntent(Context context) {
-
-		PendingIntent intent = PendingIntent.getActivity(
-			context,
-			0,
-			new Intent(),
-			getPendingIntentFlags(0)
-		);
-
-		return intent;
-	}
-
 	/**
 	 *
 	 * @return
@@ -100,7 +87,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 		int    lightOff       = 300;
 		
 		PendingIntent dummyIntent  = getDummyIntent(context);
-		PendingIntent deleteIntent = getDeleteIntent(context);
 		Uri           ringtone     = getRingtone();
 
 		Notification.Builder builder = new Notification.Builder(context)
@@ -111,7 +97,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 		    .setSmallIcon(android.R.drawable.ic_notification_clear_all)
 		    .setAutoCancel(true)
 		    .setContentIntent(dummyIntent)
-			.setDeleteIntent(deleteIntent)
 		    .setSound(ringtone);
 
 		Notification notification;
@@ -169,10 +154,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 
 		System.out.println("HBC ===> AlarmReceiver.onReceive called");
-
-		// check if there are any outstanding notifications
-		// NotificationManager.getActiveNotifications() requires at least API 23
-		// if there are, return
 
 		Intent batteryStatus = BatteryUtil.getBatteryStatus(context);
 		if (batteryStatus == null) {
