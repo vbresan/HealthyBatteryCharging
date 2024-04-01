@@ -55,7 +55,5 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
         int batteryHigh = MainActivity.getBatteryHigh(context);
 
     	AlarmReceiver.start(context, batteryLow, batteryHigh);
-    	
-		//TODO: trigeri na uključen/isključen charger
     }
 }
