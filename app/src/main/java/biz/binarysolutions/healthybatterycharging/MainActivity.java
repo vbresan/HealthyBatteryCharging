@@ -2,6 +2,8 @@ package biz.binarysolutions.healthybatterycharging;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -56,6 +58,28 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	/**
+	 *
+	 */
+	private void createNotificationChannel() {
+
+		if (Build.VERSION.SDK_INT < 26) {
+			return;
+		}
+
+		NotificationChannel channel = new NotificationChannel(
+			AlarmReceiver.NOTIFICATION_CHANNEL_ID,
+			getString(R.string.BatteryLevelAlerts),
+			NotificationManager.IMPORTANCE_LOW
+		);
+
+		NotificationManager manager = getSystemService(NotificationManager.class);
+		manager.createNotificationChannel(channel);
+	}
+
+	/**
+	 *
+	 */
 	private void loadThresholds() {
 
 		SharedPreferences preferences =
@@ -136,6 +160,32 @@ public class MainActivity extends Activity {
 		setButtonEnabled(R.id.buttonReset, isEnabled);
 	}
 
+	/**
+	 *
+	 */
+	@SuppressLint("ClickableViewAccessibility")
+	private void addButtonListeners() {
+
+		Button buttonSave = findViewById(R.id.buttonSave);
+		if (buttonSave != null) {
+			buttonSave.setOnClickListener(v -> saveThresholds());
+
+			ImageView imageView = findViewById(R.id.imageViewSave);
+			buttonSave.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
+		}
+
+		Button buttonReset = findViewById(R.id.buttonReset);
+		if (buttonReset != null) {
+			buttonReset.setOnClickListener(v -> resetThresholds());
+
+			ImageView imageView = findViewById(R.id.imageViewReset);
+			buttonReset.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
+		}
+	}
+
+	/**
+	 *
+	 */
 	private void addEditTextListeners() {
 
 		EditText editTextLow  = findViewById(R.id.editTextLow);
@@ -188,28 +238,40 @@ public class MainActivity extends Activity {
 		return false;
 	}
 
-	@SuppressLint("ClickableViewAccessibility")
+	/**
+	 *
+	 */
 	private void addListeners() {
 
-		Button buttonSave = findViewById(R.id.buttonSave);
-		if (buttonSave != null) {
-			buttonSave.setOnClickListener(v -> saveThresholds());
-
-			ImageView imageView = findViewById(R.id.imageViewSave);
-			buttonSave.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
-		}
-
-		Button buttonReset = findViewById(R.id.buttonReset);
-		if (buttonReset != null) {
-			buttonReset.setOnClickListener(v -> resetThresholds());
-
-			ImageView imageView = findViewById(R.id.imageViewReset);
-			buttonReset.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
-		}
-
+		addButtonListeners();
 		addEditTextListeners();
 	}
 
+	/**
+	 *
+	 */
+	private void registerPowerConnectionReceiver() {
+
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("android.intent.action.ACTION_POWER_CONNECTED");
+		filter.addAction("android.intent.action.ACTION_POWER_DISCONNECTED");
+
+		receiver = new BroadcastReceiver() {
+			@Override
+			public void onReceive(Context context, Intent intent) {
+				refresh();
+			}
+		};
+		registerReceiver(receiver, filter);
+	}
+
+	/**
+	 *
+	 * @param container
+	 * @param button
+	 * @param imageView
+	 * @return
+	 */
 	private int getVerticalDelta
 		(
 			@NotNull RelativeLayout container,
@@ -334,21 +396,13 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		createNotificationChannel();
+
 		loadThresholds();
 		addListeners();
+
+		registerPowerConnectionReceiver();
 		
-		IntentFilter filter = new IntentFilter();
-		filter.addAction("android.intent.action.ACTION_POWER_CONNECTED");
-		filter.addAction("android.intent.action.ACTION_POWER_DISCONNECTED");
-
-		receiver = new BroadcastReceiver() {
-			@Override
-			public void onReceive(Context context, Intent intent) {
-				refresh();
-			}
-		};
-		registerReceiver(receiver, filter);
-
 		System.out.println("HBC ===> MainActivity.onCreate calling AlarmReceiver.start");
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
@@ -356,6 +410,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+
 		refresh();
 		positionGlowImages();
 	}
