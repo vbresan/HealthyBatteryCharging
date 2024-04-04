@@ -5,6 +5,9 @@
 
     <string name="BatteryLevelAlerts">Battery level alerts</string>
 
+    <string name="BatteryLowAlert">Battery low alert</string>
+    <string name="BatteryHighAlert">Battery high alert</string>
+
     <string name="Low">Low:</string>
     <string name="High">High:</string>
 
