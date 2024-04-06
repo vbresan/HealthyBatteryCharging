@@ -23,6 +23,7 @@
     <string name="ConnectCharger">Connect the charger</string>
     <string name="DisconnectCharger">Disconnect the charger</string>
     
-    <string name="Message">You are all set up! You\'ll receive alerts when to connect/disconnect the charger. The app is supposed to run automatically after you reboot the phone as well, but this actually depends on your device security settings. So double check that the app is granted the required permission.</string>
+    <string name="MessageOK">You are all set up! You\'ll receive alerts when to connect/disconnect the charger. The app is supposed to run automatically after you reboot the phone as well, but this actually depends on your device security settings. So double check that the app is granted the required permission.</string>
+    <string name="MessageNOK">You are not set up! In order for the app to function properly you need to grant it the required permissions. Please restart the app or grant it notification permission in system settings.</string>
 
 </resources>

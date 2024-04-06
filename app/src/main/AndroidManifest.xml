@@ -4,6 +4,7 @@
     android:installLocation="internalOnly"
     >
 
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
@@ -23,12 +24,12 @@
         </activity>
         
         <receiver  
-            android:name=".AlarmReceiver"
+            android:name=".receivers.AlarmReceiver"
             android:exported="false"
         />
         
         <receiver
-            android:name=".PowerConnectionReceiver"
+            android:name=".receivers.PowerConnectionReceiver"
             android:exported="true"
             >
             <intent-filter>
@@ -39,7 +40,7 @@
 		</receiver>
 		
 		<receiver 
-		    android:name=".BootReceiver"
+		    android:name=".receivers.BootReceiver"
 		    android:enabled="true"
             android:exported="true"
 		    >

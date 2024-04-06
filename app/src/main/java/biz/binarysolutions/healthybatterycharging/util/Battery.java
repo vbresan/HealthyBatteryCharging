@@ -9,7 +9,7 @@ import android.os.BatteryManager;
  * 
  *
  */
-public class BatteryUtil {
+public class Battery {
 	
 	/**
 	 * 

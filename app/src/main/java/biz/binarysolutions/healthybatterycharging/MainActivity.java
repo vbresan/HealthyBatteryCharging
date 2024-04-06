@@ -2,13 +2,12 @@ package biz.binarysolutions.healthybatterycharging;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,14 +22,17 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Locale;
 
-import biz.binarysolutions.healthybatterycharging.util.BatteryUtil;
+import biz.binarysolutions.healthybatterycharging.receivers.AlarmReceiver;
+import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.DefaultTextWatcher;
+import biz.binarysolutions.healthybatterycharging.util.Notifications;
 
 /**
  * 
@@ -40,11 +42,14 @@ public class MainActivity extends Activity {
 	
 	private final Locale locale = Locale.getDefault();
 
+	private static final String PERMISSION_POST_NOTIFICATION =
+		"android.permission.POST_NOTIFICATIONS";
+
 	private static final double GLOW_SCALE_WIDTH  = 1.35;
 	private static final double GLOW_SCALE_HEIGHT = 2.4;
 
-	private static final int DEFAULT_BATTERY_LOW  = 40;
-	private static final int DEFAULT_BATTERY_HIGH = 80;
+	public static final int DEFAULT_BATTERY_LOW  = 40;
+	public static final int DEFAULT_BATTERY_HIGH = 80;
 
 	private BroadcastReceiver receiver;
 
@@ -56,25 +61,6 @@ public class MainActivity extends Activity {
 		if (editText != null) {
 			editText.setText(String.format(locale, "%d", value));
 		}
-	}
-
-	/**
-	 *
-	 */
-	private void createNotificationChannel() {
-
-		if (Build.VERSION.SDK_INT < 26) {
-			return;
-		}
-
-		NotificationChannel channel = new NotificationChannel(
-			AlarmReceiver.NOTIFICATION_CHANNEL_ID,
-			getString(R.string.BatteryLevelAlerts),
-			NotificationManager.IMPORTANCE_LOW
-		);
-
-		NotificationManager manager = getSystemService(NotificationManager.class);
-		manager.createNotificationChannel(channel);
 	}
 
 	/**
@@ -126,7 +112,7 @@ public class MainActivity extends Activity {
 
 		setButtonSaveEnabled(false);
 
-		AlarmReceiver.cancelNotification();
+		AlarmReceiver.cancelNotification(this);
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 
@@ -259,7 +245,7 @@ public class MainActivity extends Activity {
 		receiver = new BroadcastReceiver() {
 			@Override
 			public void onReceive(Context context, Intent intent) {
-				refresh();
+				refreshBatteryStatus();
 			}
 		};
 		registerReceiver(receiver, filter);
@@ -368,9 +354,9 @@ public class MainActivity extends Activity {
 	/**
 	 * 
 	 */
-	private void refresh() {
+	private void refreshBatteryStatus() {
 
-		Intent batteryStatus = BatteryUtil.getBatteryStatus(this);
+		Intent batteryStatus = Battery.getBatteryStatus(this);
 		if (batteryStatus == null) {
 			return;
 		}
@@ -378,7 +364,7 @@ public class MainActivity extends Activity {
 		TextView textViewStatus = findViewById(R.id.textViewBatteryStatus);
 		if (textViewStatus != null) {
 
-			boolean isCharging = BatteryUtil.isCharging(batteryStatus);
+			boolean isCharging = Battery.isCharging(batteryStatus);
 			String  text       = getString(isCharging? R.string.Charging : R.string.Discharging);
 			textViewStatus.setText(text);
 		}
@@ -386,8 +372,34 @@ public class MainActivity extends Activity {
 		TextView textViewLevel = findViewById(R.id.textViewBatteryLevel);
 		if (textViewLevel != null) {
 
-			int batteryLevel = BatteryUtil.getBatteryLevel(batteryStatus);
+			int batteryLevel = Battery.getBatteryLevel(batteryStatus);
 			textViewLevel.setText(String.format(locale, "%d%%", batteryLevel));
+		}
+	}
+
+	/**
+	 *
+	 * @return
+	 */
+	private boolean hasNotificationPermission() {
+
+		if (Build.VERSION.SDK_INT < 23) {
+			return true;
+		}
+
+		int permission = checkSelfPermission(PERMISSION_POST_NOTIFICATION);
+		return permission == PackageManager.PERMISSION_GRANTED;
+	}
+
+	/**
+	 *
+	 */
+	private void createNotificationChannels() {
+
+		if (Build.VERSION.SDK_INT >= 33 && !hasNotificationPermission()) {
+			requestPermissions(new String[]{ PERMISSION_POST_NOTIFICATION }, 0);
+		} else {
+			Notifications.createChannels(this);
 		}
 	}
 
@@ -396,22 +408,53 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		createNotificationChannel();
+		createNotificationChannels();
 
 		loadThresholds();
 		addListeners();
 
 		registerPowerConnectionReceiver();
+
+		addTestListener();
 		
 		System.out.println("HBC ===> MainActivity.onCreate calling AlarmReceiver.start");
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
+	}
+
+	/**
+	 *
+	 */
+	private void showPermissionRequestText() {
+
+		TextView textView = findViewById(R.id.textView);
+		if (textView != null) {
+			textView.setText(R.string.MessageNOK);
+		}
+	}
+
+	private void addTestListener() {
+
+		Button button = findViewById(R.id.buttonTest);
+		button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				Notifications.displayConnectChargerNotification(MainActivity.this);
+
+				/*
+				Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+				vibrator.vibrate(AlarmReceiver.MORSE_D, -1);
+
+				 */
+			}
+		});
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		refresh();
+		refreshBatteryStatus();
 		positionGlowImages();
 	}
 
@@ -443,22 +486,26 @@ public class MainActivity extends Activity {
 			}
 		}
 
-		return super.dispatchTouchEvent( event );
+		return super.dispatchTouchEvent(event);
 	}
 
-	public static int getBatteryLow(Context context) {
+	@Override
+	public void onRequestPermissionsResult
+		(
+			int               request,
+			@NonNull String[] permissions,
+			@NonNull int[]    results
+		) {
 
-		SharedPreferences preferences =
-			PreferenceManager.getDefaultSharedPreferences(context);
+		if (request != 0) {
+			return;
+		}
 
-		return preferences.getInt("batteryLow", DEFAULT_BATTERY_LOW);
-	}
-
-	public static int getBatteryHigh(Context context) {
-
-		SharedPreferences preferences =
-			PreferenceManager.getDefaultSharedPreferences(context);
-
-		return preferences.getInt("batteryHigh", DEFAULT_BATTERY_HIGH);
+		int granted = PackageManager.PERMISSION_GRANTED;
+		if (results.length > 0 && results[0] == granted) {
+			Notifications.createChannels(this);
+		} else {
+			showPermissionRequestText();
+		}
 	}
 }

@@ -1,9 +1,11 @@
-package biz.binarysolutions.healthybatterycharging;
+package biz.binarysolutions.healthybatterycharging.receivers;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+
+import biz.binarysolutions.healthybatterycharging.util.PreferencesUtil;
 
 /**
  * 
@@ -49,10 +51,10 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
             return;
         }
 
-        AlarmReceiver.cancelNotification();
+        AlarmReceiver.cancelNotification(context);
 
-        int batteryLow  = MainActivity.getBatteryLow(context);
-        int batteryHigh = MainActivity.getBatteryHigh(context);
+        int batteryLow  = PreferencesUtil.getBatteryLow(context);
+        int batteryHigh = PreferencesUtil.getBatteryHigh(context);
 
     	AlarmReceiver.start(context, batteryLow, batteryHigh);
     }

@@ -112,6 +112,13 @@
 					android:text="@string/Reset"
 				/>
 
+				<Button
+					android:id="@+id/buttonTest"
+					style="@style/AppTheme.Button"
+					android:text="Test"
+					android:enabled="true"
+				/>
+
 			</LinearLayout>
 		</RelativeLayout>
 
@@ -177,10 +184,10 @@
 	    </LinearLayout>
 
 	    <TextView
-	        android:id="@+id/textView1"
+	        android:id="@+id/textView"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/Message"
+	        android:text="@string/MessageOK"
 			android:textSize="@dimen/textNormal"
 			android:textColor="@color/textTertiary"
 		/>
