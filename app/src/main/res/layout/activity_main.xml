@@ -112,13 +112,6 @@
 					android:text="@string/Reset"
 				/>
 
-				<Button
-					android:id="@+id/buttonTest"
-					style="@style/AppTheme.Button"
-					android:text="Test"
-					android:enabled="true"
-				/>
-
 			</LinearLayout>
 		</RelativeLayout>
 

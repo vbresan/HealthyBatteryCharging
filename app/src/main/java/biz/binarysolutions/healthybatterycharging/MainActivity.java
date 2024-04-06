@@ -415,8 +415,6 @@ public class MainActivity extends Activity {
 
 		registerPowerConnectionReceiver();
 
-		addTestListener();
-		
 		System.out.println("HBC ===> MainActivity.onCreate calling AlarmReceiver.start");
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
@@ -430,24 +428,6 @@ public class MainActivity extends Activity {
 		if (textView != null) {
 			textView.setText(R.string.MessageNOK);
 		}
-	}
-
-	private void addTestListener() {
-
-		Button button = findViewById(R.id.buttonTest);
-		button.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-
-				Notifications.displayConnectChargerNotification(MainActivity.this);
-
-				/*
-				Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
-				vibrator.vibrate(AlarmReceiver.MORSE_D, -1);
-
-				 */
-			}
-		});
 	}
 
 	@Override
