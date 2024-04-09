@@ -26,18 +26,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 	private static int batteryLow;
 	private static int batteryHigh;
 
-	/**
-	 * 
-	 */
-	private void stop() {
-
-		System.out.println("HBC ===> AlarmReceiver.stop called");
-
-		if (alarmManager != null && pendingIntent != null) {
-			alarmManager.cancel(pendingIntent);
-		}
-	}
-
 	@Override
 	public void onReceive(Context context, Intent intent) {
 
@@ -53,10 +41,10 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 		if (level >= batteryHigh && isCharging) {
 			Notifications.displayDisconnectChargerNotification(context);
-			stop();
 		} else if (level <= batteryLow && !isCharging) {
 			Notifications.displayConnectChargerNotification(context);
-			stop();
+		} else {
+			Notifications.cancellAll(context);
 		}
 	}
 
@@ -90,15 +78,5 @@ public class AlarmReceiver extends BroadcastReceiver {
 		alarmManager.setInexactRepeating(
 			ALARM_TYPE, firstTrigger, INTERVAL, pendingIntent
 		);
-	}
-
-	/**
-	 * 
-	 */
-	public static void cancelNotification(Context context) {
-
-		System.out.println("HBC ===> AlarmReceiver.cancelNotification called");
-
-		Notifications.getManager(context).cancelAll();
 	}
 }

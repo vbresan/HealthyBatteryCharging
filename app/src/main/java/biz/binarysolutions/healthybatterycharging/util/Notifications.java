@@ -11,6 +11,8 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 
+import androidx.annotation.RequiresApi;
+
 import biz.binarysolutions.healthybatterycharging.BuildConfig;
 import biz.binarysolutions.healthybatterycharging.R;
 
@@ -102,24 +104,20 @@ public class Notifications {
      * @param text
      * @param channelId
      */
-    private static void displayNotification
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private static Notification getNotification
         (
             Context context,
             String  text,
             String  channelId
         ) {
 
-        System.out.println("HBC ===> Notification.displayNotification called");
-
-        if (Build.VERSION.SDK_INT < 26) {
-            return;
-        }
+        System.out.println("HBC ===> Notification.getNotification called");
 
         Notification.Builder builder = new Notification.Builder(context, channelId);
         setCommonParameters(context, text, builder);
 
-        Notification notification = builder.build();
-        getManager(context).notify(0, notification);
+        return builder.build();
     }
 
     /**
@@ -137,7 +135,7 @@ public class Notifications {
      * @param color
      * @param vibratePattern
      */
-    private static void displayNotification
+    private static Notification getNotification
         (
             Context context,
             String  text,
@@ -145,7 +143,7 @@ public class Notifications {
             long[]  vibratePattern
         ) {
 
-        System.out.println("HBC ===> Notifications.displayNotification called");
+        System.out.println("HBC ===> Notifications.getNotification called");
 
         int lightOn  = 1000;
         int lightOff = 618;
@@ -166,7 +164,21 @@ public class Notifications {
             notification = builder.getNotification();
         }
 
-        getManager(context).notify(0, notification);
+        return notification;
+    }
+
+    /**
+     *
+     * @param context
+     * @return
+     */
+    private static NotificationManager getManager(Context context) {
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            return context.getSystemService(NotificationManager.class);
+        } else {
+            return (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        }
     }
 
     /**
@@ -217,31 +229,22 @@ public class Notifications {
     /**
      *
      * @param context
-     * @return
-     */
-    public static NotificationManager getManager(Context context) {
-
-        if (Build.VERSION.SDK_INT >= 23) {
-            return context.getSystemService(NotificationManager.class);
-        } else {
-            return (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        }
-    }
-
-    /**
-     *
-     * @param context
      */
     public static void displayDisconnectChargerNotification(Context context) {
 
         System.out.println("HBC ===> Notifications.displayDisconnectChargerNotification called");
 
         String message = context.getString(R.string.DisconnectCharger);
+
+        Notification notification;
         if (Build.VERSION.SDK_INT >= 26) {
-            displayNotification(context, message, NOTIFICATION_CHANNEL_ID_HIGH);
+            notification = getNotification(context, message, NOTIFICATION_CHANNEL_ID_HIGH);
         } else {
-            displayNotification(context, message, Color.GREEN, MORSE_D);
+            notification = getNotification(context, message, Color.GREEN, MORSE_D);
         }
+
+        notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE;
+        getManager(context).notify(0, notification);
     }
 
     /**
@@ -253,10 +256,25 @@ public class Notifications {
         System.out.println("HBC ===> Notifications.displayConnectChargerNotification called");
 
         String message = context.getString(R.string.ConnectCharger);
+
+        Notification notification;
         if (Build.VERSION.SDK_INT >= 26) {
-            displayNotification(context, message, NOTIFICATION_CHANNEL_ID_LOW);
+            notification = getNotification(context, message, NOTIFICATION_CHANNEL_ID_LOW);
         } else {
-            displayNotification(context, message, Color.RED, MORSE_C);
+            notification = getNotification(context, message, Color.RED, MORSE_C);
         }
+
+        notification.flags |= Notification.FLAG_ONLY_ALERT_ONCE;
+        getManager(context).notify(0, notification);
+    }
+
+    /**
+     *
+     * @param context
+     */
+    public static void cancellAll(Context context) {
+
+        System.out.println("HBC ===> Notifications.cancellAll called");
+        getManager(context).cancelAll();
     }
 }

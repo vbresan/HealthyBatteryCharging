@@ -112,7 +112,7 @@ public class MainActivity extends Activity {
 
 		setButtonSaveEnabled(false);
 
-		AlarmReceiver.cancelNotification(this);
+		Notifications.cancellAll(this);
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 
