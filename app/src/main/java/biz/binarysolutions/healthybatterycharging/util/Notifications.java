@@ -199,7 +199,7 @@ public class Notifications {
 
         NotificationChannel channelLow = getNotificationChannel(
             NOTIFICATION_CHANNEL_ID_LOW,
-            context.getString(R.string.BatteryLowAlert),
+            context.getString(R.string.BatteryLowNotification),
             MORSE_C,
             Color.RED,
             sound,
@@ -208,7 +208,7 @@ public class Notifications {
 
         NotificationChannel channelHigh = getNotificationChannel(
             NOTIFICATION_CHANNEL_ID_HIGH,
-            context.getString(R.string.BatteryHighAlert),
+            context.getString(R.string.BatteryHighNotification),
             MORSE_D,
             Color.GREEN,
             sound,

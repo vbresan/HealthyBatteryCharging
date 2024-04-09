@@ -3,10 +3,10 @@
 
     <string name="app_name">Healthy Battery Charging</string>
 
-    <string name="BatteryLevelAlerts">Battery level alerts</string>
+    <string name="BatteryLevelNotifications">Battery level notifications</string>
 
-    <string name="BatteryLowAlert">Battery low alert</string>
-    <string name="BatteryHighAlert">Battery high alert</string>
+    <string name="BatteryLowNotification">Battery low notification</string>
+    <string name="BatteryHighNotification">Battery high notification</string>
 
     <string name="Low">Low:</string>
     <string name="High">High:</string>
@@ -23,7 +23,21 @@
     <string name="ConnectCharger">Connect the charger</string>
     <string name="DisconnectCharger">Disconnect the charger</string>
     
-    <string name="MessageOK">You are all set up! You\'ll receive alerts when to connect/disconnect the charger. The app is supposed to run automatically after you reboot the phone as well, but this actually depends on your device security settings. So double check that the app is granted the required permission.</string>
-    <string name="MessageNOK">You are not set up! In order for the app to function properly you need to grant it the required permissions. Please restart the app or grant it notification permission in system settings.</string>
+    <string name="MessageOK">
+        You are all set! You will receive notifications indicating when to
+        connect and disconnect the charger. Feel free to exit the app.
+        \n\nPlease note that the app is designed to run automatically in the
+        background, even after rebooting your phone. However, on certain
+        devices, you may need to open the security settings and grant explicit
+        permission for it to do so.
+        \n\nAdditionally, some devices terminate all background services when
+        an app is removed from memory. If this applies to your device, you will
+        need to \'lock\' the app in memory to prevent this from happening.
+    </string>
+    <string name="MessageNOK">
+        You are not set up yet! In order for the app to function properly, you
+        need to grant it the necessary permissions. Please restart the app or
+        go to your system settings and grant it notification permission.
+    </string>
 
 </resources>

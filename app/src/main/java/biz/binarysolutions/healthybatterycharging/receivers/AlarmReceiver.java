@@ -18,7 +18,7 @@ import biz.binarysolutions.healthybatterycharging.util.Notifications;
 public class AlarmReceiver extends BroadcastReceiver {
 
 	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
-	private static final long INTERVAL   = AlarmManager.INTERVAL_FIFTEEN_MINUTES / 5;
+	private static final long INTERVAL   = AlarmManager.INTERVAL_FIFTEEN_MINUTES;
 
 	private static AlarmManager  alarmManager  = null;
 	private static PendingIntent pendingIntent = null;
