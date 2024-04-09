@@ -21,6 +21,8 @@ import biz.binarysolutions.healthybatterycharging.R;
  */
 public class Notifications {
 
+    private static final String TAG = Notifications.class.getSimpleName();
+
     private static final int MORSE_SHORT = 125;
     private static final int MORSE_LONG  = 3 * MORSE_SHORT;
     private static final long[] MORSE_C = new long[] {
@@ -112,8 +114,6 @@ public class Notifications {
             String  channelId
         ) {
 
-        System.out.println("HBC ===> Notification.getNotification called");
-
         Notification.Builder builder = new Notification.Builder(context, channelId);
         setCommonParameters(context, text, builder);
 
@@ -142,8 +142,6 @@ public class Notifications {
             int     color,
             long[]  vibratePattern
         ) {
-
-        System.out.println("HBC ===> Notifications.getNotification called");
 
         int lightOn  = 1000;
         int lightOff = 618;
@@ -232,7 +230,7 @@ public class Notifications {
      */
     public static void displayDisconnectChargerNotification(Context context) {
 
-        System.out.println("HBC ===> Notifications.displayDisconnectChargerNotification called");
+        Logger.d(TAG, "displayDisconnectChargerNotification called");
 
         String message = context.getString(R.string.DisconnectCharger);
 
@@ -253,7 +251,7 @@ public class Notifications {
      */
     public static void displayConnectChargerNotification(Context context) {
 
-        System.out.println("HBC ===> Notifications.displayConnectChargerNotification called");
+        Logger.d(TAG, "displayConnectChargerNotification called");
 
         String message = context.getString(R.string.ConnectCharger);
 
@@ -274,7 +272,7 @@ public class Notifications {
      */
     public static void cancellAll(Context context) {
 
-        System.out.println("HBC ===> Notifications.cancellAll called");
+        Logger.d(TAG, "cancellAll called");
         getManager(context).cancelAll();
     }
 }

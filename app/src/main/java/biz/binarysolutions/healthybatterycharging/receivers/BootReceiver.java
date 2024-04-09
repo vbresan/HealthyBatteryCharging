@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import biz.binarysolutions.healthybatterycharging.util.Logger;
 import biz.binarysolutions.healthybatterycharging.util.PreferencesUtil;
 
 /**
@@ -12,6 +13,8 @@ import biz.binarysolutions.healthybatterycharging.util.PreferencesUtil;
  *
  */
 public class BootReceiver extends BroadcastReceiver {
+
+	private static final String TAG = BootReceiver.class.getSimpleName();
 
 	/**
 	 * Keep them in sync with actions from AndroidManifest.xml
@@ -33,7 +36,7 @@ public class BootReceiver extends BroadcastReceiver {
 			return false;
 		}
 
-		System.out.println("HBC ===> action: " + action);
+		Logger.d(TAG, "action: " + action);
 
 		for (String validAction : ACTIONS) {
 			if (action.equals(validAction)) {
@@ -48,7 +51,7 @@ public class BootReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 
-		System.out.println("HBC ===> BootReceiver.onReceive called");
+		Logger.d(TAG, "onReceive called");
 
 		if (!isValidAction(intent)) {
 			return;

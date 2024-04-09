@@ -32,6 +32,7 @@ import java.util.Locale;
 import biz.binarysolutions.healthybatterycharging.receivers.AlarmReceiver;
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.DefaultTextWatcher;
+import biz.binarysolutions.healthybatterycharging.util.Logger;
 import biz.binarysolutions.healthybatterycharging.util.Notifications;
 
 /**
@@ -39,7 +40,9 @@ import biz.binarysolutions.healthybatterycharging.util.Notifications;
  *
  */
 public class MainActivity extends Activity {
-	
+
+	private static final String TAG = MainActivity.class.getSimpleName();
+
 	private final Locale locale = Locale.getDefault();
 
 	private static final String PERMISSION_POST_NOTIFICATION =
@@ -415,7 +418,7 @@ public class MainActivity extends Activity {
 
 		registerPowerConnectionReceiver();
 
-		System.out.println("HBC ===> MainActivity.onCreate calling AlarmReceiver.start");
+		Logger.d(TAG, "onCreate: calling AlarmReceiver.start()");
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 

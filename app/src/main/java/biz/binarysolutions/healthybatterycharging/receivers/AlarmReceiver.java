@@ -9,6 +9,7 @@ import android.os.SystemClock;
 
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.IntentUtil;
+import biz.binarysolutions.healthybatterycharging.util.Logger;
 import biz.binarysolutions.healthybatterycharging.util.Notifications;
 
 /**
@@ -16,6 +17,8 @@ import biz.binarysolutions.healthybatterycharging.util.Notifications;
  *
  */
 public class AlarmReceiver extends BroadcastReceiver {
+
+	private static final String TAG = AlarmReceiver.class.getSimpleName();
 
 	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
 	private static final long INTERVAL   = AlarmManager.INTERVAL_FIFTEEN_MINUTES;
@@ -29,7 +32,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 
-		System.out.println("HBC ===> AlarmReceiver.onReceive called");
+		Logger.d(TAG, "onReceive called");
 
 		Intent batteryStatus = Battery.getBatteryStatus(context);
 		if (batteryStatus == null) {
@@ -55,7 +58,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 	 */
 	public static void start(Context context, int batteryLow, int batteryHigh) {
 
-		System.out.println("HBC ===> AlarmReceiver.start called (" + batteryLow + ", " + batteryHigh + ")");
+		Logger.d(TAG, "start called [" + batteryLow + ", " + batteryHigh + "]");
 
 		AlarmReceiver.batteryLow  = batteryLow;
 		AlarmReceiver.batteryHigh = batteryHigh;
