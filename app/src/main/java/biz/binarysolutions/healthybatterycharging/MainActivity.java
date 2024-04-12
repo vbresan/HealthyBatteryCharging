@@ -33,7 +33,7 @@ import biz.binarysolutions.healthybatterycharging.receivers.AlarmReceiver;
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.DefaultTextWatcher;
 import biz.binarysolutions.healthybatterycharging.util.Logger;
-import biz.binarysolutions.healthybatterycharging.receivers.Notifications;
+import biz.binarysolutions.healthybatterycharging.util.NotificationChannelUtil;
 
 /**
  * 
@@ -403,7 +403,7 @@ public class MainActivity extends Activity {
 		if (Build.VERSION.SDK_INT >= 33 && !hasNotificationPermission()) {
 			requestPermissions(new String[]{ PERMISSION_POST_NOTIFICATION }, 0);
 		} else {
-			Notifications.createChannels(this);
+			NotificationChannelUtil.createChannels(this);
 		}
 	}
 
@@ -487,7 +487,7 @@ public class MainActivity extends Activity {
 
 		int granted = PackageManager.PERMISSION_GRANTED;
 		if (results.length > 0 && results[0] == granted) {
-			Notifications.createChannels(this);
+			NotificationChannelUtil.createChannels(this);
 		} else {
 			showPermissionRequestText();
 		}
