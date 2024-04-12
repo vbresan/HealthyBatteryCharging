@@ -248,6 +248,7 @@ public class MainActivity extends Activity {
 		receiver = new BroadcastReceiver() {
 			@Override
 			public void onReceive(Context context, Intent intent) {
+				Notifications.cancellAll(MainActivity.this);
 				refreshBatteryStatus();
 			}
 		};
