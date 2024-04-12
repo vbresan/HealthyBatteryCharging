@@ -115,7 +115,6 @@ public class MainActivity extends Activity {
 
 		setButtonSaveEnabled(false);
 
-		Notifications.cancellAll(this);
 		AlarmReceiver.start(this, batteryLow, batteryHigh);
 	}
 
@@ -250,8 +249,6 @@ public class MainActivity extends Activity {
 			public void onReceive(Context context, Intent intent) {
 
 				refreshBatteryStatus();
-
-				Notifications.cancellAll(MainActivity.this);
 				AlarmReceiver.start(MainActivity.this, batteryLow, batteryHigh);
 			}
 		};
