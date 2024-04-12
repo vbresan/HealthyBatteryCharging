@@ -248,8 +248,11 @@ public class MainActivity extends Activity {
 		receiver = new BroadcastReceiver() {
 			@Override
 			public void onReceive(Context context, Intent intent) {
-				Notifications.cancellAll(MainActivity.this);
+
 				refreshBatteryStatus();
+
+				Notifications.cancellAll(MainActivity.this);
+				AlarmReceiver.start(MainActivity.this, batteryLow, batteryHigh);
 			}
 		};
 		registerReceiver(receiver, filter);
