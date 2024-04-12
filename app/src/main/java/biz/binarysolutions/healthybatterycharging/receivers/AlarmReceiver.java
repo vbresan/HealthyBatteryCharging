@@ -88,7 +88,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 
 		Logger.d(TAG, "onReceive called");
-		checkConditions(context);
+
+		Context applicationContext = context.getApplicationContext();
+		checkConditions(applicationContext);
 	}
 
 	/**
@@ -103,7 +105,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 		AlarmReceiver.batteryLow  = batteryLow;
 		AlarmReceiver.batteryHigh = batteryHigh;
 
-		checkConditions(context);
-		scheduleAlarms(context);
+		Context applicationContext = context.getApplicationContext();
+		checkConditions(applicationContext);
+		scheduleAlarms(applicationContext);
 	}
 }
