@@ -1,4 +1,4 @@
-package biz.binarysolutions.healthybatterycharging.util;
+package biz.binarysolutions.healthybatterycharging.receivers;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -15,6 +15,8 @@ import androidx.annotation.RequiresApi;
 
 import biz.binarysolutions.healthybatterycharging.BuildConfig;
 import biz.binarysolutions.healthybatterycharging.R;
+import biz.binarysolutions.healthybatterycharging.util.IntentUtil;
+import biz.binarysolutions.healthybatterycharging.util.Logger;
 
 /**
  *
@@ -228,7 +230,7 @@ public class Notifications {
      *
      * @param context
      */
-    public static void displayDisconnectChargerNotification(Context context) {
+    static void displayDisconnectChargerNotification(Context context) {
 
         Logger.d(TAG, "displayDisconnectChargerNotification called");
 
@@ -249,7 +251,7 @@ public class Notifications {
      *
      * @param context
      */
-    public static void displayConnectChargerNotification(Context context) {
+    static void displayConnectChargerNotification(Context context) {
 
         Logger.d(TAG, "displayConnectChargerNotification called");
 
@@ -270,7 +272,7 @@ public class Notifications {
      *
      * @param context
      */
-    public static void cancellAll(Context context) {
+    static void cancellAll(Context context) {
 
         Logger.d(TAG, "cancellAll called");
         getManager(context).cancelAll();

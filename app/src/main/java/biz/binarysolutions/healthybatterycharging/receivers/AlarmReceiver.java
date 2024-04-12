@@ -10,7 +10,6 @@ import android.os.SystemClock;
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.IntentUtil;
 import biz.binarysolutions.healthybatterycharging.util.Logger;
-import biz.binarysolutions.healthybatterycharging.util.Notifications;
 
 /**
  * 

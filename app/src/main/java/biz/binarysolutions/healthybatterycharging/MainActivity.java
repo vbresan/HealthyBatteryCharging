@@ -33,7 +33,7 @@ import biz.binarysolutions.healthybatterycharging.receivers.AlarmReceiver;
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.DefaultTextWatcher;
 import biz.binarysolutions.healthybatterycharging.util.Logger;
-import biz.binarysolutions.healthybatterycharging.util.Notifications;
+import biz.binarysolutions.healthybatterycharging.receivers.Notifications;
 
 /**
  * 
