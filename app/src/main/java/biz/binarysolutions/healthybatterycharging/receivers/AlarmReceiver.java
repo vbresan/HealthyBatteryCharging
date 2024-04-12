@@ -29,18 +29,25 @@ public class AlarmReceiver extends BroadcastReceiver {
 	private static int batteryLow;
 	private static int batteryHigh;
 
-	@Override
-	public void onReceive(Context context, Intent intent) {
-
-		Logger.d(TAG, "onReceive called");
+	/**
+	 *
+	 * @param context
+	 */
+	private static void checkConditions(Context context) {
 
 		Intent batteryStatus = Battery.getBatteryStatus(context);
 		if (batteryStatus == null) {
 			return;
 		}
-		
+
 		boolean isCharging = Battery.isCharging(batteryStatus);
 		int     level      = Battery.getBatteryLevel(batteryStatus);
+
+		//TODO: remove
+		Logger.d(TAG, "isCharging : " + isCharging);
+		Logger.d(TAG, "level      : " + level);
+		Logger.d(TAG, "batteryHigh: " + batteryHigh);
+		Logger.d(TAG, "batteryLow : " + batteryLow);
 
 		if (level >= batteryHigh && isCharging) {
 			Notifications.displayDisconnectChargerNotification(context);
@@ -49,6 +56,39 @@ public class AlarmReceiver extends BroadcastReceiver {
 		} else {
 			Notifications.cancellAll(context);
 		}
+	}
+
+	/**
+	 *
+	 * @param context
+	 */
+	private static void scheduleAlarms(Context context) {
+
+		if (alarmManager == null) {
+			alarmManager = (AlarmManager)
+				context.getSystemService(Context.ALARM_SERVICE);
+		}
+
+		if (pendingIntent == null) {
+			pendingIntent = PendingIntent.getBroadcast(
+				context,
+				0,
+				new Intent(context, AlarmReceiver.class),
+				IntentUtil.getPendingIntentFlags(PendingIntent.FLAG_UPDATE_CURRENT)
+			);
+		}
+
+		long firstTrigger = SystemClock.elapsedRealtime() + INTERVAL;
+		alarmManager.setInexactRepeating(
+			ALARM_TYPE, firstTrigger, INTERVAL, pendingIntent
+		);
+	}
+
+	@Override
+	public void onReceive(Context context, Intent intent) {
+
+		Logger.d(TAG, "onReceive called");
+		checkConditions(context);
 	}
 
 	/**
@@ -62,24 +102,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 		AlarmReceiver.batteryLow  = batteryLow;
 		AlarmReceiver.batteryHigh = batteryHigh;
-		
-		if (alarmManager == null) {
-			alarmManager = (AlarmManager) 
-				context.getSystemService(Context.ALARM_SERVICE);
-		}
-		
-		if (pendingIntent == null) {
-			pendingIntent = PendingIntent.getBroadcast(
-				context, 
-				0, 
-				new Intent(context, AlarmReceiver.class),
-				IntentUtil.getPendingIntentFlags(PendingIntent.FLAG_UPDATE_CURRENT)
-			);
-		}
-		
-		long firstTrigger = SystemClock.elapsedRealtime() - INTERVAL;
-		alarmManager.setInexactRepeating(
-			ALARM_TYPE, firstTrigger, INTERVAL, pendingIntent
-		);
+
+		checkConditions(context);
+		scheduleAlarms(context);
 	}
 }
