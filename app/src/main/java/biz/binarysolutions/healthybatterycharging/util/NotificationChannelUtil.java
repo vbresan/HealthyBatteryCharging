@@ -37,8 +37,10 @@ public class NotificationChannelUtil {
     public static final int COLOR_HIGH  = Color.GREEN;
 
     private static final String PACKAGE_NAME = BuildConfig.APPLICATION_ID;
-    public  static final String NOTIFICATION_CHANNEL_ID_LOW  = PACKAGE_NAME + ".low";
-    public  static final String NOTIFICATION_CHANNEL_ID_HIGH = PACKAGE_NAME + ".high";
+    public static final String NOTIFICATION_CHANNEL_ID_LOW  =
+        PACKAGE_NAME + ".channel.low";
+    public static final String NOTIFICATION_CHANNEL_ID_HIGH =
+        PACKAGE_NAME + ".channel.high";
 
     /**
      * @param channelId
