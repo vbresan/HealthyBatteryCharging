@@ -488,6 +488,7 @@ public class MainActivity extends Activity {
 		int granted = PackageManager.PERMISSION_GRANTED;
 		if (results.length > 0 && results[0] == granted) {
 			NotificationChannelUtil.createChannels(this);
+			AlarmReceiver.start(this, batteryLow, batteryHigh);
 		} else {
 			showPermissionRequestText();
 		}
