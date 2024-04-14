@@ -20,6 +20,14 @@ allprojects {
             url 'https://android-sdk.is.com/'
         }
     }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile).tap {
+            configureEach {
+                options.encoding = 'UTF-8'
+                options.compilerArgs << "-Xlint:deprecation"
+            }
+        }
+    }
 }
 
 subprojects {

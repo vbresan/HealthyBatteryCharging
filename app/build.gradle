@@ -23,8 +23,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
+
+    android {
+        buildFeatures {
+            buildConfig = true
+        }
+    }
 }
 
 dependencies {
     implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.google.android.material:material:1.11.0'
 }
