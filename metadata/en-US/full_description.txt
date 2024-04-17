@@ -1,0 +1,8 @@
+Make your smartphone or tablet battery last longer!
+
+Good range to aim for when charging a Li-ion battery is from about 40 to 80 percent in one go. A bunch of tiny charges throughout the day is your second best bet, and going from zero to 100 and then 100 to zero on a regular basis will put the most strain on your lithium-ion battery.
+
+This app notifies you when to charge or unplug the phone from your charger in order to improve the battery life.
+
+For those who want to know more technical details about Li-ion batteries:
+http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
