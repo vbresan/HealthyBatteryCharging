@@ -74,7 +74,6 @@ public class NotificationChannelUtil {
         channel.enableLights(true);
         channel.setLightColor(color);
         channel.setSound(sound, audioAttributes);
-        channel.setImportance(NotificationManager.IMPORTANCE_HIGH);
 
         return channel;
     }
