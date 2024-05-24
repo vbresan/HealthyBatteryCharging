@@ -16,9 +16,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url 'https://android-sdk.is.com/'
-        }
     }
     gradle.projectsEvaluated {
         tasks.withType(JavaCompile).tap {
