@@ -30,9 +30,10 @@
         background, even after rebooting your phone. However, on certain
         devices, you may need to open the security settings and grant explicit
         permission for it to do so.
-        \n\nAdditionally, some devices terminate all background services when
-        an app is removed from memory. If this applies to your device, you will
-        need to \'lock\' the app in memory to prevent this from happening.
+        \n\nSome devices terminate all background services when an app is
+        removed from memory. If this applies to your device, you will need to
+        \'lock\' the app in memory to prevent this from happening. Also make
+        sure that the app is excluded from battery optimization.
     </string>
     <string name="MessageNOK">
         You are not set up yet! In order for the app to function properly, you
