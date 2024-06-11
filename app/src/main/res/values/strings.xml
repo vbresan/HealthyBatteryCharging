@@ -26,14 +26,22 @@
     <string name="MessageOK">
         You are all set! You will receive notifications indicating when to
         connect and disconnect the charger. Feel free to exit the app.
-        \n\nPlease note that the app is designed to run automatically in the
-        background, even after rebooting your phone. However, on certain
-        devices, you may need to open the security settings and grant explicit
-        permission for it to do so.
-        \n\nSome devices terminate all background services when an app is
-        removed from memory. If this applies to your device, you will need to
-        \'lock\' the app in memory to prevent this from happening. Also make
-        sure that the app is excluded from battery optimization.
+        \n\nAdditional notes on app functionality:
+        \n\nThe app itself is optimized for low battery consumption, running in
+        the background and checking the battery level every 15 minutes. The
+        exact timing of these checks depends on the Android OS, which might
+        schedule them alongside other tasks or delay them when in sleep mode.
+        As a result, the battery level may slightly exceed the high threshold
+        while charging or drop slightly below the low threshold while
+        discharging before you receive a notification.
+        \n\nThe app should continue running in the background after rebooting
+        your phone. However, on certain devices, you may need to open the
+        security settings and grant explicit permission for it to do so.
+        \n\nCertain budget devices, especially older models with modifications
+        to the operating system, terminate all background services when an app
+        is removed from memory. If your device falls into this category, you
+        will need to \'lock\' the app in memory to prevent this from happening.
+        Additionally, ensure that the app is excluded from battery optimization.
     </string>
     <string name="MessageNOK">
         You are not set up yet! In order for the app to function properly, you
