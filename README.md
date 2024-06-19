@@ -21,3 +21,7 @@ Healthy Battery Charging notifies you when to plug or unplug your phone from the
 
 For those who want to know more technical details about Li-ion batteries:  
 http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
+
+## Translations
+
+Translations are managed through the [Healthy Battery Charging project on Weblate](https://hosted.weblate.org/projects/healthy-battery-charging/). Your contributions are greatly appreciated.
