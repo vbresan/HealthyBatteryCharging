@@ -11,10 +11,12 @@ android {
 
     defaultConfig {
         applicationId "biz.binarysolutions.healthybatterycharging"
-        versionCode 4
-        versionName "2.0.2"
         minSdkVersion 15        // android 4.0.4
         targetSdkVersion 34
+        versionCode 4
+        versionName "2.0.2"
+
+        setProperty("archivesBaseName", "$applicationId-$versionName")
     }
 
     buildTypes {
