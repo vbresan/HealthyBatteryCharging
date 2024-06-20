@@ -162,6 +162,8 @@
 	                android:layout_height="wrap_content"
 					android:textSize="@dimen/textH6"
 					android:textColor="@color/textSecondary"
+					android:maxLines="1"
+					android:ellipsize="end"
 				/>
 
 	            <TextView
