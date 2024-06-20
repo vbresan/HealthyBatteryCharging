@@ -24,4 +24,4 @@ http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batterie
 
 ## Translations
 
-Translations are managed through the Healthy Battery Charging project on Weblate. App string resources are available in the component [App](https://hosted.weblate.org/projects/healthy-battery-charging/app/) while componenet [metadata](https://hosted.weblate.org/projects/healthy-battery-charging/metadata/) contains the app description and other details. Your contributions are greatly appreciated.
+Translations are managed through the Healthy Battery Charging project on Weblate. App string resources are available in the component [App](https://hosted.weblate.org/projects/healthy-battery-charging/app/) while componenet [Metadata](https://hosted.weblate.org/projects/healthy-battery-charging/metadata/) contains the app description and other details. Your contributions are greatly appreciated.
