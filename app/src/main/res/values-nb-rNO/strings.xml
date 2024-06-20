@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ConnectCharger">Koble til laderen</string>
+    <string name="DisconnectCharger">Koble fra laderen</string>
+    <string name="Low">Lavt:</string>
+    <string name="High">Høyt:</string>
+    <string name="Save">Lagre</string>
+    <string name="Reset">Tilbakestill</string>
+    <string name="BatteryStatus">Batteristatus:</string>
+    <string name="BatteryLevel">Batterinivå:</string>
+    <string name="Charging">Lading</string>
+    <string name="app_name">Sunn batterilading</string>
+    <string name="BatteryLevelNotifications">Batterinivåmerknader</string>
+    <string name="BatteryLowNotification">Merknad for lavt batterinivå</string>
+    <string name="BatteryHighNotification">Merknad for høyt batterinivå</string>
+    <string name="Discharging">Utlading</string>
+    <string name="MessageNOK">Innvilg nødvendige tilganger. Start programmet på ny, eller gjør det fra systeminnstillingene.</string>
+    <string name="MessageOK">Du vil få merknader om når laderen bør tilsluttes og frakobles. Du kan nå avslutte programmet.
+\n
+\nProgrammet sjekker status hvert kvarter, avhengig av Android. Derfor kan tidspunktet formmerknadene avvike noe fra optimalt batterinivå.
+\n
+\nProgrammet fortsetter å kjøre i bakgrunnen etter omstart av enheten. Noen enheter krever spesiell tilgang for dette.
+\n
+\nNoen budsjettmodeller fjerner alle kjørende bakgrunnstjenester for å spare minne. Det er mulig å «låse» programminnet slik at dette ikke skjer.
+\nDet er viktig at programmet ikke er omfattet av batterioptimalisering.</string>
+</resources>
