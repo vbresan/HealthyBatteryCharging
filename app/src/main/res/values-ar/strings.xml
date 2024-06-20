@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="Low">الأدنى:</string>
+    <string name="BatteryLowNotification">إشعارات الحد الأدنى للبطارية</string>
+    <string name="BatteryHighNotification">إشعارات الحد الأقصى للبطارية</string>
+    <string name="BatteryLevelNotifications">إشعارات نسبة شحن البطارية</string>
+    <string name="app_name">سلامة شحن البطارية</string>
+    <string name="Charging">جارِ الشحن</string>
+    <string name="ConnectCharger">قم بتوصيل الشاحن</string>
+    <string name="DisconnectCharger">قم بالغاء توصيل الشاحن</string>
+    <string name="BatteryLevel">نسبة شحن البطارية:</string>
+    <string name="Discharging">لا يتم الشحن</string>
+    <string name="BatteryStatus">حالة البطارية:</string>
+    <string name="High">الأقصى:</string>
+    <string name="Save">حفظ</string>
+    <string name="Reset">إعادة تعيين</string>
+    <string name="MessageNOK">لم تنتهى من الاعداد بعد ! ليتم استخدام التطبيق بشكل سليم , تحتاج الى منح بعض الصلاحيات الهامة . برجاء اعادة تشغيل التطبيق او الذهاب الى اعدادات النظام ومنح التطبيق صلاحية الإشعارات.</string>
+</resources>
