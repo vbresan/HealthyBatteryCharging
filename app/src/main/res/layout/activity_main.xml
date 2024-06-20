@@ -10,7 +10,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:orientation="vertical"
-		android:padding="@dimen/padding"
+		android:paddingVertical="@dimen/padding"
 		android:focusableInTouchMode="true"
 		android:focusable="true"
 		>
@@ -18,6 +18,7 @@
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingHorizontal="@dimen/padding"
 			android:gravity="center"
 			android:text="@string/BatteryLevelNotifications"
 			android:textSize="@dimen/textNormal"
@@ -34,6 +35,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_centerHorizontal="true"
+				android:layout_marginHorizontal="-100dp"
 				>
 				<ImageView
 					android:id="@+id/imageViewSave"
@@ -63,6 +65,7 @@
 				android:orientation="vertical"
 				android:layout_centerInParent="true"
 				android:layout_alignParentTop="true"
+				android:paddingHorizontal="@dimen/padding"
 				>
 
 				<LinearLayout
@@ -115,113 +118,121 @@
 			</LinearLayout>
 		</RelativeLayout>
 
-	    <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:orientation="horizontal"
-	        android:paddingBottom="@dimen/minPadding"
-	        android:paddingTop="@dimen/minPadding"
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingHorizontal="@dimen/padding"
 			>
 
-	        <LinearLayout
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:orientation="vertical"
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingBottom="@dimen/minPadding"
+				android:paddingTop="@dimen/minPadding"
 				>
 
-	            <TextView
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:text="@string/BatteryStatus"
-					android:textSize="@dimen/textH6"
-					android:textColor="@color/textSecondary"
-				/>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					>
 
-	            <TextView
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:text="@string/BatteryLevel"
-					android:textSize="@dimen/textH6"
-					android:textColor="@color/textSecondary"
-				/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/BatteryStatus"
+						android:textSize="@dimen/textH6"
+						android:textColor="@color/textSecondary"
+					/>
 
-	        </LinearLayout>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/BatteryLevel"
+						android:textSize="@dimen/textH6"
+						android:textColor="@color/textSecondary"
+					/>
 
-	        <LinearLayout
-	            android:layout_width="wrap_content"
-	            android:layout_height="match_parent"
-	            android:orientation="vertical"
-	            android:paddingStart="@dimen/statusValuesPadding"
-				android:paddingLeft="@dimen/statusValuesPadding"
-				tools:ignore="RtlSymmetry"
-				>
+				</LinearLayout>
 
-	            <TextView
-	                android:id="@+id/textViewBatteryStatus"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-					android:textSize="@dimen/textH6"
-					android:textColor="@color/textSecondary"
-					android:maxLines="1"
-					android:ellipsize="end"
-				/>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:paddingStart="@dimen/statusValuesPadding"
+					android:paddingLeft="@dimen/statusValuesPadding"
+					tools:ignore="RtlSymmetry"
+					>
 
-	            <TextView
-	                android:id="@+id/textViewBatteryLevel"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-					android:textSize="@dimen/textH6"
-					android:textColor="@color/textSecondary"
-				/>
+					<TextView
+						android:id="@+id/textViewBatteryStatus"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/textH6"
+						android:textColor="@color/textSecondary"
+						android:maxLines="1"
+						android:ellipsize="end"
+					/>
 
-	        </LinearLayout>
+					<TextView
+						android:id="@+id/textViewBatteryLevel"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/textH6"
+						android:textColor="@color/textSecondary"
+					/>
 
-	    </LinearLayout>
+				</LinearLayout>
 
-	    <TextView
-	        android:id="@+id/textView"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="@string/MessageOK"
-			android:textSize="@dimen/textNormal"
-			android:textColor="@color/textTertiary"
-		/>
-	
-	    <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="0dp"
-			android:minHeight="@dimen/minPadding"
-	        android:layout_weight="1"
-	        android:orientation="vertical"
-		/>
+			</LinearLayout>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:text="@string/Copyright"
-			android:textSize="@dimen/textNormal"
-			android:textColor="@color/textTertiary"
-		/>
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/MessageOK"
+				android:textSize="@dimen/textNormal"
+				android:textColor="@color/textTertiary"
+			/>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:text="@string/CompanyName"
-			android:textSize="@dimen/textH4"
-			android:textColor="@color/textTertiary"
-		/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:minHeight="@dimen/minPadding"
+				android:layout_weight="1"
+				android:orientation="vertical"
+			/>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:autoLink="web"
-			android:text="@string/CompanyURL"
-			android:textSize="@dimen/textNormal"
-			android:textColorLink="@color/textLink"
-		/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="@string/Copyright"
+				android:textSize="@dimen/textNormal"
+				android:textColor="@color/textTertiary"
+			/>
 
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:text="@string/CompanyName"
+				android:textSize="@dimen/textH4"
+				android:textColor="@color/textTertiary"
+			/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:autoLink="web"
+				android:text="@string/CompanyURL"
+				android:textSize="@dimen/textNormal"
+				android:textColorLink="@color/textLink"
+			/>
+
+		</LinearLayout>
 	</LinearLayout>
 </ScrollView>
