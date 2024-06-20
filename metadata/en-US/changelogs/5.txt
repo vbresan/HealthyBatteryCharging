@@ -1,4 +1,4 @@
 2.0.3 (2024.xx.xx)
 
 * Adding Norwegian Bokmål, Ukrainian and Russian translations
-
+* Supporting per-app language preferences
