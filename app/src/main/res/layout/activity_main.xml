@@ -80,6 +80,9 @@
 						android:text="@string/Low"
 						android:textColor="@color/textPrimary"
 						android:textSize="@dimen/textH4"
+						android:maxLines="1"
+						android:ellipsize="end"
+						android:layout_weight="1"
 					/>
 
 					<include
@@ -95,6 +98,9 @@
 						android:text="@string/High"
 						android:textColor="@color/textPrimary"
 						android:textSize="@dimen/textH4"
+						android:maxLines="1"
+						android:ellipsize="end"
+						android:layout_weight="1"
 					/>
 
 					<include
@@ -126,17 +132,19 @@
 			>
 
 			<LinearLayout
-				android:layout_width="match_parent"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:paddingBottom="@dimen/minPadding"
 				android:paddingTop="@dimen/minPadding"
+				android:baselineAligned="false"
 				>
 
 				<LinearLayout
-					android:layout_width="wrap_content"
+					android:layout_width="0dp"
 					android:layout_height="wrap_content"
 					android:orientation="vertical"
+					android:layout_weight="1"
 					>
 
 					<TextView
@@ -145,6 +153,8 @@
 						android:text="@string/BatteryStatus"
 						android:textSize="@dimen/textH6"
 						android:textColor="@color/textSecondary"
+						android:maxLines="1"
+						android:ellipsize="end"
 					/>
 
 					<TextView
@@ -153,6 +163,8 @@
 						android:text="@string/BatteryLevel"
 						android:textSize="@dimen/textH6"
 						android:textColor="@color/textSecondary"
+						android:maxLines="1"
+						android:ellipsize="end"
 					/>
 
 				</LinearLayout>
@@ -173,7 +185,6 @@
 						android:textSize="@dimen/textH6"
 						android:textColor="@color/textSecondary"
 						android:maxLines="1"
-						android:ellipsize="end"
 					/>
 
 					<TextView
