@@ -13,6 +13,8 @@
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=biz.binarysolutions.healthybatterycharging)
 
+## About
+
 Make your smartphone or tablet battery last longer!
 
 Good range to aim for when charging a Li-ion battery is from about 40 to 80 percent in one go. A bunch of tiny charges throughout the day is your second best bet, and going from zero to 100 and then 100 to zero on a regular basis will put the most strain on your lithium-ion battery.
@@ -24,4 +26,18 @@ http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batterie
 
 ## Translations
 
-Translations are managed through the Healthy Battery Charging project on Weblate. App string resources are available in the component [App](https://hosted.weblate.org/projects/healthy-battery-charging/app/) while componenet [Metadata](https://hosted.weblate.org/projects/healthy-battery-charging/metadata/) contains the app description and other details. Your contributions are greatly appreciated.
+Translations are managed through [Weblate](https://weblate.org). App string resources are available in the [App](https://hosted.weblate.org/projects/healthy-battery-charging/app/) component, while [Metadata](https://hosted.weblate.org/projects/healthy-battery-charging/metadata/) component contains the app description and other details. You can log in to Weblate with your GitHub account. *(When your Weblate and GitHub accounts are connected, and your contributions are merged into the main branch, you will be shown in the GitHub [Contributors](https://github.com/vbresan/HealthyBatteryCharging/graphs/contributors) sidebar.)*
+
+Your contributions are greatly appreciated.
+
+### Notes to translators
+
+It is not necessary to translate past changelogs for app versions that did not include the language you are adding.
+
+### Translators
+
+Big thanks to:
+* Arabic - **[islam2hamy](https://github.com/islam2hamy)**
+* Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
+* Russian - **[Korb](https://github.com/Korb)**
+* Ukrainian - **[Korb](https://github.com/Korb)**
