@@ -1,0 +1,8 @@
+Øk batteriets levetid på smarttelefonen eller nettbrettet ditt
+
+For Li-ion-batterier er det best å holde batteriet mellom 40 og 80% opplading for å øke batterilevetiden. Nest best er det å klattlade det gjennom dagen, og det verste er å gå fra 100 til 0% regelmessig.
+
+Du vil her få en merknad om å plugge inn eller ut laderen. Selv om programmet sjekker hvert kvarter er selve effektueringen avhengig av operativsystemet. Derfor kan opp- eller utlading overskride terskelnivåene litt.
+
+Mer teknisk info om li-ion-batterier er å finne på
+https://batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries
