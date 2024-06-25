@@ -1,0 +1,8 @@
+Faça a bateria de seu smartphone ou tablet durar mais!
+
+Uma boa faixa de carga para uma bateria de íons de lítio é de cerca de 40 a 80% de uma só vez. Uma série de pequenas cargas ao longo do dia é a sua segunda melhor aposta, e ir de zero a 100 e depois de 100 a zero regularmente é o que mais sobrecarrega a sua bateria de íons de lítio.
+
+O Healthy Battery Charging avisa quando você deve conectar ou desconectar o telefone do carregador para melhorar a vida útil da bateria. O próprio aplicativo é otimizado para baixo consumo de bateria, sendo executado em segundo plano e verificando o nível da bateria a cada 15 minutos. O momento exato dessas verificações depende do sistema operacional Android, que pode programá-las juntamente com outras tarefas ou atrasá-las quando estiver no modo de suspensão. Como resultado, o nível da bateria pode exceder ligeiramente o limite alto durante o carregamento ou cair ligeiramente abaixo do limite baixo durante a descarga antes de você receber uma notificação.
+
+Para aqueles que desejam saber mais detalhes técnicos sobre baterias de íons de lítio:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries

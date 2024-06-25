@@ -11,7 +11,7 @@
             <gradient
                 android:startColor="@color/glowStart"
                 android:endColor="@color/glowEnd"
-                android:angle="0"
+                android:angle="@integer/gradient_angle"
             />
             <corners android:radius="@dimen/buttonCornerRadius" />
         </shape>

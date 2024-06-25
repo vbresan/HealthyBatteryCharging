@@ -1,0 +1,4 @@
+2.0.3 (2024.06.22)
+
+* Nye oversettelser til bokmål, ukrainsk, og russisk.
+* Støtte for språkinnstillinger per program
