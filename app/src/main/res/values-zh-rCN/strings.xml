@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="BatteryLevelNotifications">电量提示</string>
+    <string name="BatteryLowNotification">低电量通知</string>
+    <string name="BatteryHighNotification">高电量通知</string>
+    <string name="Low">下限：</string>
+    <string name="High">上限：</string>
+    <string name="Save">保存</string>
+    <string name="Reset">重置</string>
+    <string name="BatteryStatus">电池状态：</string>
+    <string name="BatteryLevel">电量：</string>
+    <string name="Charging">充电</string>
+    <string name="Discharging">未充电</string>
+    <string name="ConnectCharger">连接充电器</string>
+    <string name="DisconnectCharger">拔下充电器</string>
+    <string name="MessageNOK">还没设置完！为了让应用程序正常运行，需要您授予必要的权限。请重新启动应用程序或前往系统设置并授予通知权限。</string>
+    <string name="MessageOK">设置好了！您会收到提示连接和拔下充电器的通知。应用程序可以随意退出。
+\n
+\n关于应用功能的附加说明：
+\n
+\n本应用经过优化，耗电极低，在后台运行，每 15 分钟检查一次电池电量。具体的检查时间取决于 Android 操作系统，可能会随其他任务一起安排，或在休眠模式下延迟。因此，充电时电池电量可能会略微超过上限，或在放电时略微低于下限，然后您才会收到通知。
+\n
+\n在重新启动手机后，该应用程序应该会继续在后台运行。然而，在某些设备上，本应用程序可能需要您打开安全设置并另行授权才能继续运行。
+\n
+\n某些便宜的设备，尤其是操作系统经过修改的旧型号设备，从内存中移除应用程序时会终止所有后台服务。如果您的设备属于这种情况，您需要将应用程序“锁定”在内存中以防止这种情况发生。此外，需要将本应用排除在电池优化之外。</string>
+</resources>
