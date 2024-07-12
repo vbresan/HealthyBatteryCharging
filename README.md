@@ -46,6 +46,7 @@ When translating metadata:
 
 Big thanks to:
 * Arabic - **[islam2hamy](https://github.com/islam2hamy)**
+* Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
 * Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**
 * Russian - **[Korb](https://github.com/Korb)**
