@@ -1,0 +1,4 @@
+2.0.3 (2024.06.22)
+
+* Adicionando traduções bokmål norueguês, ucraniano e russo
+* Suporte a preferências de idioma por aplicativo
