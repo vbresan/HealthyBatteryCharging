@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Carregamento saudável da bateria</string>
+    <string name="BatteryLowNotification">Notificação de bateria baixa</string>
+    <string name="BatteryHighNotification">Notificação de bateria alta</string>
+    <string name="Low">Baixa:</string>
+    <string name="BatteryLevelNotifications">Notificar nível da bateria</string>
+    <string name="MessageOK">Está tudo pronto! Você receberá notificações indicando quando deve conectar e desconectar o carregador. Sinta-se à vontade para sair do aplicativo.
+\n
+\nObservações adicionais sobre a funcionalidade do aplicativo:
+\n
+\nO aplicativo em si é otimizado para baixo consumo de bateria, sendo executado em segundo plano e verificando o nível da bateria a cada 15 minutos. O tempo exato dessas verificações depende do sistema operacional Android, que pode programá-las junto com outras tarefas ou atrasá-las quando estiver no modo de suspensão. Como resultado, o nível da bateria pode exceder ligeiramente o limite alto durante o carregamento ou cair ligeiramente abaixo do limite baixo durante a descarga antes de você receber uma notificação.
+\n
+\nO aplicativo deve continuar em execução em segundo plano após a reinicialização do telefone. Entretanto, em determinados dispositivos, talvez seja necessário abrir as configurações de segurança e conceder permissão explícita para que ele faça isso.
+\n
+\nAlguns dispositivos econômicos, especialmente modelos mais antigos com modificações no sistema operacional, encerram todos os serviços em segundo plano quando um aplicativo é removido da memória. Se o seu dispositivo se enquadrar nessa categoria, você precisará \"bloquear\" o aplicativo na memória para evitar que isso aconteça. Além disso, verifique se o aplicativo está excluído da otimização da bateria.</string>
+    <string name="ConnectCharger">Conectar ao carregador</string>
+    <string name="DisconnectCharger">Desconectar do carregador</string>
+    <string name="MessageNOK">Você ainda não está configurado! Para que o aplicativo funcione corretamente, você precisa conceder as permissões necessárias. Reinicie o aplicativo ou acesse as configurações do sistema e conceda permissão de notificação.</string>
+    <string name="High">Alta:</string>
+    <string name="Save">Salvar</string>
+    <string name="Reset">Restaurar</string>
+    <string name="BatteryStatus">Status da bateria:</string>
+    <string name="BatteryLevel">Nível da bateria:</string>
+    <string name="Charging">Carregando</string>
+    <string name="Discharging">Descarregando</string>
+</resources>
