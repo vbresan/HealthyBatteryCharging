@@ -26,13 +26,11 @@ android {
         }
     }
 
-    android {
-        buildFeatures {
-            buildConfig = true
-        }
-        androidResources {
-            generateLocaleConfig true
-        }
+    buildFeatures {
+        buildConfig = true
+    }
+    androidResources {
+        generateLocaleConfig true
     }
 }
 
