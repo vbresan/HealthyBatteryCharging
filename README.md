@@ -1,19 +1,15 @@
 # Healthy Battery Charging
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/biz.binarysolutions.healthybatterycharging/)
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
-     alt="Get it on IzzyOnDroid"
-     height="80">](https://apt.izzysoft.de/fdroid/index/apk/biz.binarysolutions.healthybatterycharging)
-[<img src="https://raw.githubusercontent.com/andOTP/andOTP/master/assets/badges/get-it-on-github.png"
-     alt="Get it on GitHub"
-     height="80">](https://github.com/vbresan/HealthyBatteryCharging/releases/latest)
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-     alt="Get it on Google Play"
-     height="80">](https://play.google.com/store/apps/details?id=biz.binarysolutions.healthybatterycharging)
+## Screenshots
 
-## About
+<p float="center">
+  <img src="https://github.com/vbresan/HealthyBatteryCharging/blob/master/metadata/en-US/images/phoneScreenshots/1.png" width="20%" alt="Screenshot discharging" title="Screenshot discharging" />
+  <img src="https://github.com/vbresan/HealthyBatteryCharging/blob/master/metadata/en-US/images/phoneScreenshots/2.png" width="20%" alt="Screenshot charging" title="Screenshot charging" />
+  <img src="https://github.com/vbresan/HealthyBatteryCharging/blob/master/metadata/en-US/images/phoneScreenshots/4.png" width="20%" alt="Screenshot connect the charger notification" title="Screenshot connect the charger notification" />
+  <img src="https://github.com/vbresan/HealthyBatteryCharging/blob/master/metadata/en-US/images/phoneScreenshots/3.png" width="20%" alt="Screenshot disconnect the charger notification" title="Screenshot disconnect the charger notification" />
+</p>
+
+## About the app
 
 Make your smartphone or tablet battery last longer!
 
@@ -24,17 +20,33 @@ Healthy Battery Charging notifies you when to plug or unplug your phone from the
 For those who want to know more technical details about Li-ion batteries:  
 http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
 
-## Translations
+## Get it on ...
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/biz.binarysolutions.healthybatterycharging/)
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/biz.binarysolutions.healthybatterycharging)
+[<img src="https://raw.githubusercontent.com/andOTP/andOTP/master/assets/badges/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/vbresan/HealthyBatteryCharging/releases/latest)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=biz.binarysolutions.healthybatterycharging)
+
+
+## Support and contributions
+
+If you like the app, you can show your support by starring the repository and joining the [stargazers](https://github.com/vbresan/HealthyBatteryCharging/stargazers)!
+
+Open-source projects often struggle to be financially sustainable. You are more than welcome to sponsor the project by donating via [Liberapay](https://liberapay.com/vbresan) or [Ko-fi](https://ko-fi.com/vbresan). Such support can help ensure the continued development of this app.
+
+If you would like to get directly involved in the project, you can contribute by providing a translation.
+
+### Translations
 
 Translations are managed through [Weblate](https://weblate.org). App string resources are available in the [App](https://hosted.weblate.org/projects/healthy-battery-charging/app/) component, while [Metadata](https://hosted.weblate.org/projects/healthy-battery-charging/metadata/) component contains the app description and other details. You can log in to Weblate with your GitHub account. *(When your Weblate and GitHub accounts are connected, and your contributions are merged into the main branch, you will be shown in the GitHub [Contributors](https://github.com/vbresan/HealthyBatteryCharging/graphs/contributors) sidebar.)*
 
 Your contributions are greatly appreciated.
 
-### Current translation status
+#### Current translation status
 
 ![Bar chart with current translation status](https://camo.githubusercontent.com/312468899a9c021089fe3515ab50a4ef9df33cc44ef020d799c4a09b4a0f5ba7/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
 
-### Notes to translators
+#### Notes to translators
 
 When translating app string resources:
 * For context, please refer to the provided screenshots.
@@ -42,12 +54,12 @@ When translating app string resources:
 When translating metadata:
 * It's not necessary to translate changelogs related to app releases made before your language was added.
 
-### Translators
+#### Translators
 
 Big thanks to:
 * Arabic - **[islam2hamy](https://github.com/islam2hamy)**
 * Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
-* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**
+* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, Jose Delvani
 * Russian - **[Korb](https://github.com/Korb)**
 * Ukrainian - **[Korb](https://github.com/Korb)**
