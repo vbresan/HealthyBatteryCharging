@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">wawa pona pi poki pika</string>
+    <string name="BatteryLevelNotifications">sona supa pi poki pika</string>
+    <string name="BatteryLowNotification">sona anpa pi poki pika</string>
+    <string name="BatteryHighNotification">sona sewi pi poki pika</string>
+    <string name="Low">anpa:</string>
+    <string name="High">sewi:</string>
+    <string name="Save">o jo</string>
+    <string name="Reset">o sijelo wan</string>
+    <string name="BatteryStatus">sijelo pi poki pika:</string>
+    <string name="BatteryLevel">supa pi poki pika:</string>
+    <string name="ConnectCharger">o insa e ijo pika</string>
+    <string name="DisconnectCharger">o insa ala e ijo pika</string>
+    <string name="Charging">wawa</string>
+    <string name="Discharging">wawa ala</string>
+</resources>
