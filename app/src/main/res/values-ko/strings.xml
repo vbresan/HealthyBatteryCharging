@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">건강한 배터리 충전</string>
+    <string name="BatteryLevelNotifications">배터리 잔량 알림</string>
+    <string name="BatteryHighNotification">배터리 잔량 높음 알림</string>
+    <string name="Low">낮음:</string>
+    <string name="High">높음:</string>
+    <string name="Save">저장</string>
+    <string name="BatteryStatus">배터리 상태:</string>
+    <string name="BatteryLevel">배터리 잔량:</string>
+    <string name="Charging">충전 중</string>
+    <string name="Discharging">방전 중</string>
+    <string name="ConnectCharger">충전기를 연결하세요</string>
+    <string name="DisconnectCharger">충전기를 분리하세요</string>
+    <string name="MessageNOK">아직 설정되지 않았어요! 앱이 제대로 작동하려면 필요한 권한을 부여해야 해요. 앱을 다시 시작하거나 시스템 설정으로 이동하여 알림 권한을 부여해주세요.</string>
+    <string name="BatteryLowNotification">배터리 잔량 낮음 알림</string>
+    <string name="Reset">초기화</string>
+    <string name="MessageOK">준비 완료! 충전기를 연결 또는 분리할 시기를 알려주는 알림이 올 거예요. 앱을 종료하셔도 괜찮아요.
+\n
+\n앱 기능에 대한 추가 정보:
+\n
+\n앱 자체는 낮은 배터리 소모에 최적화되어 있으며 백그라운드에서 실행되어 15분마다 배터리 잔량을 확인해요. 이러한 검사의 정확한 시각은 안드로이드 OS에 따라 다르며 다른 작업과 함께 예약되거나 절전 모드에서 지연될 수 있어요. 따라서 알림을 받기 전에 충전 중 배터리 잔량이 상한 임계값을 약간 초과하거나 방전 중 하한 임계값을 약간 초과할 수도 있어요.
+\n
+\n스마트폰을 다시 시작한 후에도 앱이 백그라운드에서 계속 실행돼요. 그러나 특정 기기에서는 보안 설정을 열어 명시적으로 권한을 부여해야 할 수도 있어요.
+\n
+\n일부 저가형 기기, 특히 운영 체제가 수정된 오래된 모델에서는 앱이 메모리에서 제거되면 모든 백그라운드 서비스도 같이 종료돼요. 기기가 이 범주에 해당하는 경우 이를 방지하기 위해 메모리의 앱을 \'잠금\'해야 해요. 또한 앱이 배터리 최적화에서 제외되었는지도 확인하세요.</string>
+</resources>

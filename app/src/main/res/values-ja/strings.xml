@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">健康的なバッテリー充電</string>
+    <string name="BatteryLevelNotifications">バッテリー残量通知</string>
+    <string name="BatteryLowNotification">バッテリー残量低下通知</string>
+    <string name="BatteryHighNotification">バッテリー残量上昇通知</string>
+    <string name="Low">低い：</string>
+    <string name="High">高い：</string>
+    <string name="Save">保存</string>
+    <string name="Reset">リセット</string>
+    <string name="Charging">充電中</string>
+    <string name="BatteryLevel">バッテリー残量：</string>
+    <string name="BatteryStatus">バッテリーの状態：</string>
+    <string name="Discharging">放電中</string>
+    <string name="ConnectCharger">充電器を接続してください</string>
+    <string name="MessageOK">準備完了です！充電器をいつ接続および切断するかを示す通知が届きます。アプリを終了してもかまいません。
+\n
+\nアプリの機能に関する追加情報：
+\n
+\nアプリ自体は低バッテリー消費向けに最適化されており、バックグラウンドで実行され、15分ごとにバッテリーレベルをチェックします。これらのチェックの正確なタイミングはAndroid OSによって異なり、他のタスクと一緒にスケジュールされたり、スリープモードの時に遅延されたりする場合があります。その結果、通知を受け取る前に、充電中にバッテリーレベルが上限しきい値をわずかに超えたり、放電中に下限しきい値をわずかに下回ったりすることがあります。
+\n
+\nアプリは、スマートフォンを再起動した後もバックグラウンドで実行され続けます。ただし、特定のデバイスでは、セキュリティ設定を開いて明示的に許可を与える必要がある場合があります。
+\n
+\n一部の低価格デバイス、特にオペレーティングシステムに変更を加えた古いモデルでは、アプリがメモリから削除されると、すべてのバックグラウンドサービスが終了します。デバイスがこのカテゴリに該当する場合は、これを防ぐためにメモリ内のアプリを「ロック」する必要があります。さらに、アプリがバッテリー最適化から除外されていることを確認してください。</string>
+    <string name="MessageNOK">まだ設定されていません！アプリが正しく機能するには、必要な権限を付与する必要があります。アプリを再起動するか、システム設定に移動して通知権限を付与してください。</string>
+    <string name="DisconnectCharger">充電器を切断してください</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sana Bateria Ŝargado</string>
+    <string name="BatteryLowNotification">Sciigo pri malalta baterio</string>
+    <string name="BatteryHighNotification">Sciigo pri alta baterio</string>
+    <string name="Low">Malalta:</string>
+    <string name="High">Alta:</string>
+    <string name="Reset">Restarigi</string>
+    <string name="BatteryStatus">Bateria stato:</string>
+    <string name="BatteryLevel">Bateria nivelo:</string>
+    <string name="Charging">Ŝargado</string>
+    <string name="Discharging">Malŝargado</string>
+    <string name="ConnectCharger">Konektu la ŝargilon</string>
+    <string name="MessageNOK">Vi ankoraŭ ne estas starigita! Por ke la aplikaĵo funkciu ĝuste, vi devas doni al ĝi la necesajn permesojn. Bonvolu rekomenci la aplikaĵon aŭ iri al viaj sistemaj agordoj kaj doni al ĝi sciigan permeson.</string>
+    <string name="BatteryLevelNotifications">Sciigoj pri bateria nivelo</string>
+    <string name="Save">Konservi</string>
+    <string name="DisconnectCharger">Malkonektu la ŝargilon</string>
+    <string name="MessageOK">Vi estas tute preta! Vi ricevos sciigojn indikante kiam konekti kaj malkonekti la ŝargilon. Bonvolu eliri la aplikaĵon.
+\n
+\nPliaj notoj pri aplikaĵa funkcio:
+\n
+\nLa aplikaĵo mem estas optimumigita por malalta konsumo de baterio, funkciante en la fono kaj kontrolante la baterian nivelon ĉiujn 15 minutojn. La preciza tempo de ĉi tiuj kontroloj dependas de la Android OS, kiu povus plani ilin kune kun aliaj taskoj aŭ prokrasti ilin kiam en dormreĝimo. Kiel rezulto, la bateria nivelo povas iomete superi la altan sojlon dum ŝargado aŭ fali iomete sub la malaltan sojlon dum malŝargado antaŭ ol vi ricevas sciigon.
+\n
+\nLa aplikaĵo devus daŭri funkcii en la fono post rekomenco de via telefono. Tamen, en iuj aparatoj, vi eble bezonos malfermi la sekurecajn agordojn kaj doni eksplicitan permeson por tio.
+\n
+\nIuj buĝetaj aparatoj, precipe pli malnovaj modeloj kun modifoj al la operaciumo, ĉesigas ĉiujn fonajn servojn kiam aplikaĵo estas forigita de memoro. Se via aparato apartenas al ĉi tiu kategorio, vi devos \'ŝlosi\' la aplikaĵon en memoro por eviti ke tio okazu. Aldone, certigu, ke la aplikaĵo estas ekskludita de bateria optimumigo.</string>
+</resources>
