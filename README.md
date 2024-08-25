@@ -58,8 +58,12 @@ When translating metadata:
 
 Big thanks to:
 * Arabic - **[islam2hamy](https://github.com/islam2hamy)**
-* Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**
+* Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**, Assem Askarova
+* Esperanto - Assem Askarova
+* Japanese - Assem Askarova
+* Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
-* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, Jose Delvani
+* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**
 * Russian - **[Korb](https://github.com/Korb)**
+* Toki Pona - Assem Askarova
 * Ukrainian - **[Korb](https://github.com/Korb)**
