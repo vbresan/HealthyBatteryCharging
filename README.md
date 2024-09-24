@@ -25,9 +25,8 @@ http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batterie
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/biz.binarysolutions.healthybatterycharging/)
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/biz.binarysolutions.healthybatterycharging)
 [<img src="https://raw.githubusercontent.com/andOTP/andOTP/master/assets/badges/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/vbresan/HealthyBatteryCharging/releases/latest)
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=biz.binarysolutions.healthybatterycharging)
 
-It is quite possible that the app is not available on the Google Play Store, as it often gets suspended for [alleged violations of the Descriptive Behavior Policy](https://viktorbresan.blogspot.com/2024/08/why-am-i-so-afraid-to-update-my-google.html). I typically appeal these suspensions, and the outcomes vary; some appeals are rejected, while others are approved, seemingly at the discretion of the reviewers. Due to this inconsistent treatment, please do not expect to always find the latest version of the app there.
+The app is not available on the Google Play Store, as it got suspended for [alleged violations of the Descriptive Behavior Policy](https://viktorbresan.blogspot.com/2024/08/why-am-i-so-afraid-to-update-my-google.html).
 
 ## Support and contributions
 
