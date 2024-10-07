@@ -1,0 +1,8 @@
+¡Haz que la batería de tu móvil o tablet dure más!
+
+Una buena opción para cargar una batería de iones de litio es entre el 40% y el 80% de una sola vez. Un montón de pequeñas cargar durante todo el día es la segunda mejor opción, e ir desde cero a 100 y después de 100 a cero de manera regular supondrá un mayor esfuerzo para tu batería de iones de litio.
+
+Healthy Battery Charging te notifica cuando conectar o desconectar tu teléfono del cargador para mejorar la vida de la batería. La propia aplicación está optimizada para ofrece un consumo de batería bajo, ejecutándose en segundo plano y comprobando el nivel de batería cada 15 minutos. El momento exacto de estas comprobaciones depende del sistema operativo de Android, el cuál puede programarlas junto con otras tareas o retrasarlas durante el modo de suspensión. Como resultado, el nivel de barería podría superar ligeramente el límite de nivel superior mientras se carga o bajar ligeramente por debajo del límite inferior mientras se descarga antes de que recibas una notificación.
+
+Si quieres saber más detalles técnicos sobre las baterías de iones de litio:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
