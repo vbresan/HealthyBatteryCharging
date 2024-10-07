@@ -1,4 +1,4 @@
 2.0.7 (2024.08.25)
 
-* Añadidas traducciones en: japonés, esperanto, coreano y toki pona
-* Actualizada traducción en chino (simplificado)
+* Añadidas traducciones a: japonés, esperanto, coreano y toki pona
+* Actualizada traducción al chino (simplificado)

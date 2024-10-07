@@ -1,3 +1,3 @@
 2.0.5 (2024.07.12)
 
-* Añadida traducción en chino (simplificado)
+* Añadida traducción al chino (simplificado)
