@@ -1,0 +1,4 @@
+2.0.3 (2024.06.22)
+
+* Añadidas traducciones en noruego (bokmål), ucraniano y ruso
+* Admitidos ajustes de idioma por aplicación

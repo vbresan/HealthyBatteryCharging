@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Save">Guardar</string>
+    <string name="Reset">Restablecer</string>
+    <string name="app_name">Healthy Battery Charging</string>
+    <string name="BatteryLevelNotifications">Notificaciones de nivel de batería</string>
+    <string name="BatteryLowNotification">Notificación de batería baja</string>
+    <string name="BatteryHighNotification">Notificación de batería alta</string>
+    <string name="Low">Bajo:</string>
+    <string name="High">Alto:</string>
+    <string name="BatteryStatus">Estado de batería:</string>
+    <string name="BatteryLevel">Nivel de batería:</string>
+    <string name="Charging">Cargando</string>
+    <string name="Discharging">Descargando</string>
+    <string name="ConnectCharger">Conectar el cargador</string>
+    <string name="DisconnectCharger">Desconectar el cargador</string>
+    <string name="MessageOK">¡Ya está todo listo! Recibirás notificaciones indicando cuando conectar y desconectar el cargador. No dudes en salir de la aplicación.\n\nNotas adicionales sobre la funcionalidad de la aplicación:\n\nLa propia aplicación está optimizada para ofrece un consumo de batería bajo, ejecutándose en segundo plano y comprobando el nivel de batería cada 15 minutos. El momento exacto de estas comprobaciones depende del sistema operativo de Android, el cuál puede programarlas junto con otras tareas o retrasarlas durante el modo de suspensión. Como resultado, el nivel de barería podría superar ligeramente el límite de nivel superior mientras se carga o bajar ligeramente por debajo del límite inferior mientras se descarga antes de que recibas una notificación.\n\nLa aplicación debería continuar ejecutándose en segundo plano tras reiniciar el teléfono. Sin embargo, en algunos dispositivos, tienes que abrir los ajustes de seguridad y concederle el permiso explícito para hacerlo.\n\nAlgunos dispositivos más asequibles, especialmente modelos más antiguos con modificaciones del sistema operativo, interrumpen todos los servicios en segundo plano cuando la aplicación se elimina de la memoria. Si tu dispositivo encaja en esta categoría, tendrás que \'bloquear\' la aplicación en la memoría para evitar que esto ocurra. Además, asegúrate que la aplicación esté excluida de la optimización de la batería.</string>
+    <string name="MessageNOK">¡Todavía no está todo configurado! Para que la aplicación funcione adecuadamente, tienes que concederle los permisos necesarios. Por favor, reinicia la aplicación o dirígete a los ajustes del sistema y concédele los permisos de notificación.</string>
+</resources>
