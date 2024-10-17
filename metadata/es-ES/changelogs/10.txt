@@ -1,0 +1,4 @@
+2.0.8 (2024.10.08)
+
+* Añadir icono monocromático al lanzador
+* Traducción al español
