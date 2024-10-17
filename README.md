@@ -64,7 +64,7 @@ Big thanks to:
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
 * Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**
-* Russian - **[Korb](https://github.com/Korb)**
+* Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Toki Pona - Assem Askarova
 * Ukrainian - **[Korb](https://github.com/Korb)**
