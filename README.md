@@ -67,4 +67,4 @@ Big thanks to:
 * Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Toki Pona - Assem Askarova
-* Ukrainian - **[Korb](https://github.com/Korb)**
+* Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen
