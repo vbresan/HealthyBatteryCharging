@@ -44,7 +44,7 @@ Your contributions are greatly appreciated.
 
 #### Current translation status
 
-![Bar chart with current translation status](https://camo.githubusercontent.com/312468899a9c021089fe3515ab50a4ef9df33cc44ef020d799c4a09b4a0f5ba7/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
+![Bar chart with current translation status](https://camo.githubusercontent.com/d72883b914ec90080faeec601bf3c7f0fd1cc1c82d34539228339b7cffc961ae/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
 
 #### Notes to translators
 
