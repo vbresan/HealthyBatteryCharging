@@ -30,9 +30,9 @@ The app is not available on the Google Play Store, as it got suspended for [alle
 
 ## Support and contributions
 
-If you like the app, you can show your support by starring the repository and joining the [stargazers](https://github.com/vbresan/HealthyBatteryCharging/stargazers)!
+Open-source projects often struggle to be financially sustainable. You are more than welcome to sponsor the project by donating via [Ko-fi](https://ko-fi.com/vbresan) or [Liberapay](https://liberapay.com/vbresan). Such support can help ensure the continued development of this app.
 
-Open-source projects often struggle to be financially sustainable. You are more than welcome to sponsor the project by donating via [Liberapay](https://liberapay.com/vbresan) or [Ko-fi](https://ko-fi.com/vbresan). Such support can help ensure the continued development of this app.
+If you like the app, you can show your support by starring the repository and joining the [stargazers](https://github.com/vbresan/HealthyBatteryCharging/stargazers)!
 
 If you would like to get directly involved in the project, you can contribute by providing a translation.
 
