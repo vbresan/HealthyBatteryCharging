@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="BatteryLevelNotifications">Akutaseme teavitused</string>
+    <string name="BatteryLowNotification">Aku laetuse madal tase</string>
+    <string name="Reset">Lähtesta</string>
+    <string name="BatteryLevel">Aku laetus:</string>
+    <string name="app_name">Healthy Battery Charging</string>
+    <string name="BatteryHighNotification">Aku laetuse kõrge tase</string>
+    <string name="Low">Madal:</string>
+    <string name="High">Kõrge:</string>
+    <string name="Save">Salvesta</string>
+    <string name="Charging">Laadimisel</string>
+    <string name="Discharging">Mahalaadimisel</string>
+    <string name="ConnectCharger">Palun ühenda laadija</string>
+    <string name="DisconnectCharger">Palun ühenda laadija lahti</string>
+    <string name="MessageNOK">Sa pole seadistamist veel lõpetanud! Rakenduse korrektseks toimimiseks vajab ta õigusi. Palun käivita rakendus uuesti või ava süsteemi seadistused ning luba tal saata teavitusi.</string>
+    <string name="BatteryStatus">Aku olek:</string>
+    <string name="MessageOK">Oled seadistamise lõpetanud! Edaspidi hakkad saama teavitusi, kui pead laadija ühendama või lahti ühendama. Võid nüüd rakenduse kinni panna.\n\nLisateave selle rakenduse funktsionaalsuse kohta:\n\nRakendus vajab oma töö jaoks minimaalselt energiat, tema akukasutus on optimeeritud töötamiseks taustal ja käivitumiseks iga 15 minuti järel. Detailne ajastamine sõltub ka Androidist - operatsioonisüsteem võib otsustada käivitamist viivitada ja teha seda koos teiste rakendustega või viivitada käivitamisega unerežiimis. Mistõttu siinmainitud ülem- ja alampiirid ei pruugi alati olla päris täpselt järgitud.\n\nPeale nutiseadme uuesti käivitamist peaks rakendus töötama taustal. Kuid mõnede nutiseadmete puhul pead avama süsteemi seadistused ning eraldi taustal töötamist lubama.\n\nMõned odavamat tüüpi nutiseadmed, eriti mõned vanemad mudelid, kus operatsioonisüsteemi on kohendatud, lõpetavad peale rakenduse mälust eemaldamist ka tema töö taustal. Kui peaksid kasutama sellist nutiseadet, siis pead niisuguse olukorra vältimiseks rakenduse „lukustama“ mällu. Lisaks kindlasti palun kontrolli, et rakendusele ei kohaldata akukasutuse optimeerimist.</string>
 </resources>
