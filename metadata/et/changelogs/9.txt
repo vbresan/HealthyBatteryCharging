@@ -1,0 +1,4 @@
+2.0.7 (2024.08.25)
+
+* lisasime jaapani, esperanto, korea ja toki pona keelte tõlked
+* täiendasime hiina keele tõlget (lihtsustatud kirjas)

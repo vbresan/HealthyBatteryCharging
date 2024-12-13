@@ -1,0 +1,8 @@
+Aita kaasa, et sinu nutiseadme aku kestaks kauem.
+
+Tehnilises mõttes on hea, kui ühe laadimisega hoiad oma nutiseadme aku laetust 40% ja 80% vahel. Järgmine hea lahendus on see, kui aku saab palju lühikesi laadimiskordi päevas. Aga igapäevane laadimine nullist 100ni koormab sinu nutiseadme liitiumioonakut kõige rohkem.
+
+See rakendus annab sulle märku kui aku eluea mõttes on kõige mõistlikum aeg alustada laadimist või see lõpetada. Rakendus vajab oma töö jaoks minimaalselt energiat, tema akukasutus on optimeeritud töötamiseks taustal ja käivitumiseks iga 15 minuti järel. Detailne ajastamine sõltub ka Androidist - operatsioonisüsteem võib otsustada käivitamist viivitada ja teha seda koos teiste rakendustega või viivitada käivitamisega unerežiimis. Mistõttu siinmainitud ülem- ja alampiirid ei pruugi alati olla päris täpselt järgitud.
+
+Kui otsid lisateavet liitiumioonakude kohta, siis leiad seda siit:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
