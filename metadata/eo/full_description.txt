@@ -1,0 +1,8 @@
+Faru vian telefonon aŭ tabulkomputilon daŭron pli longe!
+
+Bona gamo por celi kiam ŝargas Li-jonan baterion estas de ĉirkaŭ 40 ĝis 80 procentoj unufoje. Aro da etaj ŝargadoj dum la tuta tago estas via dua plej bona veto, kaj iri de nul al 100 kaj poste 100 al nul regule faros la plej streĉon sur via litio-jona baterio.
+
+Sana Bateria Ŝargado sciigas vin kiam konekti aŭ malkonekti vian telefonon de la ŝargilo por plibonigi la baterian vivon. La aplikaĵo mem estas optimumigita por malalta konsumo de baterio, funkciante en la fono kaj kontrolante la baterian nivelon ĉiujn 15 minutojn. La preciza tempo de ĉi tiuj kontroloj dependas de la Android OS, kiu povus plani ilin kune kun aliaj taskoj aŭ prokrasti ilin kiam en dormreĝimo. Kiel rezulto, la bateria nivelo povas iomete superi la altan sojlon dum ŝargado aŭ fali iomete sub la malaltan sojlon dum malŝargado antaŭ ol vi ricevas sciigon.
+
+Por tiuj, kiuj volas scii pli da teknikaj detaloj pri Li-jonaj baterioj:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
