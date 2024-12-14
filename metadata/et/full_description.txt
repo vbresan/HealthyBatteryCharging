@@ -1,8 +1,8 @@
-Faru vian telefonon aŭ tabulkomputilon daŭron pli longe!
+Aita kaasa, et sinu nutiseadme aku kestaks kauem.
 
-Bona gamo por celi kiam ŝargas Li-jonan baterion estas de ĉirkaŭ 40 ĝis 80 procentoj unufoje. Aro da etaj ŝargadoj dum la tuta tago estas via dua plej bona veto, kaj iri de nul al 100 kaj poste 100 al nul regule faros la plej streĉon sur via litio-jona baterio.
+Tehnilises mõttes on hea, kui ühe laadimisega hoiad oma nutiseadme aku laetust 40% ja 80% vahel. Järgmine hea lahendus on see, kui aku saab palju lühikesi laadimiskordi päevas. Aga igapäevane laadimine nullist 100ni koormab sinu nutiseadme liitiumioonakut kõige rohkem.
 
-Sana Bateria Ŝargado sciigas vin kiam konekti aŭ malkonekti vian telefonon de la ŝargilo por plibonigi la baterian vivon. La aplikaĵo mem estas optimumigita por malalta konsumo de baterio, funkciante en la fono kaj kontrolante la baterian nivelon ĉiujn 15 minutojn. La preciza tempo de ĉi tiuj kontroloj dependas de la Android OS, kiu povus plani ilin kune kun aliaj taskoj aŭ prokrasti ilin kiam en dormreĝimo. Kiel rezulto, la bateria nivelo povas iomete superi la altan sojlon dum ŝargado aŭ fali iomete sub la malaltan sojlon dum malŝargado antaŭ ol vi ricevas sciigon.
+See rakendus annab sulle märku kui aku eluea mõttes on kõige mõistlikum aeg alustada laadimist või see lõpetada. Rakendus vajab oma töö jaoks minimaalselt energiat, tema akukasutus on optimeeritud töötamiseks taustal ja käivitumiseks iga 15 minuti järel. Detailne ajastamine sõltub ka Androidist - operatsioonisüsteem võib otsustada käivitamist viivitada ja teha seda koos teiste rakendustega või viivitada käivitamisega unerežiimis. Mistõttu siinmainitud ülem- ja alampiirid ei pruugi alati olla päris täpselt järgitud.
 
-Por tiuj, kiuj volas scii pli da teknikaj detaloj pri Li-jonaj baterioj:
+Kui otsid lisateavet liitiumioonakude kohta, siis leiad seda siit:
 https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
