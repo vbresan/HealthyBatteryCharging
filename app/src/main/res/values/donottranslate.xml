@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="CompanyName">Binary Solutions</string>
-    <string name="CompanyURL">https://binarysolutions.biz</string>
+    <string name="DonationURL">https://ko-fi.com/vbresan</string>
     <string name="Copyright">&#169; 2017 – 2024</string>
 </resources>

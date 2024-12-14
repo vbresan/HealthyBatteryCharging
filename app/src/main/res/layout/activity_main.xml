@@ -208,12 +208,34 @@
 				android:textColor="@color/textTertiary"
 			/>
 
-			<LinearLayout
+			<TextView
 				android:layout_width="match_parent"
-				android:layout_height="0dp"
-				android:minHeight="@dimen/minPadding"
-				android:layout_weight="1"
-				android:orientation="vertical"
+				android:layout_height="wrap_content"
+				android:text="@string/DonationTitle"
+				android:gravity="center_horizontal"
+				android:textSize="@dimen/textH6"
+				android:textColor="@color/textSecondary"
+				android:layout_marginTop="@dimen/minPadding"
+				android:layout_marginBottom="@dimen/textNormal"
+			/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/DonationContent"
+				android:textSize="@dimen/textNormal"
+				android:textColor="@color/textTertiary"
+				android:layout_marginBottom="@dimen/textNormal"
+			/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:textSize="@dimen/textH6"
+				android:textColor="@color/textTertiary"
+				android:autoLink="web"
+				android:text="@string/DonationURL"
+				android:textColorLink="@color/textLink"
 			/>
 
 			<TextView
@@ -221,27 +243,9 @@
 				android:layout_height="wrap_content"
 				android:layout_gravity="center"
 				android:text="@string/Copyright"
-				android:textSize="@dimen/textNormal"
+				android:textSize="@dimen/textSmall"
 				android:textColor="@color/textTertiary"
-			/>
-
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:text="@string/CompanyName"
-				android:textSize="@dimen/textH4"
-				android:textColor="@color/textTertiary"
-			/>
-
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:autoLink="web"
-				android:text="@string/CompanyURL"
-				android:textSize="@dimen/textNormal"
-				android:textColorLink="@color/textLink"
+				android:layout_marginTop="@dimen/minPadding"
 			/>
 
 		</LinearLayout>

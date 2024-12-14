@@ -22,8 +22,8 @@
     -->
     <dimen name="textH6">20.25sp</dimen>
     <dimen name="textNormal">18sp</dimen>
-    <!--
     <dimen name="textSmall">16sp</dimen>
+    <!--
     <dimen name="textSmallest">14.22sp</dimen>
     -->
 
