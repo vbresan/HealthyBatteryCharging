@@ -30,9 +30,9 @@ The app is not available on the Google Play Store, as it got suspended for [alle
 
 ## Support and contributions
 
-If you like the app, you can show your support by starring the repository and joining the [stargazers](https://github.com/vbresan/HealthyBatteryCharging/stargazers)!
+Open-source projects often struggle to be financially sustainable. You are more than welcome to sponsor the project by donating via [Ko-fi](https://ko-fi.com/vbresan) or [Liberapay](https://liberapay.com/vbresan). Such support can help ensure the continued development of this app.
 
-Open-source projects often struggle to be financially sustainable. You are more than welcome to sponsor the project by donating via [Liberapay](https://liberapay.com/vbresan) or [Ko-fi](https://ko-fi.com/vbresan). Such support can help ensure the continued development of this app.
+If you like the app, you can show your support by starring the repository and joining the [stargazers](https://github.com/vbresan/HealthyBatteryCharging/stargazers)!
 
 If you would like to get directly involved in the project, you can contribute by providing a translation.
 
@@ -44,7 +44,7 @@ Your contributions are greatly appreciated.
 
 #### Current translation status
 
-![Bar chart with current translation status](https://camo.githubusercontent.com/312468899a9c021089fe3515ab50a4ef9df33cc44ef020d799c4a09b4a0f5ba7/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
+![Bar chart with current translation status](https://camo.githubusercontent.com/d72883b914ec90080faeec601bf3c7f0fd1cc1c82d34539228339b7cffc961ae/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
 
 #### Notes to translators
 
@@ -64,7 +64,7 @@ Big thanks to:
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
 * Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**
-* Russian - **[Korb](https://github.com/Korb)**
+* Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Toki Pona - Assem Askarova
-* Ukrainian - **[Korb](https://github.com/Korb)**
+* Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen
