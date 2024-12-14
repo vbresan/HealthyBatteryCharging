@@ -49,4 +49,10 @@
         go to your system settings and grant it notification permission.
     </string>
 
+    <string name="DonationTitle">This app depends on your support</string>
+    <string name="DonationContent">
+        This app is free, open-source, and has no ads or trackers. To keep
+        it that way, if you can, please donate today:
+    </string>
+
 </resources>
