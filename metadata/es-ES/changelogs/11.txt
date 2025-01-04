@@ -1,0 +1,5 @@
+2.0.9 (14/12/2024)
+
+* Eliminar el bloque de información de dependencia de los archivos compilados
+* Agregar texto y enlace de donación
+* Añadiendo traducción al estonio
