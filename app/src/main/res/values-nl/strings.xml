@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="DonationTitle">Deze app is afhankelijk van jouw steun</string>
+    <string name="Save">Opslaan</string>
+    <string name="BatteryLevelNotifications">Meldingen voor batterijniveau</string>
+    <string name="BatteryHighNotification">Batterij hoog melding</string>
+    <string name="Low">Laag:</string>
+    <string name="Reset">Terugzetten</string>
+    <string name="BatteryStatus">Batterijstatus:</string>
+    <string name="BatteryLevel">Batterijniveau:</string>
+    <string name="Charging">Opladen</string>
+    <string name="Discharging">Ontladen</string>
+    <string name="MessageOK">Je bent er helemaal klaar voor! Je ontvangt meldingen wanneer je de oplader moet aansluiten en loskoppelen. Voel je vrij om de app af te sluiten. \n\nAanvullende opmerkingen over de functionaliteit van de app:\n\nDe app zelf is geoptimaliseerd voor een laag batterijverbruik, draait op de achtergrond en controleert het batterijniveau elke 15 minuten. De exacte timing van deze controles hangt af van het Android OS, dat ze naast andere taken kan plannen of ze kan uitstellen als de app in de slaapstand staat. Als gevolg daarvan kan het batterijniveau iets boven de hoge drempel komen tijdens het opladen of iets onder de lage drempel komen tijdens het ontladen voordat je een melding krijgt. \n\nDe app moet op de achtergrond blijven draaien nadat je je telefoon opnieuw hebt opgestart. Op bepaalde apparaten moet je echter de beveiligingsinstellingen openen en hier expliciet toestemming voor geven. \n\nBepaalde budgetapparaten, vooral oudere modellen met aanpassingen aan het besturingssysteem, beëindigen alle achtergronddiensten wanneer een app uit het geheugen wordt verwijderd. Als je apparaat in deze categorie valt, moet je de app in het geheugen \'vergrendelen\' om te voorkomen dat dit gebeurt. Zorg er daarnaast voor dat de app is uitgesloten van batterijoptimalisatie.</string>
+    <string name="MessageNOK">Je bent nog niet ingesteld! Om de app goed te laten werken, moet je hem de nodige toestemmingen geven. Start de app opnieuw op of ga naar je systeeminstellingen en geef de app toestemming voor notificaties.</string>
+    <string name="DonationContent">Deze app is gratis, open-source en heeft geen advertenties of trackers. Als je kunt, doneer dan vandaag om dat zo te houden:</string>
+    <string name="DisconnectCharger">Ontkoppel de oplader</string>
+    <string name="app_name">Batterij gezond opladen</string>
+    <string name="BatteryLowNotification">Batterij bijna leeg melding</string>
+    <string name="High">Hoog:</string>
+    <string name="ConnectCharger">De oplader aansluiten</string>
+</resources>
