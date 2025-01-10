@@ -67,5 +67,6 @@ Big thanks to:
 * Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**
 * Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
+* Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
 * Toki Pona - Assem Askarova
 * Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen
