@@ -59,6 +59,7 @@ When translating metadata:
 Big thanks to:
 * Arabic - **[islam2hamy](https://github.com/islam2hamy)**
 * Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**, Assem Askarova
+* Dutch - **[Rudi Timmermans](https://github.com/ruditimmermans)**
 * Esperanto - Assem Askarova
 * Estonian - Priit Jõerüüt
 * Japanese - Assem Askarova
