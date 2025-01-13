@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BatteryLevelNotifications">電池電量通知</string>
+    <string name="MessageOK">設定好了！您會收到提示連接和拔除充電器的通知。應用程式可以隨意退出。\n\n關於應用程式功能的附加說明:\n\n本應用經過最佳化，耗電極低，在背景運行，每 15 分鐘檢查一次電池電量。具體的檢查時間取決於 Android 作業系統，可能會隨其他任務一起安排，或在休眠模式下延遲。因此，充電時電池電量可能會略微超過上限，或在放電時略微低於下限，然後您才會收到通知。\n\n在重新啟動手機後，該應用程式應該會繼續在背景運行。然而，在某些裝置上，本應用程式可能需要您開啟安全設定並另行授權才能繼續運作。\n\n某些便宜的設備，尤其是作業系統經過修改的舊型號設備，從記憶體移除應用程式時會終止所有後台服務。如果您的裝置屬於這種情況，您需要將應用程式「鎖定」在記憶體中以防止這種情況發生。此外，本應用需要排除在電池優化之外。</string>
+    <string name="Low">下限:</string>
+    <string name="High">上限:</string>
+    <string name="Save">保存</string>
+    <string name="Reset">重置</string>
+    <string name="BatteryStatus">電池狀態:</string>
+    <string name="BatteryLevel">電池電量:</string>
+    <string name="Charging">充電中</string>
+    <string name="Discharging">未充電</string>
+    <string name="ConnectCharger">連接充电器</string>
+    <string name="DisconnectCharger">拔下充電器</string>
+    <string name="BatteryLowNotification">電池低電量通知</string>
+    <string name="app_name">健康電池充电</string>
+    <string name="MessageNOK">還沒設定完！為了讓應用程式正常運行，需要您授予必要的權限。請重新啟動應用程式或前往系統設定並授予通知權限。</string>
+    <string name="DonationTitle">此應用程式依賴您的支持</string>
+    <string name="DonationContent">該應用程式是免費的、開源的，並且沒有廣告或追蹤器。為了維持這種狀態，如果可以的話，請立即捐款:</string>
+    <string name="BatteryHighNotification">電池高電量通知</string>
+</resources>
