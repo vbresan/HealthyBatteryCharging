@@ -1,0 +1,4 @@
+2.0.7 (25/08/2024)
+
+* Ajout de la traduction en : Japonais, Espéranto, Coréen et Toki Pona
+* Mise à jour de la traduction en Chinois (simplifié)

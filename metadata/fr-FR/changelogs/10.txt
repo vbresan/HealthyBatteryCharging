@@ -1,0 +1,4 @@
+2.0.8 (10.8.2024)
+
+* Ajout d'une icône de lancement monochrome
+* Ajout de la traduction en espagnol

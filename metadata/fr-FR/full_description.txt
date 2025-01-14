@@ -1,0 +1,9 @@
+Prolongez la durée de vie de la batterie de votre smartphone ou tablette !
+
+La bonne autonomie à viser lors du chargement d’une batterie Li-ion est d’environ 40 à 80 % en une seule fois. Une série de petites charges tout au long de la journée est votre deuxième meilleur choix, et passer de zéro à 100 % puis de 100 à zéro de manière régulière mettra à rude épreuve votre batterie lithium-ion.
+
+Healthy Battery Charging vous avertit quand brancher ou débrancher votre téléphone du chargeur afin d’améliorer la durée de vie de la batterie. L'application elle-même est optimisée pour une faible consommation de batterie, s'exécutant en arrière-plan et vérifiant le niveau de la batterie toutes les 15 minutes. Le moment exact de ces vérifications dépend du système d'exploitation Android, qui peut les programmer en même temps que d'autres tâches ou les retarder en mode veille. Par conséquent, le niveau de la batterie peut légèrement dépasser le seuil élevé pendant la charge ou descendre légèrement en dessous du seuil bas pendant la décharge avant que vous ne receviez une notification.
+
+
+Pour ceux qui souhaitent en savoir plus sur les détails techniques des batteries Li-ion :
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
