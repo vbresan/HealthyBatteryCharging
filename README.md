@@ -63,6 +63,7 @@ Big thanks to:
 * Dutch - **[Rudi Timmermans](https://github.com/ruditimmermans)**
 * Esperanto - Assem Askarova
 * Estonian - Priit Jõerüüt
+* French - **[Ilithy](https://github.com/Ilithy)**
 * Japanese - Assem Askarova
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
