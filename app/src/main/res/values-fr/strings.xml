@@ -4,18 +4,18 @@
     <string name="app_name">Healthy Battery Charging</string>
     <string name="BatteryLowNotification">Notification de batterie faible</string>
     <string name="BatteryHighNotification">Notification de batterie chargé</string>
-    <string name="Low">Bas :</string>
-    <string name="High">Haut :</string>
+    <string name="Low">Bas:</string>
+    <string name="High">Haut:</string>
     <string name="Save">Sauvegarder</string>
     <string name="Reset">Réinitialiser</string>
-    <string name="BatteryStatus">État de la batterie :</string>
-    <string name="BatteryLevel">Niveau de batterie :</string>
+    <string name="BatteryStatus">État de la batterie:</string>
+    <string name="BatteryLevel">Niveau de batterie:</string>
     <string name="Charging">Chargement</string>
     <string name="Discharging">Déchargement</string>
     <string name="ConnectCharger">Connectez le chargeur</string>
     <string name="DisconnectCharger">Déconnecter le chargeur</string>
-    <string name="MessageOK">Vous êtes prêt ! Vous recevrez des notifications indiquant quand connecter et déconnecter le chargeur. N\'hésitez pas à quitter l\'application. \n\n\nRemarques supplémentaires sur les fonctionnalités de l\'application :\n\nL\'application elle-même est optimisée pour une faible consommation de batterie, s\'exécutant en arrière-plan et vérifiant le niveau de la batterie toutes les 15 minutes. Le moment exact de ces vérifications dépend du système d\'exploitation Android, qui peut les programmer en même temps que d\'autres tâches ou les retarder en mode veille. Par conséquent, le niveau de la batterie peut légèrement dépasser le seuil élevé pendant la charge ou descendre légèrement en dessous du seuil bas pendant la décharge avant que vous ne receviez une notification.\n\n\nL\'application doit continuer à fonctionner en arrière-plan après le redémarrage de votre téléphone. Cependant, sur certains appareils, vous devrez peut-être ouvrir les paramètres de sécurité et accorder une autorisation explicite pour qu\'elle le fasse. \n\nCertains appareils à petit budget, en particulier les anciens modèles avec des modifications du système d\'exploitation, mettent fin à tous les services d\'arrière-plan lorsqu\'une application est supprimée de la mémoire. Si votre appareil entre dans cette catégorie, vous devrez « verrouiller » l\'application en mémoire pour éviter que cela ne se produise. Assurez-vous également que l’application est exclue de l’optimisation de la batterie.</string>
+    <string name="MessageOK">Vous êtes prêt ! Vous recevrez des notifications indiquant quand connecter et déconnecter le chargeur. N\'hésitez pas à quitter l\'application. \n\n\nRemarques supplémentaires sur les fonctionnalités de l\'application:\n\nL\'application elle-même est optimisée pour une faible consommation de batterie, s\'exécutant en arrière-plan et vérifiant le niveau de la batterie toutes les 15 minutes. Le moment exact de ces vérifications dépend du système d\'exploitation Android, qui peut les programmer en même temps que d\'autres tâches ou les retarder en mode veille. Par conséquent, le niveau de la batterie peut légèrement dépasser le seuil élevé pendant la charge ou descendre légèrement en dessous du seuil bas pendant la décharge avant que vous ne receviez une notification.\n\n\nL\'application doit continuer à fonctionner en arrière-plan après le redémarrage de votre téléphone. Cependant, sur certains appareils, vous devrez peut-être ouvrir les paramètres de sécurité et accorder une autorisation explicite pour qu\'elle le fasse. \n\nCertains appareils à petit budget, en particulier les anciens modèles avec des modifications du système d\'exploitation, mettent fin à tous les services d\'arrière-plan lorsqu\'une application est supprimée de la mémoire. Si votre appareil entre dans cette catégorie, vous devrez « verrouiller » l\'application en mémoire pour éviter que cela ne se produise. Assurez-vous également que l’application est exclue de l’optimisation de la batterie.</string>
     <string name="MessageNOK">Rien n\'est encore configuré ! Pour que l\'application fonctionne correctement, vous devez lui accorder les autorisations nécessaires. Veuillez redémarrer l\'application ou accéder aux paramètres de votre système et lui accorder l\'autorisation de notification.</string>
     <string name="DonationTitle">Cette application dépend de votre soutien</string>
-    <string name="DonationContent">Cette application est gratuite, open source et ne contient ni publicités ni outils de suivi. Pour qu\'elle reste ainsi, si vous le pouvez, faites un don aujourd\'hui :</string>
+    <string name="DonationContent">Cette application est gratuite, open source et ne contient ni publicités ni outils de suivi. Pour qu\'elle reste ainsi, si vous le pouvez, faites un don aujourd\'hui:</string>
 </resources>
