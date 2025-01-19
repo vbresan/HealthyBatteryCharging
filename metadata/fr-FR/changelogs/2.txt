@@ -1,0 +1,4 @@
+2.0 (14.4.2024)
+
+* refonte complète
+* ciblage du niveau 34 de l'API Android

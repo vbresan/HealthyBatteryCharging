@@ -1,0 +1,4 @@
+2.0.3 (22/06/2024)
+
+* Ajout des traductions en norvégien bokmål, en ukrainien et en russe
+* Prise en charge des préférences linguistiques par application

@@ -24,4 +24,6 @@
 \n
 \n某些便宜的设备，尤其是操作系统经过修改的旧型号设备，从内存中移除应用程序时会终止所有后台服务。如果您的设备属于这种情况，您需要将应用程序“锁定”在内存中以防止这种情况发生。此外，需要将本应用排除在电池优化之外。</string>
     <string name="app_name">健康电池充电</string>
+    <string name="DonationTitle">本应用取决于您的支持</string>
+    <string name="DonationContent">本应用免费、开源且无广告或跟踪器。要让其保持这种状态，如果有能力，请今天就捐赠：</string>
 </resources>

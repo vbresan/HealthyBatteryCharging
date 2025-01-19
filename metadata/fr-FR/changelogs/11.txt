@@ -1,0 +1,5 @@
+2.0.9 (14/12/2024)
+
+* Suppression du bloc d'informations sur les dépendances des fichiers créés
+* Ajout d'un texte de don et d'un lien
+* Ajout de la traduction en Estonien
