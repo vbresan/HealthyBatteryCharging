@@ -1,0 +1,4 @@
+2.0.13 (2025.01.19)
+
+* Lisasime prantsuse keele tõlke
+* Uuendasime lihtsustatud hiina keele tõlget
