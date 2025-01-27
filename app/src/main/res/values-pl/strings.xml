@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zdrowe Ładowanie Baterii</string>
+    <string name="BatteryLowNotification">Powiadomienie o niskim poziomie naładowania baterii</string>
+    <string name="Low">Niski:</string>
+    <string name="High">Wysoki:</string>
+    <string name="Save">Zapisz</string>
+    <string name="Reset">Zresetuj</string>
+    <string name="BatteryStatus">Stan baterii:</string>
+    <string name="BatteryLevel">Poziom naładowania baterii:</string>
+    <string name="Charging">Ładowanie</string>
+    <string name="Discharging">Rozładowywanie</string>
+    <string name="ConnectCharger">Podłącz ładowarkę</string>
+    <string name="DisconnectCharger">Odłącz ładowarkę</string>
+    <string name="DonationTitle">Ta aplikacja jest zależna od Twojego wsparcia</string>
+    <string name="DonationContent">Ta aplikacja jest darmowa, open-source i nie ma reklam ani trackerów. Aby tak pozostało, jeśli możesz, przekaż darowiznę już dziś:</string>
+    <string name="BatteryLevelNotifications">Powiadomienia o poziomie naładowania baterii</string>
+    <string name="BatteryHighNotification">Powiadomienie o wysokim poziomie naładowania baterii</string>
+    <string name="MessageOK">Wszystko gotowe! Otrzymasz powiadomienia wskazujące, kiedy podłączyć i odłączyć ładowarkę. Możesz swobodnie wyjść z aplikacji.\n\nDodatkowe uwagi dotyczące funkcjonalności aplikacji:\n\nSama aplikacja jest zoptymalizowana pod kątem niskiego zużycia baterii, działa w tle i sprawdza poziom naładowania baterii co 15 minut. Dokładny czas tych sprawdzeń zależy od systemu operacyjnego Android, który może je zaplanować razem z innymi zadaniami lub opóźnić je, gdy jest w trybie uśpienia. W rezultacie poziom naładowania baterii może nieznacznie przekroczyć wysoki próg podczas ładowania lub spaść nieznacznie poniżej niskiego progu podczas rozładowywania, zanim otrzymasz powiadomienie.\n\nAplikacja powinna nadal działać w tle po ponownym uruchomieniu telefonu. Jednak na niektórych urządzeniach może być konieczne otwarcie ustawień zabezpieczeń i udzielenie jej wyraźnego pozwolenia na to.\n\nNiektóre urządzenia budżetowe, zwłaszcza starsze modele ze zmianami w systemie operacyjnym, kończą wszystkie usługi działające w tle, gdy aplikacja zostanie usunięta z pamięci. Jeśli Twoje urządzenie należy do tej kategorii, musisz „zablokować” aplikację w pamięci, aby temu zapobiec. Ponadto upewnij się, że aplikacja jest wyłączona z optymalizacji baterii.</string>
+    <string name="MessageNOK">Jeszcze nie jesteś skonfigurowany! Aby aplikacja działała prawidłowo, musisz przyznać jej niezbędne uprawnienia. Uruchom ponownie aplikację lub przejdź do ustawień systemowych i przyznaj jej uprawnienia do powiadomień.</string>
+</resources>
