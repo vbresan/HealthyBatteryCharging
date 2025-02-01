@@ -24,4 +24,6 @@
     <string name="BatteryLevel">Nível da bateria:</string>
     <string name="Charging">Carregando</string>
     <string name="Discharging">Descarregando</string>
+    <string name="DonationContent">Este aplicativo é gratuito, de código aberto e não tem anúncios ou rastreadores. Para mantê-lo assim, se você puder, faça uma doação hoje:</string>
+    <string name="DonationTitle">Este aplicativo depende de seu apoio</string>
 </resources>
