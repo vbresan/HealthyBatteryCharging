@@ -1,0 +1,5 @@
+2.0.9 (2024.12.14)
+
+* Entfernen des Abhängigkeitsinfoblocks aus den Build-Dateien
+* Hinzufügen von Spendentext und Link
+* Hinzufügen der estnischen Übersetzung
