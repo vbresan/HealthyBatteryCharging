@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DisconnectCharger">Trenne das Ladegerät</string>
+    <string name="Low">Niedrig:</string>
+    <string name="High">Hoch:</string>
+    <string name="Save">Speichern</string>
+    <string name="DonationTitle">Diese App ist auf Ihre Unterstützung angewiesen</string>
+    <string name="MessageOK">Sie sind bereit! Sie erhalten Benachrichtigungen, wenn Sie das Ladegerät anschließen und abtrennen müssen. Sie können die App jederzeit verlassen.\n\nZusätzliche Hinweise zur Funktionalität der App: \n\nDie App selbst ist für einen geringen Akkuverbrauch optimiert, läuft im Hintergrund und prüft den Akkustand alle 15 Minuten. Der genaue Zeitpunkt dieser Überprüfungen hängt vom Android-Betriebssystem ab, das sie möglicherweise zusammen mit anderen Aufgaben plant oder sie im Ruhezustand verzögert. Daher kann es vorkommen, dass der Akkustand beim Aufladen den oberen Schwellenwert leicht überschreitet oder beim Entladen leicht unter den unteren Schwellenwert fällt, bevor Sie eine Benachrichtigung erhalten.\n\nDie App sollte nach dem Neustart des Telefons im Hintergrund weiterlaufen. Bei einigen Geräten müssen Sie jedoch möglicherweise die Sicherheitseinstellungen öffnen und der App explizit die Erlaubnis hierzu erteilen.\n\nBestimmte preisgünstige Geräte, insbesondere ältere Modelle mit Änderungen am Betriebssystem, beenden alle Hintergrunddienste, wenn eine App aus dem Speicher entfernt wird. Wenn Ihr Gerät in diese Kategorie fällt, müssen Sie die App im Speicher „sichern“, um dies zu verhindern. Stellen Sie außerdem sicher, dass die App von der Akkuoptimierung ausgeschlossen ist.</string>
+    <string name="MessageNOK">Sie haben noch keine Einstellungen vorgenommen! Damit die App richtig funktioniert, müssen Sie ihr die erforderlichen Berechtigungen erteilen. Bitte starten Sie die App neu oder gehen Sie zu Ihren Systemeinstellungen und erteilen Sie ihr die Berechtigung für Benachrichtigungen.</string>
+    <string name="BatteryStatus">Batteriestatus:</string>
+    <string name="BatteryLevel">Batterieladezustand:</string>
+    <string name="app_name">Schonendes Laden</string>
+    <string name="Discharging">Entlädt</string>
+    <string name="Reset">Zurücksetzen</string>
+    <string name="Charging">Lädt</string>
+    <string name="BatteryHighNotification">Benachrichtigung bei hohem Batteriestand</string>
+    <string name="ConnectCharger">Schließe das Ladegerät an</string>
+    <string name="DonationContent">Diese App ist kostenlos, quelloffen und hat keine Werbung oder Tracker. Damit das so bleibt, kannst du heute gerne spenden:</string>
+    <string name="BatteryLevelNotifications">Benachrichtigungen über den Akkustand</string>
+    <string name="BatteryLowNotification">Benachrichtigung bei niedrigem Batteriestand</string>
+</resources>

@@ -1,0 +1,5 @@
+2.0.9 (2024.12.14)
+
+* Remoção do bloco de informações de dependência dos arquivos compilados
+* Adição de texto e link de doação
+* Adição de tradução para o estoniano
