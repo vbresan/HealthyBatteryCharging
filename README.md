@@ -64,6 +64,7 @@ Big thanks to:
 * Esperanto - Assem Askarova
 * Estonian - Priit Jõerüüt
 * French - **[Ilithy](https://github.com/Ilithy)**
+* German - **[Maurits van der Zee](https://github.com/MauritsvanderZee)**
 * Japanese - Assem Askarova
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
