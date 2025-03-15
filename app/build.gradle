@@ -13,8 +13,8 @@ android {
         applicationId "biz.binarysolutions.healthybatterycharging"
         minSdkVersion 15        // android 4.0.4
         targetSdkVersion 34
-        versionCode 16
-        versionName "2.0.14"
+        versionCode 17
+        versionName "2.0.15"
 
         setProperty("archivesBaseName", "$applicationId-$versionName")
     }
