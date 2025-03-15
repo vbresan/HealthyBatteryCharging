@@ -1,6 +1,10 @@
 param (
     [Parameter(Mandatory=$true,Position=0)]
-    [int]$PortNumber
+    [string]$LastIPOctetPort
 )
 
-& $Env:LOCALAPPDATA\Android\sdk\platform-tools\adb.exe connect 192.168.2.162:$PortNumber
+# Split the input string into the last octet and port
+$lastIPOctet, $portNumber = $LastIPOctetPort.Split(':')
+
+$IPAddress = "192.168.2.$lastIPOctet"
+& $Env:LOCALAPPDATA\Android\sdk\platform-tools\adb.exe connect "$IPAddress`:$portNumber"
