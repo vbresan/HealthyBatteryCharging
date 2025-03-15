@@ -1,0 +1,4 @@
+2.0.7 (2024.08.25)
+
+* Hinzufügen der Übersetzung in: Japanisch, Esperanto, Koreanisch und Toki Pona
+* Aktualisierung der chinesischen (vereinfachten) Übersetzung
