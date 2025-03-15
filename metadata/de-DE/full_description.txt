@@ -1,0 +1,8 @@
+Lassen Sie den Akku Ihres Smartphones oder Tablets länger halten!
+
+Ein guter Ladebereich für eine Lithium-Ionen-Batterie liegt zwischen 40 und 80 Prozent in einem Durchgang. Alternativ ist es auch vorteilhaft, den Akku mehrmals am Tag in kleinen Schritten zu laden. Dagegen setzt das regelmäßige vollständige Auf- und Entladen von 0 auf 100 Prozent und zurück auf 0 Prozent den Akku unter die größte Belastung.
+
+Schonendes Laden benachrichtigt Sie, wenn Sie Ihr Smartphone ein- oder ausstecken sollten, um die Lebensdauer des Akkus zu verlängern. Die App ist selbst für minimalen Energieverbrauch optimiert, läuft im Hintergrund und überprüft den Akkustand alle 15 Minuten. Der genaue Zeitpunkt dieser Prüfungen hängt vom Android-Betriebssystem ab, das sie mit anderen Aufgaben kombinieren oder im Ruhemodus verzögern kann. Daher kann es vorkommen, dass der Akkustand beim Laden leicht über den oberen Schwellenwert steigt oder beim Entladen leicht unter den unteren Schwellenwert fällt, bevor eine Benachrichtigung erfolgt.
+
+Für alle, die mehr technische Details über Lithium-Ionen-Akkus erfahren möchten:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries

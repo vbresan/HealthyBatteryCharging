@@ -1,0 +1,4 @@
+2.0.3 (2024.06.22)
+
+* Hinzufügen von norwegischen Bokmål-, ukrainischen und russischen Übersetzungen
+* Unterstützung von Spracheinstellungen pro App
