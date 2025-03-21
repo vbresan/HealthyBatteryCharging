@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Zdravé nabíjení baterie</string>
+    <string name="BatteryLevelNotifications">Oznámení o úrovni baterie</string>
+    <string name="BatteryLowNotification">Oznámení o vybité baterii</string>
+    <string name="Low">Spodní:</string>
+    <string name="Save">Uložit</string>
+    <string name="Reset">Resetovat</string>
+    <string name="BatteryLevel">Úroveň baterie:</string>
+    <string name="Charging">Nabíjení</string>
+    <string name="Discharging">Vybíjení</string>
+    <string name="ConnectCharger">Připojte nabíječku</string>
+    <string name="DisconnectCharger">Odpojte nabíječku</string>
+    <string name="DonationContent">Tato aplikace je bezplatná, s otevřeným zdrojovým kódem, bez reklam či sledovacích prvků. Aby tak mohla zůstat, přispějte prosím na její vývoj:</string>
+    <string name="BatteryHighNotification">Oznámení o nabité baterii</string>
+    <string name="BatteryStatus">Stav baterie:</string>
+    <string name="High">Horní:</string>
+    <string name="MessageOK">Vše je připraveno! Budete dostávat oznámení o tom, kdy připojit a odpojit nabíječku. Nyní můžete aplikaci zavřít. \n\nDalší poznámky k funkcím aplikace: \n\nSamotná aplikace je optimalizována pro nízkou spotřebu baterie, běží na pozadí a každých 15 minut kontroluje stav baterie. Přesné načasování těchto kontrol závisí na operačním systému, který je může naplánovat vedle jiných úloh nebo je v režimu spánku odložit. V důsledku toho může úroveň baterie při nabíjení mírně překročit horní limit nebo při vybíjení mírně klesnout pod spodní limit, než obdržíte oznámení. \n\nPo restartování telefonu by měla aplikace pokračovat v provozu na pozadí. Na některých zařízeních však může být nutné otevřít nastavení zabezpečení a udělit jí k tomu výslovné povolení. \n\nNěkterá levná zařízení, zejména starší modely s úpravami operačního systému, ukončují po odstranění aplikace z paměti všechny služby na pozadí. Pokud vaše zařízení spadá do této kategorie, budete muset aplikaci v paměti „uzamknout“, abyste tomu zabránili. Kromě toho zajistěte, aby byla aplikace vyloučena z optimalizace baterie.</string>
+    <string name="MessageNOK">Ještě nejste připraveni! Aby aplikace mohla správně fungovat, je nezbytné udělit jí potřebná oprávnění. Restartujte prosím aplikaci nebo přejděte do nastavení systému a udělte jí oprávnění k oznámením.</string>
+    <string name="DonationTitle">Tato aplikace závisí na vaší podpoře</string>
+</resources>
