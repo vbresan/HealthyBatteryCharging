@@ -1,0 +1,4 @@
+2.0.15 (2025.03.15)
+
+* Lisasime saksa keele tõlke
+* Uuendasime araabia ja portugali keelte tõlkeid
