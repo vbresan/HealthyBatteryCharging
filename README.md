@@ -59,7 +59,8 @@ When translating metadata:
 Big thanks to:
 * Arabic - **[islam2hamy](https://github.com/islam2hamy)**, Med
 * Chinese (Simplified) - **[poipoipoipoipoipoipoipoipoi](https://github.com/poipoipoipoipoipoipoipoipoi)**, Assem Askarova
-* Chinese (Traditional) - **[shinebrillant](https://github.com/shinebrillant)** 
+* Chinese (Traditional) - **[shinebrillant](https://github.com/shinebrillant)**
+* Czech - **[Fjuro](https://github.com/fjuro)**
 * Dutch - **[Rudi Timmermans](https://github.com/ruditimmermans)**
 * Esperanto - Assem Askarova
 * Estonian - Priit Jõerüüt
@@ -69,7 +70,7 @@ Big thanks to:
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
 * Polish - **[diskacz](https://github.com/diskacz)**
-* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**, José Roberto
+* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**, José Roberto, dedakir923
 * Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
