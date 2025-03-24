@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BatteryLevelNotifications">Notificacións do nivel da batería</string>
+    <string name="BatteryHighNotification">Notificación de carga alta</string>
+    <string name="app_name">Carga Saudabel da Batería</string>
+    <string name="BatteryLowNotification">Notificación de carga baixa</string>
+    <string name="Low">Baixa:</string>
+    <string name="High">Alta:</string>
+    <string name="Save">Gardar</string>
+    <string name="Reset">Restablecer</string>
+    <string name="BatteryStatus">Estado da batería:</string>
+    <string name="BatteryLevel">Nivel da batería:</string>
+    <string name="Charging">Cargando</string>
+    <string name="Discharging">Descargando</string>
+    <string name="ConnectCharger">Conectar ao cargador</string>
+    <string name="DisconnectCharger">Desconectar do cargador</string>
+    <string name="DonationTitle">Esta app depende do teu apoio</string>
+    <string name="MessageOK">Xa está preparada! A aplicacións vaiche enviar notificacións cando debas conectar e desconectar o cargador. Sal da aplicación cando queiras.\n\nNotas adicionais:\n\nA aplicación en si mesma está optimizada para usa moi pouca batería, funcionando en segundo plano e comprobando a batería cada 15 minutos. O momento exacto destas comprobacións depende do SO Android, que podería programalas xunto con outras tarefas ou retrasalas cando está en repouso. Como resultado disto o nivel da batería podería ser lixeiramente superior ao máximo ou inferior ao mínimo no momento de recibir a notificación.\n\nA aplicación debería seguir funcionando en segundo plano incluso ao reiniciar o dispositivo. Emporiso, nalgúns dispositivos, poderías precisar abrir os axustes de seguridade e conceder explícitamente o permiso para que así sexa.\n\nAlgúns dispositivos básicos, especialmente os antigos con modificacións do sistema operativo, fechan todos os servizos en segundo plano cando unha aplicación se quita da memoria. Se o teu dispositivo é deste tipo, será necesario que «fixes» a aplicación na memoria para evitalo. Adicionalmente comproba que a aplicación está excluída das optimizacións da batería.</string>
+    <string name="MessageNOK">Aínda non está preparada! Para que a aplicación funcione correctamente debes concederlle os permisos necesarios. Reinicia a aplicación ou vai aos axustes do sistema e concede o permiso para as notificacións.</string>
+    <string name="DonationContent">Esta aplicación é gratuíta, de código aberto e non ten publicidade nen rastrexadores. Para que así sexa, se podes, fai unha doazón:</string>
+</resources>
