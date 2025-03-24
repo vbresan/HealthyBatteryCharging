@@ -2,7 +2,7 @@
 <resources>
     <string name="BatteryLevelNotifications">Notificacións do nivel da batería</string>
     <string name="BatteryHighNotification">Notificación de carga alta</string>
-    <string name="app_name">Carga Saudabel da Batería</string>
+    <string name="app_name">Carga Saudábel da Batería</string>
     <string name="BatteryLowNotification">Notificación de carga baixa</string>
     <string name="Low">Baixa:</string>
     <string name="High">Alta:</string>

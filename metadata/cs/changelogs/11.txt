@@ -1,0 +1,5 @@
+2.0.9 (2024.12.14)
+
+* Removing dependency info block from built files
+* Adding donation text and link
+* Adding Estonian translation

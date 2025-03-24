@@ -1,0 +1,4 @@
+2.0.7 (2024.08.25)
+
+* Adding translation to: Japanese, Esperanto, Korean and Toki Pona
+* Updating Chinese (Simplified) translation
