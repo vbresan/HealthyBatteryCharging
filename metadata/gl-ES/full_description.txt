@@ -1,0 +1,8 @@
+Fai que a batería do teu móbil ou tableta dure máis!
+
+Un rango de carga axeitado para as baterías de Li-ion está entre o 40 e o 80 por cento nunha única carga. Varias pequenas cargas ao longo do día é a segunda mellor opción, e ir de cero a cen e viceverse de xeito regular porá maior estrés na túa batería de ión-litio.
+
+Carga Saudábel de Batería notifícache cando conectar ou desconectar o dispositivo do cargador para mellorar a vida útil da batería. A aplicación en si mesma está optimizada para que consuma moi pouca batería, funciona en segundo plano e comproba a carga cada 15 minutos. O momento exacto depende do sistema operativo Android, podendo realizarse xunto a outras tarefas ou retrasarse se está en modo de agarda. Por isto, no momento da notificación, poderían mostrarse valores de carga lixeiramente superiores ou inferiores aos establecidos.
+
+Se queres coñecer máis detalles técnicos sobre as baterías de Li-ion:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries

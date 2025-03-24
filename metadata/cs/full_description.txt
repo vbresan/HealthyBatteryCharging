@@ -1,0 +1,8 @@
+Prodlužte výdrž baterie svého smartphonu nebo tabletu!
+
+Ideální rozsah nabíjení Li-ion baterie je mezi 40 až 80 procenty v jednom cyklu. Pokud to není možné, druhou nejlepší možností je časté krátké dobíjení během dne. Naopak pravidelné nabíjení z 0 na 100 % a následné úplné vybití nejvíce zatěžuje lithium-iontovou baterii.
+
+Aplikace Zdravé nabíjení baterie vás upozorní, kdy telefon připojit nebo odpojit od nabíječky, aby se prodloužila životnost baterie. Samotná aplikace je optimalizována pro nízkou spotřebu baterie – běží na pozadí a kontroluje stav baterie každých 15 minut. Přesný čas těchto kontrol závisí na systému Android, který je může sloučit s jinými úlohami nebo odložit v režimu spánku. Proto se může stát, že při nabíjení úroveň baterie mírně překročí horní hranici nebo při vybíjení klesne pod dolní hranici, než obdržíte oznámení.
+
+Více technických detailů o Li-ion bateriích najdete zde:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
