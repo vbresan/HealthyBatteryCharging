@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="Save">שמור</string>
+    <string name="Reset">איפוס</string>
+    <string name="High">גבוה:</string>
+    <string name="MessageOK">אתה מוכן! תקבלו התראות המציינות מתי לחבר ולנתק את המטען. אל תהסס לצאת מהאפליקציה. \nהערות נוספות על פונקציונליות האפליקציה:\nהאפליקציה עצמה מותאמת לצריכת סוללה נמוכה, פועלת ברקע ובודקת את רמת הסוללה כל 15 דקות. התזמון המדויק של בדיקות אלו תלוי במערכת ההפעלה אנדרואיד, אשר עשויה לתזמן אותן לצד משימות אחרות או לעכב אותן במצב שינה. כתוצאה מכך, רמת הסוללה עשויה לחרוג מעט מהסף הגבוה בזמן הטעינה או לרדת מעט מתחת לסף הנמוך בזמן פריקה לפני שתקבל הודעה. \nהאפליקציה אמורה להמשיך לרוץ ברקע לאחר אתחול הטלפון שלך. עם זאת, במכשירים מסוימים, ייתכן שיהיה עליך לפתוח את הגדרות האבטחה ולהעניק הרשאה מפורשת לכך. \nמכשירים תקציביים מסוימים, במיוחד דגמים ישנים יותר עם שינויים במערכת ההפעלה, מפסיקים את כל שירותי הרקע כאשר אפליקציה מוסרת מהזיכרון. אם המכשיר שלך נכנס לקטגוריה זו, תצטרך \'לנעול\' את האפליקציה בזיכרון כדי למנוע את זה. בנוסף, ודא שהאפליקציה אינה נכללת באופטימיזציה של הסוללה.</string>
+    <string name="app_name">טעינת סוללה בריאה</string>
+    <string name="MessageNOK">אתה עדיין לא מוגדר! על מנת שהאפליקציה תפעל כראוי, עליך להעניק לה את ההרשאות הנדרשות. אנא הפעל מחדש את האפליקציה או עבור להגדרות המערכת שלך והענק לה הרשאה להתראות.</string>
+    <string name="DonationTitle">אפליקציה זו תלויה בתמיכה שלך</string>
+    <string name="DonationContent">אפליקציה זו חינמית, קוד פתוח ואין לה מודעות או עוקבים. כדי לשמור על זה כך, אם אתה יכול, אנא תרמו עוד היום:</string>
+    <string name="BatteryLevelNotifications">התראות על רמת הסוללה</string>
+    <string name="DisconnectCharger">נתק את המטען</string>
+    <string name="BatteryLowNotification">התראה על חוסר סוללה</string>
+    <string name="Low">נמוך:</string>
+    <string name="BatteryHighNotification">התראה כשהסוללה מלאה</string>
+    <string name="BatteryStatus">מצב הסוללה:</string>
+    <string name="BatteryLevel">רמת סוללה:</string>
+    <string name="ConnectCharger">חבר את המטען</string>
+    <string name="Charging">מטעין</string>
+    <string name="Discharging">לא מטעין</string>
+</resources>
