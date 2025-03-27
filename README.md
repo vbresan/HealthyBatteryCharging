@@ -67,6 +67,7 @@ Big thanks to:
 * French - **[Ilithy](https://github.com/Ilithy)**
 * Galician - josé m
 * German - **[Maurits van der Zee](https://github.com/MauritsvanderZee)**
+* Hebrew - **[elid](https://github.com/elid34)**
 * Japanese - Assem Askarova
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
