@@ -4,6 +4,5 @@ L'autonomie idéale pour une batterie lithium-ion est de 40 à 80 % en une seul
 
 L'application « Chargement optimal de la batterie » vous avertit quand brancher ou débrancher votre téléphone du chargeur afin d'optimiser son autonomie. L'application est optimisée pour une faible consommation de batterie. Elle s'exécute en arrière-plan et vérifie le niveau de la batterie toutes les 15 minutes. Le moment exact de ces vérifications dépend du système d'exploitation Android, qui peut les programmer en même temps que d'autres tâches ou les retarder en mode veille. Par conséquent, le niveau de la batterie peut légèrement dépasser le seuil haut pendant la charge ou descendre légèrement en dessous du seuil bas pendant la décharge avant que vous ne receviez une notification.
 
-Pour en savoir plus sur les batteries lithium-ion :
-
+Pour en savoir plus sur les batteries lithium-ion:
 https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
