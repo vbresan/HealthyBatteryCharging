@@ -1,0 +1,4 @@
+2.0.15 (2025.03.15)
+
+* Adição da tradução para o alemão
+* Atualização das traduções para o árabe e o português

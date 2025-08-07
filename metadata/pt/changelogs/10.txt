@@ -1,0 +1,4 @@
+2.0.8 (2024.10.08)
+
+* Adicionando ícone de iniciador monocromático
+* Adicionando tradução em espanhol

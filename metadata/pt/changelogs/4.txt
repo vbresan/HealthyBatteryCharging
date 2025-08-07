@@ -1,0 +1,3 @@
+2.0.2 (2024.06.11)
+
+* expansão das notas sobre a funcionalidade da app

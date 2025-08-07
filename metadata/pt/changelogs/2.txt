@@ -1,0 +1,4 @@
+2.0 (2024.04.14)
+
+* Reformulação completa
+* voltada para o nível 34 da API do Android
