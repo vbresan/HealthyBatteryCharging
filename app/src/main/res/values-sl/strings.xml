@@ -1,3 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Healthy Battery Charging</string>
+    <string name="BatteryLevelNotifications">Obvestila o stanju baterije</string>
+    <string name="BatteryLowNotification">Opozorilo o nizki napolnjenosti baterije</string>
+    <string name="BatteryHighNotification">Obvestilo o visoki napolnjenosti baterije</string>
+    <string name="Low">Nizko:</string>
+    <string name="High">Visoko:</string>
+    <string name="Save">Shrani</string>
+    <string name="Reset">Ponastavi</string>
+    <string name="BatteryStatus">Stanje baterije:</string>
+    <string name="BatteryLevel">Raven baterije:</string>
+    <string name="Charging">Polnenje</string>
+    <string name="Discharging">Praznenje</string>
+    <string name="ConnectCharger">Priključite polnilnik</string>
+    <string name="DisconnectCharger">Odklopite polnilnik</string>
+    <string name="MessageOK">Vse je pripravljeno! Prejeli boste obvestila, kdaj priključiti in odklopiti polnilnik. Aplikacijo lahko zaprete. \n\nDodatne opombe o delovanju aplikacije: \n\nAplikacija je optimizirana za nizko porabo baterije, deluje v ozadju in vsake 15 minut preverja stanje baterije. Natančen čas teh preverjanj je odvisen od operacijskega sistema Android, ki jih lahko načrtuje skupaj z drugimi opravili ali jih odloži, ko je telefon v načinu mirovanja. Zato lahko raven baterije med polnjenjem nekoliko preseže zgornjo mejo ali med praznjenjem nekoliko pade pod spodnjo mejo, preden prejmete obvestilo.\n\nAplikacija naj bi po ponovnem zagonu telefona še naprej delovala v ozadju. Vendar boste na nekaterih napravah morda morali odpreti varnostne nastavitve in ji izrecno dodeliti dovoljenje za to. \n\nNekatere cenejše naprave, zlasti starejši modeli z modificiranim operacijskim sistemom, ustavijo vse storitve v ozadju, ko se aplikacija odstrani iz pomnilnika. Če vaša naprava spada v to kategorijo, boste morali aplikacijo »zakleniti« v pomnilniku, da se to ne bo zgodilo. Poleg tega poskrbite, da je aplikacija izključena iz optimizacije baterije.</string>
+    <string name="MessageNOK">Niste še pripravljeni! Da bo aplikacija delovala pravilno, ji morate dodeliti potrebna dovoljenja. Ponovno zaženite aplikacijo ali odprite nastavitve sistema in ji dodelite dovoljenje za obvestila.</string>
+    <string name="DonationTitle">Ta aplikacija je odvisna od vaše podpore</string>
+    <string name="DonationContent">Ta aplikacija je brezplačna, odprtokodna in ne vsebuje oglasov ali sledilnikov. Da bi tako ostalo tudi v prihodnje, vas prosimo, da danes, če lahko, darujete:</string>
 </resources>
