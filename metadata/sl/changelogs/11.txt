@@ -1,0 +1,5 @@
+2.0.9 (14.12.2024)
+
+* Odstranitev bloka informacij o odvisnosti iz zgrajenih datotek
+* Dodajanje besedila in povezave za donacije
+* Dodajanje estonskega prevoda

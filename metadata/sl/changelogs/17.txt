@@ -1,0 +1,4 @@
+2.0.15 (15.03.2025)
+
+* Dodajanje nemškega prevoda
+* Posodobitev arabskega in portugalskega prevoda

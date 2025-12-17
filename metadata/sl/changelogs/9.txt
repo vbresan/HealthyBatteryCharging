@@ -1,0 +1,4 @@
+2.0.7 (25.08.2024)
+
+* Dodajanje prevodov v: japonščino, esperanto, korejščino in toki pona
+* Posodobitev prevoda v kitajščino (poenostavljeno)
