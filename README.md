@@ -74,6 +74,7 @@ Big thanks to:
 * Polish - **[diskacz](https://github.com/diskacz)**
 * Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**, José Roberto, dedakir923
 * Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
+* Slovenian - **[Andrew Poženel](https://github.com/anderlli0053)**
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
 * Toki Pona - Assem Askarova
