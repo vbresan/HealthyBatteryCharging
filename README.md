@@ -72,9 +72,10 @@ Big thanks to:
 * Korean - Assem Askarova
 * Norwegian Bokmål - **[comradekingu](https://github.com/comradekingu)**
 * Polish - **[diskacz](https://github.com/diskacz)**
-* Portugese (Brasil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**, José Roberto, dedakir923
+* Portuguese - **[SantosSi](https://github.com/SantosSi)**
+* Portuguese (Brazil) - **[AsmodeumX](https://github.com/AsmodeumX)**, **[Jose Delvani](https://github.com/jsdelvani)**, José Roberto, dedakir923
 * Russian - **[Korb](https://github.com/Korb)**, Lowri Olsen
 * Spanish - gallegonovato, **[Kamborio](https://github.com/Kamborio)**
 * Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
 * Toki Pona - Assem Askarova
-* Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen
+* Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen, Максим Горпиніч
