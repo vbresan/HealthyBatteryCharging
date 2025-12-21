@@ -15,12 +15,5 @@
     <string name="BatteryHighNotification">Merknad for høyt batterinivå</string>
     <string name="Discharging">Utlading</string>
     <string name="MessageNOK">Innvilg nødvendige tilganger. Start programmet på ny, eller gjør det fra systeminnstillingene.</string>
-    <string name="MessageOK">Du vil få merknader om når laderen bør tilsluttes og frakobles. Du kan nå avslutte programmet.
-\n
-\nProgrammet sjekker status hvert kvarter, avhengig av Android. Derfor kan tidspunktet formmerknadene avvike noe fra optimalt batterinivå.
-\n
-\nProgrammet fortsetter å kjøre i bakgrunnen etter omstart av enheten. Noen enheter krever spesiell tilgang for dette.
-\n
-\nNoen budsjettmodeller fjerner alle kjørende bakgrunnstjenester for å spare minne. Det er mulig å «låse» programminnet slik at dette ikke skjer.
-\nDet er viktig at programmet ikke er omfattet av batterioptimalisering.</string>
+    <string name="MessageOK">Du vil få merknader om når laderen bør tilsluttes og frakobles. Du kan nå avslutte programmet. \n \nProgrammet sjekker status hvert kvarter, avhengig av Android. Derfor kan tidspunktet formmerknadene avvike noe fra optimalt batterinivå. \n \nProgrammet fortsetter å kjøre i bakgrunnen etter omstart av enheten. Noen enheter krever spesiell tilgang for dette. \n \nNoen budsjettmodeller fjerner alle kjørende bakgrunnstjenester for å spare minne. Det er mulig å «låse» programminnet slik at dette ikke skjer. \nDet er viktig at programmet ikke er omfattet av batterioptimalisering.</string>
 </resources>
