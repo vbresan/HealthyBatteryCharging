@@ -1,6 +1,7 @@
-2.1 (2025.12.xx)
+2.1 (2025.12.21)
 
 * Implementing configurable battery check interval
+* Adding Italian translation
 * Adding Slovenian translation
 * Adding Portuguese (pt) translation
 * Updating Ukrainian translation
