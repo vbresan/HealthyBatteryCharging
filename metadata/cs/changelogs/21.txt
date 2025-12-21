@@ -1,0 +1,6 @@
+2.1 (2025.12.xx)
+
+* Implementace nastavitelného intervalu kontroly baterie
+* Přidána slovinština
+* Přidána portugalština
+* Přidána ukrajinština
