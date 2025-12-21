@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carga saudável da pilha</string>
+    <string name="BatteryLevelNotifications">Notificar nível da pilha</string>
+    <string name="BatteryLowNotification">Notificação de pilha baixa</string>
+    <string name="BatteryHighNotification">Notificação de pilha alta</string>
+    <string name="Low">Baixa:</string>
+    <string name="High">Alta:</string>
+    <string name="Save">Gravar</string>
+    <string name="Reset">Restaurar</string>
+    <string name="BatteryStatus">Estado da pilha:</string>
+    <string name="BatteryLevel">Nível da pilha:</string>
+    <string name="Charging">A carregar</string>
+    <string name="Discharging">A descarregar</string>
+    <string name="ConnectCharger">Conectar ao carregador</string>
+    <string name="DisconnectCharger">Desconectar do carregador</string>
+    <string name="MessageOK">Está tudo pronto! Receberá notificações indicando quando deve conectar e desconectar o carregador. Sinta-se à vontade para sair da app. \n \nObservações adicionais sobre a funcionalidade da app: \n \nA app em si é otimizado para baixo consumo de pilha, sendo executado em segundo plano e verificando o nível da pilha a cada 15 minutos. O tempo exato dessas verificações depende do sistema operativo Android, que pode programá-las junto com outras tarefas ou atrasá-las quando estiver no modo de suspensão. Como resultado, o nível da pilha pode exceder ligeiramente o limite alto durante o carregamento ou cair ligeiramente abaixo do limite baixo durante a descarga antes de receber uma notificação. \n \nA app deve continuar em execução em segundo plano após a reinicialização do telefone. Entretanto, em determinados dispositivos, talvez seja necessário abrir as configurações de segurança e conceder permissão explícita para que ele faça isto. \n \nAlguns dispositivos econômicos, especialmente modelos mais antigos com modificações no sistema operativo, encerram todos os serviços em segundo plano quando uma app é removida da memória. Se o seu dispositivo se enquadrar nessa categoria, deverá \"bloquear\" a app na memória para evitar que isto aconteça. Além disso, verifique se a app está excluída da otimização da pilha.</string>
+    <string name="MessageNOK">Ainda não está configurado! Para que a app funcione corretamente, precisa conceder as permissões necessárias. Reinicie a app ou acesse as configurações do sistema e conceda permissão de notificação.</string>
+    <string name="DonationTitle">Esta app depende do seu apoio</string>
+    <string name="DonationContent">Esta app é gratuita, de código aberto e não tem anúncios ou rastreadores. Para mantê-lo assim, se puder, faça uma doação hoje:</string>
+</resources>

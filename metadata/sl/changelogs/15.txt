@@ -1,0 +1,4 @@
+2.0.13 (19.01.2025)
+
+* Dodajanje francoskega prevoda
+* Posodobitev kitajskega (poenostavljenega) prevoda

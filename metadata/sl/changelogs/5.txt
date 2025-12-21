@@ -1,0 +1,4 @@
+2.0.3 (22.06.2024)
+
+* Dodajanje prevodov v norveški bokmål, ukrajinski in ruski jezik
+* Podpora jezikovnih nastavitev za posamezne aplikacije

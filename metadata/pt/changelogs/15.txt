@@ -1,0 +1,4 @@
+2.0.13 (2025.01.19)
+
+* Adição da tradução para o francês
+* Atualização da tradução para o chinês (simplificado)

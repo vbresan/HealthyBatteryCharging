@@ -1,0 +1,3 @@
+2.0.11 (2025.01.10)
+
+* Adição da tradução para o holandês

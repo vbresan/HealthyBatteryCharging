@@ -1,0 +1,8 @@
+Podaljšajte življenjsko dobo baterije svojega pametnega telefona ali tabličnega računalnika!
+
+Pri polnjenju litij-ionske baterije je priporočljivo, da jo napolnite na 40 do 80 odstotkov. Druga najboljša možnost je večkratno polnjenje skozi dan, saj redno polnjenje od 0 do 100 in nato od 100 do 0 najbolj obremenjuje litij-ionsko baterijo.
+
+Aplikacija Healthy Battery Charging vas obvesti, kdaj morate telefon priključiti ali odklopiti iz polnilnika, da podaljšate življenjsko dobo baterije. Aplikacija je optimizirana za nizko porabo baterije, deluje v ozadju in vsake 15 minut preverja stanje baterije. Natančen čas teh preverjanj je odvisen od operacijskega sistema Android, ki jih lahko načrtuje skupaj z drugimi opravili ali jih odloži, ko je telefon v načinu mirovanja. Posledično lahko raven baterije med polnjenjem nekoliko preseže zgornjo mejo ali med praznjenjem nekoliko pade pod spodnjo mejo, preden prejmete obvestilo.
+
+Za tiste, ki želijo vedeti več tehničnih podrobnosti o litij-ionskih baterijah:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
