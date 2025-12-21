@@ -71,42 +71,80 @@
 				<LinearLayout
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:orientation="horizontal"
+					android:orientation="vertical"
 					>
-
-					<TextView
+					<LinearLayout
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:text="@string/Low"
-						android:textColor="@color/textPrimary"
-						android:textSize="@dimen/textH4"
-						android:maxLines="1"
-						android:ellipsize="end"
-						android:layout_weight="1"
-					/>
+						android:orientation="horizontal"
+						>
 
-					<include
-						android:id="@+id/editTextLow"
-						layout="@layout/edittext_input"
-					/>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/Low"
+							android:textColor="@color/textPrimary"
+							android:textSize="@dimen/textH4"
+							android:maxLines="1"
+							android:ellipsize="end"
+							android:layout_weight="1"
+						/>
 
-					<TextView
+						<include
+							android:id="@+id/editTextLow"
+							layout="@layout/edittext_input"
+						/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="@dimen/thresholdMargin"
+							android:layout_marginLeft="@dimen/thresholdMargin"
+							android:text="@string/High"
+							android:textColor="@color/textPrimary"
+							android:textSize="@dimen/textH4"
+							android:maxLines="1"
+							android:ellipsize="end"
+							android:layout_weight="1"
+						/>
+
+						<include
+							android:id="@+id/editTextHigh"
+							layout="@layout/edittext_input"
+						/>
+					</LinearLayout>
+
+					<LinearLayout
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:layout_marginStart="@dimen/thresholdMargin"
-						android:layout_marginLeft="@dimen/thresholdMargin"
-						android:text="@string/High"
-						android:textColor="@color/textPrimary"
-						android:textSize="@dimen/textH4"
-						android:maxLines="1"
-						android:ellipsize="end"
-						android:layout_weight="1"
-					/>
+						android:orientation="horizontal"
+						>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/CheckEvery"
+							android:textColor="@color/textPrimary"
+							android:textSize="@dimen/textH4"
+							android:maxLines="1"
+							android:ellipsize="end"
+							android:layout_weight="1"
+						/>
+						<include
+							android:id="@+id/editTextInterval"
+							layout="@layout/edittext_input"
+						/>
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/Min"
+							android:textColor="@color/textPrimary"
+							android:textSize="@dimen/textH4"
+							android:maxLines="1"
+							android:ellipsize="end"
+							android:layout_weight="1"
+						/>
+					</LinearLayout>
 
-					<include
-						android:id="@+id/editTextHigh"
-						layout="@layout/edittext_input"
-					/>
 				</LinearLayout>
 
 				<Button

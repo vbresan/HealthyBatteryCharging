@@ -30,7 +30,6 @@ public class AlarmReceiver extends BroadcastReceiver {
 		PACKAGE_NAME + ".intentExtra.high";
 
 	private static final int  ALARM_TYPE = AlarmManager.ELAPSED_REALTIME_WAKEUP;
-	private static final long INTERVAL   = AlarmManager.INTERVAL_FIFTEEN_MINUTES;
 
 	/**
 	 * @param context
@@ -86,16 +85,12 @@ public class AlarmReceiver extends BroadcastReceiver {
 		return intent;
 	}
 
-	/**
-	 * @param context
-	 * @param batteryLow
-	 * @param batteryHigh
-	 */
 	private static void scheduleAlarms
 		(
 			Context context,
 			int 	batteryLow,
-			int 	batteryHigh
+			int 	batteryHigh,
+			int     intervalMillis
 		) {
 
 		AlarmManager alarmManager = (AlarmManager)
@@ -108,9 +103,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 			IntentUtil.getPendingIntentFlags(PendingIntent.FLAG_UPDATE_CURRENT)
 		);
 
-		long firstTrigger = SystemClock.elapsedRealtime() + INTERVAL;
+		long firstTrigger = SystemClock.elapsedRealtime() + intervalMillis;
 		alarmManager.setInexactRepeating(
-			ALARM_TYPE, firstTrigger, INTERVAL, pendingIntent
+			ALARM_TYPE, firstTrigger, intervalMillis, pendingIntent
 		);
 	}
 
@@ -130,17 +125,17 @@ public class AlarmReceiver extends BroadcastReceiver {
 		checkConditions(applicationContext, batteryLow, batteryHigh);
 	}
 
-	/**
-	 * @param context
-	 * @param batteryLow
-	 * @param batteryHigh
-	 */
-	public static void start(Context context, int batteryLow, int batteryHigh) {
+	public static void start(
+		Context context,
+		int 	batteryLow,
+		int 	batteryHigh,
+		int 	intervalMinutes
+	) {
 
-		Logger.d(TAG, "start called [" + batteryLow + ", " + batteryHigh + "]");
+		Logger.d(TAG, "start called [" + batteryLow + ", " + batteryHigh + ", " + intervalMinutes + "]");
 
 		Context applicationContext = context.getApplicationContext();
 		checkConditions(applicationContext, batteryLow, batteryHigh);
-		scheduleAlarms(applicationContext, batteryLow, batteryHigh);
+		scheduleAlarms(applicationContext, batteryLow, batteryHigh, intervalMinutes * 60 * 1000);
 	}
 }

@@ -20,7 +20,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
@@ -29,17 +28,16 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Locale;
 
+import biz.binarysolutions.healthybatterycharging.databinding.ActivityMainBinding;
 import biz.binarysolutions.healthybatterycharging.receivers.AlarmReceiver;
 import biz.binarysolutions.healthybatterycharging.util.Battery;
 import biz.binarysolutions.healthybatterycharging.util.DefaultTextWatcher;
 import biz.binarysolutions.healthybatterycharging.util.Logger;
 import biz.binarysolutions.healthybatterycharging.util.NotificationChannelUtil;
 
-/**
- * 
- *
- */
 public class MainActivity extends Activity {
+
+	private ActivityMainBinding binding;
 
 	private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -53,11 +51,13 @@ public class MainActivity extends Activity {
 
 	public static final int DEFAULT_BATTERY_LOW  = 40;
 	public static final int DEFAULT_BATTERY_HIGH = 80;
+	public static final int DEFAULT_INTERVAL = 15;
 
 	private BroadcastReceiver receiver;
 
 	private int batteryLow;
 	private int batteryHigh;
+	private int interval;
 
 	private void setEditText(EditText editText, int value) {
 
@@ -68,40 +68,42 @@ public class MainActivity extends Activity {
 
 	/**
 	 *
+	 * @param editText edit text to get value from
+	 * @return int value
+	 * @throws NumberFormatException if value can not be converted to itn
+	 * @throws NullPointerException if edit text is null
 	 */
-	private void loadThresholds() {
+	private int getEditText(EditText editText) {
+		return Integer.parseInt(editText.getText().toString());
+	}
+
+	private void loadPreferences() {
 
 		SharedPreferences preferences =
 			PreferenceManager.getDefaultSharedPreferences(this);
 
 		batteryLow  = preferences.getInt("batteryLow",  DEFAULT_BATTERY_LOW);
 		batteryHigh = preferences.getInt("batteryHigh", DEFAULT_BATTERY_HIGH);
+		interval    = preferences.getInt("interval",    DEFAULT_INTERVAL);
 
-		EditText editTextLow = findViewById(R.id.editTextLow);
-		setEditText(editTextLow, batteryLow);
-
-		EditText editTextHigh = findViewById(R.id.editTextHigh);
-		setEditText(editTextHigh, batteryHigh);
+		setEditText(binding.editTextLow.getRoot(),      batteryLow);
+		setEditText(binding.editTextHigh.getRoot(),     batteryHigh);
+		setEditText(binding.editTextInterval.getRoot(), interval);
 
 		boolean isDefault =
 			batteryLow  == DEFAULT_BATTERY_LOW &&
-			batteryHigh == DEFAULT_BATTERY_HIGH;
+			batteryHigh == DEFAULT_BATTERY_HIGH &&
+			interval    == DEFAULT_INTERVAL;
 		setButtonResetEnabled(!isDefault);
 	}
 
-	private void saveThresholds() {
-
-		EditText editTextLow  = findViewById(R.id.editTextLow);
-		EditText editTextHigh = findViewById(R.id.editTextHigh);
-
-		if (editTextLow == null || editTextHigh == null) {
-			return;
-		}
+	private void savePreferences() {
 
 		try {
-			batteryLow  = Integer.parseInt(editTextLow.getText().toString());
-			batteryHigh = Integer.parseInt(editTextHigh.getText().toString());
-		} catch (NumberFormatException e) {
+			batteryLow  = getEditText(binding.editTextLow.getRoot());
+			batteryHigh = getEditText(binding.editTextHigh.getRoot());
+			interval    = getEditText(binding.editTextInterval.getRoot());
+		} catch (NumberFormatException | NullPointerException e) {
 			// do nothing, this should not happen as it has been checked already
 		}
 
@@ -111,93 +113,81 @@ public class MainActivity extends Activity {
 		SharedPreferences.Editor editor = preferences.edit();
 		editor.putInt("batteryLow",  batteryLow);
 		editor.putInt("batteryHigh", batteryHigh);
+		editor.putInt("interval",    interval);
 		editor.apply();
 
 		setButtonSaveEnabled(false);
 
-		AlarmReceiver.start(this, batteryLow, batteryHigh);
+		AlarmReceiver.start(this, batteryLow, batteryHigh, interval);
 	}
 
-	private void resetThresholds() {
+	private void resetPreferences() {
 
 		batteryLow  = DEFAULT_BATTERY_LOW;
 		batteryHigh = DEFAULT_BATTERY_HIGH;
+		interval    = DEFAULT_INTERVAL;
 
-		EditText editTextLow = findViewById(R.id.editTextLow);
-		setEditText(editTextLow, batteryLow);
+		setEditText(binding.editTextLow.getRoot(),      batteryLow);
+		setEditText(binding.editTextHigh.getRoot(),     batteryHigh);
+		setEditText(binding.editTextInterval.getRoot(), interval);
 
-		EditText editTextHigh = findViewById(R.id.editTextHigh);
-		setEditText(editTextHigh, batteryHigh);
-
-		saveThresholds();
+		savePreferences();
 	}
 
-	private void setButtonEnabled(int id, boolean isEnabled) {
-
-		Button button = findViewById(id);
-		if (button != null) {
-			button.setEnabled(isEnabled);
-		}
+	private void setButtonEnabled(Button button, boolean isEnabled) {
+		button.setEnabled(isEnabled);
 	}
 
 	private void setButtonSaveEnabled(boolean isEnabled) {
-		setButtonEnabled(R.id.buttonSave, isEnabled);
+		setButtonEnabled(binding.buttonSave, isEnabled);
 	}
 
 	private void setButtonResetEnabled(boolean isEnabled) {
-		setButtonEnabled(R.id.buttonReset, isEnabled);
+		setButtonEnabled(binding.buttonReset, isEnabled);
 	}
 
-	/**
-	 *
-	 */
 	@SuppressLint("ClickableViewAccessibility")
 	private void addButtonListeners() {
 
-		Button buttonSave = findViewById(R.id.buttonSave);
-		if (buttonSave != null) {
-			buttonSave.setOnClickListener(v -> saveThresholds());
+		binding.buttonSave.setOnClickListener(v -> savePreferences());
+		binding.buttonSave.setOnTouchListener((v, event) ->
+			toggleGlow(event, binding.imageViewSave)
+		);
 
-			ImageView imageView = findViewById(R.id.imageViewSave);
-			buttonSave.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
-		}
-
-		Button buttonReset = findViewById(R.id.buttonReset);
-		if (buttonReset != null) {
-			buttonReset.setOnClickListener(v -> resetThresholds());
-
-			ImageView imageView = findViewById(R.id.imageViewReset);
-			buttonReset.setOnTouchListener((v, event) -> toggleGlow(event, imageView));
-		}
+		binding.buttonReset.setOnClickListener(v -> resetPreferences());
+		binding.buttonReset.setOnTouchListener((v, event) ->
+			toggleGlow(event, binding.imageViewReset)
+		);
 	}
 
-	/**
-	 *
-	 */
 	private void addEditTextListeners() {
-
-		EditText editTextLow  = findViewById(R.id.editTextLow);
-		EditText editTextHigh = findViewById(R.id.editTextHigh);
-
-		if (editTextLow == null || editTextHigh == null) {
-			return;
-		}
 
 		DefaultTextWatcher textWatcher = new DefaultTextWatcher() {
 			@Override
 			public void afterTextChanged(Editable s) {
 
 				try {
-					int low  = Integer.parseInt(editTextLow.getText().toString());
-					int high = Integer.parseInt(editTextHigh.getText().toString());
+					int newLow      = getEditText(binding.editTextLow.getRoot());
+					int newHigh     = getEditText(binding.editTextHigh.getRoot());
+					int newInterval = getEditText(binding.editTextInterval.getRoot());
 
-					boolean isModified = low != batteryLow || high != batteryHigh;
-					setButtonSaveEnabled(isModified && low < high);
+					boolean isModified =
+						newLow      != batteryLow  ||
+						newHigh     != batteryHigh ||
+						newInterval != interval;
+					boolean isValid =
+						newLow      < newHigh &&
+						newInterval > 0       &&
+						newInterval <= DEFAULT_INTERVAL;
+					setButtonSaveEnabled(isModified && isValid);
 
-					boolean isDefault  = low == DEFAULT_BATTERY_LOW && high == DEFAULT_BATTERY_HIGH;
+					boolean isDefault  =
+						newLow      == DEFAULT_BATTERY_LOW  &&
+						newHigh     == DEFAULT_BATTERY_HIGH &&
+						newInterval == DEFAULT_INTERVAL;
 					setButtonResetEnabled(!isDefault);
 
-				} catch (NumberFormatException e) {
+				} catch (NumberFormatException | NullPointerException e) {
 
 					setButtonSaveEnabled(false);
 					setButtonResetEnabled(true);
@@ -205,8 +195,9 @@ public class MainActivity extends Activity {
 			}
 		};
 
-		editTextLow.addTextChangedListener(textWatcher);
-		editTextHigh.addTextChangedListener(textWatcher);
+		binding.editTextLow.getRoot().addTextChangedListener(textWatcher);
+		binding.editTextHigh.getRoot().addTextChangedListener(textWatcher);
+		binding.editTextInterval.getRoot().addTextChangedListener(textWatcher);
 	}
 
 	private boolean toggleGlow(MotionEvent event, ImageView imageView) {
@@ -235,9 +226,6 @@ public class MainActivity extends Activity {
 		addEditTextListeners();
 	}
 
-	/**
-	 *
-	 */
 	private void registerPowerConnectionReceiver() {
 
 		IntentFilter filter = new IntentFilter();
@@ -249,7 +237,7 @@ public class MainActivity extends Activity {
 			public void onReceive(Context context, Intent intent) {
 
 				refreshBatteryStatus();
-				AlarmReceiver.start(MainActivity.this, batteryLow, batteryHigh);
+				AlarmReceiver.start(MainActivity.this, batteryLow, batteryHigh, interval);
 			}
 		};
 		registerReceiver(receiver, filter);
@@ -314,16 +302,9 @@ public class MainActivity extends Activity {
 	private void positionGlowImage
 		(
 			@NotNull RelativeLayout container,
-			int buttonId,
-			int imageViewId
+			Button    button,
+			ImageView imageView
 		) {
-
-		Button    button    = findViewById(buttonId);
-		ImageView imageView = findViewById(imageViewId);
-
-		if (button == null || imageView == null) {
-			return;
-		}
 
 		scaleImage(imageView, button);
 
@@ -333,11 +314,7 @@ public class MainActivity extends Activity {
 
 	private void positionGlowImages() {
 
-		RelativeLayout container = findViewById(R.id.relativeLayoutContainer);
-		if (container == null) {
-			return;
-		}
-
+		RelativeLayout container = binding.relativeLayoutContainer;
 		container.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
 
 			@Override
@@ -349,15 +326,12 @@ public class MainActivity extends Activity {
 					container.getViewTreeObserver().removeGlobalOnLayoutListener(this);
 				}
 
-				positionGlowImage(container, R.id.buttonSave,  R.id.imageViewSave);
-				positionGlowImage(container, R.id.buttonReset, R.id.imageViewReset);
+				positionGlowImage(container, binding.buttonSave,  binding.imageViewSave);
+				positionGlowImage(container, binding.buttonReset, binding.imageViewReset);
 			}
 		});
 	}
 
-	/**
-	 * 
-	 */
 	private void refreshBatteryStatus() {
 
 		Intent batteryStatus = Battery.getBatteryStatus(this);
@@ -365,20 +339,12 @@ public class MainActivity extends Activity {
 			return;
 		}
 
-		TextView textViewStatus = findViewById(R.id.textViewBatteryStatus);
-		if (textViewStatus != null) {
+		boolean isCharging = Battery.isCharging(batteryStatus);
+		String  text       = getString(isCharging? R.string.Charging : R.string.Discharging);
+		binding.textViewBatteryStatus.setText(text);
 
-			boolean isCharging = Battery.isCharging(batteryStatus);
-			String  text       = getString(isCharging? R.string.Charging : R.string.Discharging);
-			textViewStatus.setText(text);
-		}
-
-		TextView textViewLevel = findViewById(R.id.textViewBatteryLevel);
-		if (textViewLevel != null) {
-
-			int batteryLevel = Battery.getBatteryLevel(batteryStatus);
-			textViewLevel.setText(String.format(locale, "%d%%", batteryLevel));
-		}
+		int batteryLevel = Battery.getBatteryLevel(batteryStatus);
+		binding.textViewBatteryLevel.setText(String.format(locale, "%d%%", batteryLevel));
 	}
 
 	/**
@@ -410,28 +376,23 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+
+		binding = ActivityMainBinding.inflate(getLayoutInflater());
+		setContentView(binding.getRoot());
 
 		createNotificationChannels();
 
-		loadThresholds();
+		loadPreferences();
 		addListeners();
 
 		registerPowerConnectionReceiver();
 
 		Logger.d(TAG, "onCreate: calling AlarmReceiver.start()");
-		AlarmReceiver.start(this, batteryLow, batteryHigh);
+		AlarmReceiver.start(this, batteryLow, batteryHigh, interval);
 	}
 
-	/**
-	 *
-	 */
 	private void showPermissionRequestText() {
-
-		TextView textView = findViewById(R.id.textView);
-		if (textView != null) {
-			textView.setText(R.string.MessageNOK);
-		}
+		binding.textView.setText(R.string.MessageNOK);
 	}
 
 	@Override
@@ -444,7 +405,7 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onDestroy() {
-		
+
 		if (receiver != null) {
 			unregisterReceiver(receiver);
 			receiver = null;
@@ -488,7 +449,7 @@ public class MainActivity extends Activity {
 		int granted = PackageManager.PERMISSION_GRANTED;
 		if (results.length > 0 && results[0] == granted) {
 			NotificationChannelUtil.createChannels(this);
-			AlarmReceiver.start(this, batteryLow, batteryHigh);
+			AlarmReceiver.start(this, batteryLow, batteryHigh, interval);
 		} else {
 			showPermissionRequestText();
 		}

@@ -59,7 +59,8 @@ public class BootReceiver extends BroadcastReceiver {
 
 		int batteryLow  = PreferencesUtil.getBatteryLow(context);
 		int batteryHigh = PreferencesUtil.getBatteryHigh(context);
+		int interval    = PreferencesUtil.getInterval(context);
 
-		AlarmReceiver.start(context, batteryLow, batteryHigh);
+		AlarmReceiver.start(context, batteryLow, batteryHigh, interval);
 	}
 }

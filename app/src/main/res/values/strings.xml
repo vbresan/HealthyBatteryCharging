@@ -10,6 +10,8 @@
 
     <string name="Low">Low:</string>
     <string name="High">High:</string>
+    <string name="CheckEvery">Check every</string>
+    <string name="Min">min.</string>
 
     <string name="Save">Save</string>
     <string name="Reset">Reset</string>
@@ -28,12 +30,12 @@
         connect and disconnect the charger. Feel free to exit the app.
         \n\nAdditional notes on app functionality:
         \n\nThe app itself is optimized for low battery consumption, running in
-        the background and checking the battery level every 15 minutes. The
-        exact timing of these checks depends on the Android OS, which might
-        schedule them alongside other tasks or delay them when in sleep mode.
-        As a result, the battery level may slightly exceed the high threshold
-        while charging or drop slightly below the low threshold while
-        discharging before you receive a notification.
+        the background and checking the battery level every 15 minutes
+        (configurable). The exact timing of these checks depends on the Android
+        OS, which might schedule them alongside other tasks or delay them when
+        in sleep mode. As a result, the battery level may slightly exceed the
+        high threshold while charging or drop slightly below the low threshold
+        while discharging before you receive a notification.
         \n\nThe app should continue running in the background after rebooting
         your phone. However, on certain devices, you may need to open the
         security settings and grant explicit permission for it to do so.

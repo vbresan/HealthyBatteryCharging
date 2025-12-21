@@ -2,6 +2,7 @@ package biz.binarysolutions.healthybatterycharging.util;
 
 import static biz.binarysolutions.healthybatterycharging.MainActivity.DEFAULT_BATTERY_HIGH;
 import static biz.binarysolutions.healthybatterycharging.MainActivity.DEFAULT_BATTERY_LOW;
+import static biz.binarysolutions.healthybatterycharging.MainActivity.DEFAULT_INTERVAL;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -37,5 +38,13 @@ public class PreferencesUtil {
             PreferenceManager.getDefaultSharedPreferences(context);
 
         return preferences.getInt("batteryHigh", DEFAULT_BATTERY_HIGH);
+    }
+
+    public static int getInterval(Context context) {
+
+        SharedPreferences preferences =
+                PreferenceManager.getDefaultSharedPreferences(context);
+
+        return preferences.getInt("interval", DEFAULT_INTERVAL);
     }
 }
