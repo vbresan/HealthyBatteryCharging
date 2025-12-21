@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BatteryLevelNotifications">Notifiche del livello della batteria</string>
+    <string name="BatteryLowNotification">Notifica di batteria scarica</string>
+    <string name="BatteryHighNotification">Notifica di batteria carica</string>
+    <string name="Low">Scarica:</string>
+    <string name="High">Carica:</string>
+    <string name="Save">Salva</string>
+    <string name="Reset">Resetta</string>
+    <string name="BatteryStatus">Stato della batteria:</string>
+    <string name="BatteryLevel">Livello della batteria:</string>
+    <string name="Charging">In caricamento</string>
+    <string name="Discharging">In scaricamento</string>
+    <string name="ConnectCharger">Collegare il caricabatterie</string>
+    <string name="DisconnectCharger">Scollegare il caricabatterie</string>
+    <string name="MessageOK">Tutto pronto! Riceverai notifiche che indicano quando collegare e scollegare il caricabatterie. Sentiti libero di uscire dall\'app.\n\nNote aggiuntive sulle funzionalità dell\'app:\n\nL\'app stessa è ottimizzata per un basso consumo di batteria, funzionando in background e controllando il livello della batteria ogni 15 minuti. La tempistica esatta di questi controlli dipende dal sistema operativo Android, che potrebbe programmarli insieme ad altre attività o ritardarli in modalità sospensione. Di conseguenza, il livello della batteria potrebbe leggermente superare la soglia massima durante la carica o scendere leggermente al di sotto della soglia minima durante la scarica prima di ricevere una notifica.\n\nL\'app dovrebbe continuare a funzionare in background dopo il riavvio del telefono. Tuttavia, su alcuni dispositivi, potrebbe essere necessario aprire le impostazioni di sicurezza e concedere l\'autorizzazione esplicita per farlo.\n\nAlcuni dispositivi economici, in particolare i modelli più vecchi con modifiche al sistema operativo, terminano tutti i servizi in background quando un\'app viene rimossa dalla memoria. Se il tuo dispositivo rientra in questa categoria, dovrai \"bloccare\" l\'app in memoria per evitare che ciò accada. Inoltre, assicurati che l\'app sia esclusa dall\'ottimizzazione della batteria.</string>
+    <string name="MessageNOK">Non sei ancora configurato! Affinché l\'app funzioni correttamente, devi concederle le autorizzazioni necessarie. Riavvia l\'app o vai alle impostazioni di sistema e concedile l\'autorizzazione alle notifiche.</string>
+    <string name="DonationTitle">Questa app dipende dal tuo supporto</string>
+    <string name="DonationContent">Questa app è gratuita, open source e non contiene pubblicità o tracker. Per mantenerla tale, se puoi, fai una donazione oggi stesso:</string>
+    <string name="app_name">Healthy Battery Charging</string>
+</resources>
