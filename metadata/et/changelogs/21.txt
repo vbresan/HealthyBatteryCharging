@@ -1,6 +1,7 @@
-2.1 (2025.12.xx)
+2.1 (2025.12.21)
 
 * Lisandus seadistatav aku kontrollimise välp
+* Lisandus tõlge itaalia keelde
 * Lisandus tõlge sloveeni keelde
 * Lisandus tõlge portugali keelde
 * Täiened tõlge ukraina keelde
