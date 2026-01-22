@@ -57,6 +57,7 @@ When translating app string resources:
 * For context, please refer to the provided screenshots.
 
 When translating metadata:
+* Please keep the short description (`short_description.txt`) limited to 80 characters.
 * It's not necessary to translate changelogs related to app releases made before your language was added.
 
 #### Translators
