@@ -18,4 +18,6 @@
     <string name="MessageNOK">Niste še pripravljeni! Da bo aplikacija delovala pravilno, ji morate dodeliti potrebna dovoljenja. Ponovno zaženite aplikacijo ali odprite nastavitve sistema in ji dodelite dovoljenje za obvestila.</string>
     <string name="DonationTitle">Ta aplikacija je odvisna od vaše podpore</string>
     <string name="DonationContent">Ta aplikacija je brezplačna, odprtokodna in ne vsebuje oglasov ali sledilnikov. Da bi tako ostalo tudi v prihodnje, vas prosimo, da danes, če lahko, darujete:</string>
+    <string name="CheckEvery">Preveri vsake</string>
+    <string name="Min">najmanj</string>
 </resources>
