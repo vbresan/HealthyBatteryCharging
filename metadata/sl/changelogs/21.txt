@@ -1,0 +1,7 @@
+2.1 (21.12.2025)
+
+* Izvedba nastavljivega intervala preverjanja baterije
+* Dodajanje italijanskega prevoda
+* Dodajanje slovenskega prevoda
+* Dodajanje portugalskega (pt) prevoda
+* Posodobitev ukrajinskega prevoda
