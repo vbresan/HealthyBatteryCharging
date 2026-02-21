@@ -1,0 +1,7 @@
+2.1 (21/12/2025)
+
+* Implementação do intervalo configurável para verificação da bateria
+* Adição da tradução para o italiano
+* Adição da tradução para o esloveno
+* Adição da tradução para o português (pt)
+* Atualização da tradução para o ucraniano
