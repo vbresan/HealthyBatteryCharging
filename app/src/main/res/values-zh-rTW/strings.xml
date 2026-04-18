@@ -14,9 +14,9 @@
     <string name="DisconnectCharger">拔下充電器</string>
     <string name="BatteryLowNotification">電池低電量通知</string>
     <string name="app_name">健康電池充電</string>
-    <string name="MessageNOK">還沒設定完！為了讓應用程式正常運行，需要您授予必要的權限。請重新啟動應用程式或前往系統設定並授予通知權限。</string>
-    <string name="DonationTitle">此應用程式依賴您的支持</string>
-    <string name="DonationContent">該應用程式是免費的、開源的，並且沒有廣告或追蹤器。為了維持這種狀態，如果可以的話，請立即捐款:</string>
+    <string name="MessageNOK">還沒設定完！為了讓應用程式正常運作，需要您授予必要的權限。請重新啟動應用程式，或前往系統設定開啟通知權限。</string>
+    <string name="DonationTitle">此應用程式需要您的支持</string>
+    <string name="DonationContent">此應用程式是免費的、開源的，並且沒有廣告或追蹤器。為了維持這種狀態，如果可以的話，請立即捐款：</string>
     <string name="BatteryHighNotification">電池高電量通知</string>
     <string name="Min">分鐘</string>
 </resources>
