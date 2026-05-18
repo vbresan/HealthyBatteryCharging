@@ -1,0 +1,5 @@
+2.0.9 (2024.12.14)
+
+* Menghapus blok dependensi dari file yang telah dibuat
+* Menambahkan teks dan tautan donasi
+* Menambahkan terjemahan bahasa Estonia

@@ -1,0 +1,4 @@
+2.0.7 (2024.08.25)
+
+* Menambahkan terjemahan ke: bahasa Jepang, Esperanto, Korea, dan Toki Pona
+* Memperbarui terjemahan bahasa Tiongkok (Disederhanakan)

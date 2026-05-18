@@ -1,0 +1,8 @@
+Buat ponsel atau tablet baterai anda bertahan lebih lama!
+
+Kisaran yang baik untuk mengisi daya baterai Li-ion adalah sekitar 40 sampai 80 persen dalam sekali jalan. Banyak pengisian daya kecil sepanjang hari adalah taruhan terbaik kedua anda, dan mulai dari 0 ke 100 lalu 100 ke 0 secara teratur akan memberikan tekanan paling banyak ke baterai lithium-ion anda.
+
+Pengisi Daya Sehat memberi tahu anda kapan anda harus mencolokkan dan mencabut ponsel anda dari pengisi daya untuk meningkatkan daya baterai anda. Aplikasinya sendiri dioptimalkan untuk pemakaian baterai daya rendah, berjalan di latar belakang dan memeriksa tingkat baterai level anda setiap 15 menit (dapat dikonfigurasi). Waktu yang tepat untuk pemeriksaan-pemeriksaan ini tergantung Android OS anda, yang mungkin menjadwalkannya bersamaan dengan tugas lain atau menundanya saat dalam mode tidur. Sebagai akibatnya, tingkat baterainya bisa jadi sedikit melebihi ambang batas tinggi saat sedang mengisi daya atau menurun sedikit dibawah ambang batas rendah saat pengosongan sebelum anda menerima pemberitahuan.
+
+Bagi yang ingin mengetahui detail teknis lebih lanjut tentang baterai Li-ion:
+https://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
