@@ -1,0 +1,6 @@
+2.1.3 (2026.05.22)
+
+* Adding Indonesian translation (incomplete)
+* Updating Arabic, Portuguese (BR) and Mandarin (Traditional) translations
+* Updating copyright year
+* Replacing donation link with a button
