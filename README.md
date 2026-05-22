@@ -49,7 +49,7 @@ Your contributions are greatly appreciated.
 
 #### Current translation status
 
-![Bar chart with current translation status](https://camo.githubusercontent.com/d72883b914ec90080faeec601bf3c7f0fd1cc1c82d34539228339b7cffc961ae/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
+![Bar chart with current translation status](https://camo.githubusercontent.com/f7eca24a896214e5ddc90ba72a5e7d4df7e0248d3c179475fd042b19885f2252/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6865616c7468792d626174746572792d6368617267696e672f6170702f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
 
 #### Notes to translators
 
@@ -74,6 +74,7 @@ Big thanks to:
 * Galician - josé m
 * German - **[Maurits van der Zee](https://github.com/MauritsvanderZee)**
 * Hebrew - **[elid](https://github.com/elid34)**
+* Indonesian - wkzxdsh
 * Italian - **[albanobattistella](https://github.com/albanobattistella)**
 * Japanese - Assem Askarova
 * Korean - Assem Askarova
