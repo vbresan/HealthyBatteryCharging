@@ -1,0 +1,4 @@
+2.0.13 (2025.01.19)
+
+* Menambahkan terjemahan bahasa Prancis
+* Memperbarui terjemahan bahasa Tiongkok (Disederhanakan)

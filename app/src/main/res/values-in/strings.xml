@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pengisi Daya Sehat</string>
+    <string name="BatteryLevelNotifications">Notifikasi tingkat baterai</string>
+    <string name="BatteryLowNotification">Notifikasi daya baterai rendah</string>
+    <string name="BatteryHighNotification">Notifikasi daya baterai tinggi</string>
+    <string name="Low">Rendah:</string>
+    <string name="High">Tinggi:</string>
+    <string name="CheckEvery">Periksa setiap</string>
+    <string name="Min">min.</string>
+    <string name="Save">Simpan</string>
+    <string name="Reset">Atur ulang</string>
+    <string name="BatteryStatus">Keadaan baterai:</string>
+    <string name="BatteryLevel">Tingkat baterai:</string>
+    <string name="Charging">Mengisi daya</string>
+    <string name="Discharging">Melepaskan daya</string>
+    <string name="ConnectCharger">Hubungkan pengisi daya</string>
+    <string name="DisconnectCharger">Memutuskan pengisi daya</string>
+    <string name="MessageNOK">Anda belum siap! Agar aplikasinya berfungsi dengan baik, anda perlu memberikan izin yang diperlukan. Silakan mulai ulang aplikasi atau pergi ke pengaturan sistem dan berikan izin notifikasi.</string>
+    <string name="DonationTitle">Aplikasi ini bergantung pada dukungan anda</string>
+    <string name="DonationContent">Aplikasi ini gratis, open-source, dan tidak ada iklan atau pelacak. Agar tetap seperti itu, jika anda mampu, silakan berdonasi hari ini:</string>
+    <string name="MessageOK">Anda sudah siap! Anda akan mendapatkan notifikasi kapan harus mencolokkan dan mencabut pengisi daya. Silakan keluar aplikasi jika anda mau.\n\nCatatan tambahan tentang fungsi aplikasi:\n\nAplikasinya sendiri dioptimalkan untuk penggunaan baterai rendah,</string>
+</resources>

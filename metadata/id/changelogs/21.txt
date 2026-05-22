@@ -1,0 +1,7 @@
+2.1 (2025.12.21)
+
+* Menerapkan interval pengecekan baterai yang dapat dikonfigurasi.
+* Menambahkan terjemahan bahasa Italia
+* Menambahkan terjemahan bahasa Slovenia
+* Menambahkan terjemahan bahasa Portugis (pt)
+* Memperbarui terjemahan bahasa Ukraina
