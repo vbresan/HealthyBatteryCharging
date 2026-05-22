@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="DonationURL">https://ko-fi.com/vbresan</string>
+    <string name="DonationURL">https://ko-fi.com/vbresan/?utm_source=hbc&amp;utm_medium=app&amp;utm_campaign=regular</string>
     <string name="Copyright">&#169; 2017 – 2026</string>
 </resources>

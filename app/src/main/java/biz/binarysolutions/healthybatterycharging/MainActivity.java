@@ -9,12 +9,13 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Rect;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewTreeObserver.OnGlobalLayoutListener;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -134,6 +135,13 @@ public class MainActivity extends Activity {
 		savePreferences();
 	}
 
+	private void donate() {
+
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setData(Uri.parse(getString(R.string.DonationURL)));
+		startActivity(intent);
+	}
+
 	private void setButtonEnabled(Button button, boolean isEnabled) {
 		button.setEnabled(isEnabled);
 	}
@@ -157,6 +165,11 @@ public class MainActivity extends Activity {
 		binding.buttonReset.setOnClickListener(v -> resetPreferences());
 		binding.buttonReset.setOnTouchListener((v, event) ->
 			toggleGlow(event, binding.imageViewReset)
+		);
+
+		binding.buttonDonate.setOnClickListener(v -> donate());
+		binding.buttonDonate.setOnTouchListener((v, event) ->
+			toggleGlow(event, binding.imageViewDonate)
 		);
 	}
 
@@ -312,23 +325,34 @@ public class MainActivity extends Activity {
 		moveImageVertically(imageView, delta);
 	}
 
+	private void resizeDonateButton() {
+
+		binding.buttonReset.post(() -> {
+
+			ViewGroup.LayoutParams params = binding.buttonDonate.getLayoutParams();
+			params.width = binding.buttonReset.getWidth();
+			binding.buttonDonate.setLayoutParams(params);
+
+			/* button and glow background do not share the same-width parent,
+				so image has to be positioned (scaled) when button width is
+				set.
+			 */
+			binding.buttonDonate.post(() ->
+				positionGlowImage(
+					binding.relativeLayoutDonate,
+					binding.buttonDonate,
+					binding.imageViewDonate
+            	)
+			);
+		});
+	}
+
 	private void positionGlowImages() {
 
-		RelativeLayout container = binding.relativeLayoutContainer;
-		container.getViewTreeObserver().addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
-
-			@Override
-			public void onGlobalLayout() {
-
-				if (Build.VERSION.SDK_INT >= 16) {
-					container.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-				} else {
-					container.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-				}
-
-				positionGlowImage(container, binding.buttonSave,  binding.imageViewSave);
-				positionGlowImage(container, binding.buttonReset, binding.imageViewReset);
-			}
+		RelativeLayout controls = binding.relativeLayoutControls;
+		controls.post(() -> {
+			positionGlowImage(controls, binding.buttonSave,  binding.imageViewSave);
+			positionGlowImage(controls, binding.buttonReset, binding.imageViewReset);
 		});
 	}
 
@@ -400,6 +424,7 @@ public class MainActivity extends Activity {
 		super.onResume();
 
 		refreshBatteryStatus();
+		resizeDonateButton();
 		positionGlowImages();
 	}
 

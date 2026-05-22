@@ -26,7 +26,7 @@
 		/>
 
 		<RelativeLayout
-			android:id="@+id/relativeLayoutContainer"
+			android:id="@+id/relativeLayoutControls"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			>
@@ -256,25 +256,57 @@
 				android:layout_marginTop="@dimen/minPadding"
 				android:layout_marginBottom="@dimen/textNormal"
 			/>
-			<TextView
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:text="@string/DonationContent"
-				android:textSize="@dimen/textNormal"
-				android:textColor="@color/textTertiary"
-				android:layout_marginBottom="@dimen/textNormal"
-			/>
 
-			<TextView
+			<RelativeLayout
+				android:id="@+id/relativeLayoutDonate"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:gravity="center_horizontal"
-				android:textSize="@dimen/textH6"
-				android:textColor="@color/textTertiary"
-				android:autoLink="web"
-				android:text="@string/DonationURL"
-				android:textColorLink="@color/textLink"
-			/>
+				>
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					>
+					<ImageView
+						android:id="@+id/imageViewDonate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20dp"
+						android:scaleType="fitXY"
+						android:src="@drawable/glow"
+						android:visibility="invisible"
+						tools:ignore="ContentDescription"
+						android:layout_centerHorizontal="true"
+					/>
+				</RelativeLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_centerInParent="true"
+					android:layout_alignParentTop="true"
+					>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/DonationContent"
+						android:textSize="@dimen/textNormal"
+						android:textColor="@color/textTertiary"
+						android:layout_marginBottom="@dimen/textNormal"
+					/>
+
+					<Button
+						android:id="@+id/buttonDonate"
+						style="@style/AppTheme.Button"
+						android:text="@string/ShowSupport"
+						android:enabled="true"
+						android:layout_gravity="center_horizontal"
+					/>
+				</LinearLayout>
+			</RelativeLayout>
 
 			<TextView
 				android:layout_width="wrap_content"
@@ -283,7 +315,6 @@
 				android:text="@string/Copyright"
 				android:textSize="@dimen/textSmall"
 				android:textColor="@color/textTertiary"
-				android:layout_marginTop="@dimen/minPadding"
 			/>
 
 		</LinearLayout>
