@@ -1,0 +1,6 @@
+2.1.3 (2026.05.22)
+
+* Přidána indonéština (nekompletní)
+* Aktualizována arabština, portugalština (BR) a mandarínština (tradiční)
+* Aktualizován rok v copyrightu
+* Nahrazení odkazu na darování tlačítkem
