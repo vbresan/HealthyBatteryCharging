@@ -1,0 +1,6 @@
+2.1.3 (2026.05.22)
+
+* Lisandus (poolik) indoneesia keele tõlge
+* Uuenesid araabia, Brasiilia portugali ja traditsioonilise mandariini keele tõlked
+* Uuenes autoriõiguste aastamärge
+* Rahalise toetuse lingi asemel on nüüd nupp
