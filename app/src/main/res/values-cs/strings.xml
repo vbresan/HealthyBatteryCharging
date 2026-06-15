@@ -20,4 +20,5 @@
     <string name="DonationTitle">Tato aplikace závisí na vaší podpoře</string>
     <string name="CheckEvery">Kontrolovat každých</string>
     <string name="Min">min.</string>
+    <string name="ShowSupport">Zobrazit podporu</string>
 </resources>
