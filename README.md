@@ -88,3 +88,7 @@ Big thanks to:
 * Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
 * Toki Pona - Assem Askarova
 * Ukrainian - **[Korb](https://github.com/Korb)**, Lowri Olsen, Максим Горпиніч
+
+## Alternative apps
+
+If your device is rooted, take a look at [Advanced Charging Controller](https://github.com/VR-25/acc) and [AccA](https://github.com/MatteCarra/AccA) frontend.
