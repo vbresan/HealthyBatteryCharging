@@ -91,4 +91,11 @@ Big thanks to:
 
 ## Alternative apps
 
-If your device is rooted, take a look at [Advanced Charging Controller](https://github.com/VR-25/acc) and [AccA](https://github.com/MatteCarra/AccA) frontend.
+If your device is rooted, check out  [Advanced Charging Controller (ACC)](https://github.com/VR-25/acc).
+It can automatically stop charging when a specified battery level is reached, among other features.
+([ACC XDA forum thread](xdaforums.com/t/advanced-charging-controller-acc.3668427/))
+
+There are two ACC frontends, though neither is actively supported or endorsed anymore. 
+One is [AccA](https://github.com/MatteCarra/AccA), ([AccA on F-Droid](https://f-droid.org/en/packages/mattecarra.accapp/)).
+The other is [AccSettings](https://github.com/CrazyBoyFeng/AccSettings) which supports
+even older devices.
