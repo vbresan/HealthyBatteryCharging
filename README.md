@@ -99,3 +99,7 @@ There are two ACC frontends, though neither is actively supported or endorsed an
 One is [AccA](https://github.com/MatteCarra/AccA), ([AccA on F-Droid](https://f-droid.org/en/packages/mattecarra.accapp/)).
 The other is [AccSettings](https://github.com/CrazyBoyFeng/AccSettings) which supports
 even older devices.
+
+Other apps:
+- [Battery Monitor](https://github.com/tswistak/Battery-Monitor)
+- [Beam](https://github.com/montafra/beam)
