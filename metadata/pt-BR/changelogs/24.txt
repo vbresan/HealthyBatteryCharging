@@ -1,0 +1,6 @@
+2.1.3 (22/05/2026)
+
+* Adição da tradução para o indonésio (incompleta)
+* Atualização das traduções para o árabe, português (Brasil) e mandarim (tradicional)
+* Atualização do ano dos direitos autorais
+* Substituição do link de doação por um botão

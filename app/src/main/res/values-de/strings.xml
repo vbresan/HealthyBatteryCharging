@@ -18,4 +18,6 @@
     <string name="DonationContent">Diese App ist kostenlos, quelloffen und hat keine Werbung oder Tracker. Damit das so bleibt, kannst du heute gerne spenden:</string>
     <string name="BatteryLevelNotifications">Benachrichtigungen über den Akkustand</string>
     <string name="BatteryLowNotification">Benachrichtigung bei niedrigem Batteriestand</string>
+    <string name="CheckEvery">Überprüfen alle</string>
+    <string name="Min">Min.</string>
 </resources>

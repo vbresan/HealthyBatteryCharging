@@ -18,4 +18,7 @@
     <string name="MessageNOK">¡Aún no está configurada! Para que la aplicación funcione correctamente, debes concederle los permisos necesarios. Reinicia la aplicación o ve a la configuración del sistema y concédele permisos de notificación.</string>
     <string name="DonationTitle">Esta aplicación depende de tu apoyo</string>
     <string name="DonationContent">Esta aplicación es gratuita, de código abierto y no tiene anuncios ni rastreadores. Para mantenerla así, si puedes, por favor dona hoy:</string>
+    <string name="CheckEvery">Revisa cada</string>
+    <string name="Min">Min.</string>
+    <string name="ShowSupport">Apóyanos</string>
 </resources>

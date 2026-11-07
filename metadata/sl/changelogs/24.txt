@@ -1,0 +1,6 @@
+2.1.3 (2026.05.22)
+
+* Dodan indonezijski prevod (nepopoln)
+* Posodobljen prevod v arabščino, portugalščino (BR) in mandarinščino (tradicionalna)
+* Posodobljeno leto avtorskih pravic
+* Zamenjava povezave za donacijo z gumbom

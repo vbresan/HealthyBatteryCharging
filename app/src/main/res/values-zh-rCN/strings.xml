@@ -20,4 +20,5 @@
     <string name="DonationContent">本应用免费、开源且无广告或跟踪器。要让其保持这种状态，如果有能力，请今天就捐赠：</string>
     <string name="CheckEvery">检查间隔</string>
     <string name="Min">分钟</string>
+    <string name="ShowSupport">显示支持</string>
 </resources>

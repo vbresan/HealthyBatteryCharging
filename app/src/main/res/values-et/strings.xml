@@ -20,4 +20,5 @@
     <string name="DonationContent">See rakendus põhineb avatud lähtekoodil, on vaba ja tasuta ning ei sisalda reklaame ega träkkereid. Et nii oleks ka tulevikus, palun toeta meid juba täna:</string>
     <string name="CheckEvery">Kontrollimise välp</string>
     <string name="Min">min.</string>
+    <string name="ShowSupport">Näita oma toetust</string>
 </resources>

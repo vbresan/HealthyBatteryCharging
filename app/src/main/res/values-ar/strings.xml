@@ -20,4 +20,5 @@
     <string name="DonationContent">هذا التطبيق مجاني ومفتوح المصدر ولا يحتوي على إعلانات أو أدوات تعقب. وللحفاظ عليه على هذا النحو، يُرجى التبرع اليوم إذا كان بوسعك:</string>
     <string name="CheckEvery">تحقّق كل</string>
     <string name="Min">دقيقة</string>
+    <string name="ShowSupport">أظهر دعمك</string>
 </resources>
